@@ -7,8 +7,8 @@ et vous proposez un substitut plus sain à l'aliment qui vous fait envie.
 
 
    ### FONCTIONNALITÉS UTILISATEUR
-       
-- L'utilisateur choisi entre remplacer un aliment ou consulter ses favoris (ses aliments substitués):
+
+    - L'utilisateur choisi entre remplacer un aliment ou consulter ses favoris (ses aliments substitués):
 
     Remplacer un aliment:
         - L'utilisateur sélectionne une catégorie d'aliments
@@ -37,18 +37,18 @@ et vous proposez un substitut plus sain à l'aliment qui vous fait envie.
              - L'utilisateur peut quittez le programme ou faire une nouvelle recherche
              
              
-    DÉROULEMENT DU PROGRAMME
+   ### DÉROULEMENT DU PROGRAMME
     
-color:red "Système": 1 - Quel aliment souhaitez-vous remplacer?
-color:red             2 - Retrouver mes aliments substitués.
+    <<Système>>: 1 - Quel aliment souhaitez-vous remplacer?
+           2 - Retrouver mes aliments substitués.
              
-color:green    "User": Tape 1
+    "User": Tape 1
                 -> User veut remplacer un aliment
 
-        "Système": Sélectionnez la catégorie.
+        <<Système>>: Sélectionnez la catégorie.
                     (Affichage des catégories (Chaque catégorie est associées à un chiffre))
             
-color:green        "User": Tape le chiffre associé à la catégorie voulu.
+        "User": Tape le chiffre associé à la catégorie voulu.
                     -> User choisi une catégorie
             
         <<Système>>: Sélectionner l'aliment.
