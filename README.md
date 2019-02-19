@@ -37,7 +37,7 @@ et vous proposez un substitut plus sain à l'aliment qui vous fait envie.
              - L'utilisateur peut quittez le programme ou faire une nouvelle recherche
              
              
-    DÉROULEMENT DU PROGRAMME
+   ### DÉROULEMENT DU PROGRAMME
     
 color:red "Système": 1 - Quel aliment souhaitez-vous remplacer?
 color:red             2 - Retrouver mes aliments substitués.
