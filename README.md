@@ -166,8 +166,8 @@ et vous proposez un substitut plus sain à l'aliment qui vous fait envie.
                         <<Système>>: Vous avez fait trois tentatives sans succès, vos favoris ne sont pas accessible.
                                     (Le système n'affiche pas les favoris et recommence au début (question 1))
 
-                    <<Système>>: 1 - Quittez le programme
-                                 2 - Faire une nouvelle recherche
+                    <<Système>>: 1 - Faire une nouvelle recherche
+                                 2 - Quittez le programme
 
                     "User": Tape 1
                                 -> User veut quitter le programme
