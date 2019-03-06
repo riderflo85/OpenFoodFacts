@@ -3,7 +3,13 @@
 
 API = "https://fr.openfoodfacts.org/cgi/search.pl"
 
-USERCHOICE = "Votre choix: "
+#-----------------------DataBase----------------------------------------------
+HOST = "192.168.1.13"
+USER = "distant"
+PWD = "test"
+#-----------------------------------------------------------------------------
+
+USERCHOICE = ">>> "
 
 CATEGORIES = {
     1: "Boissons",
@@ -24,7 +30,9 @@ QUESTIONS = {
     2: "Retrouver mes aliments substitués.",
     3: "Selectionnez la catégorie:",
     4: "Sélectionnez l'aliment:",
-    5: "Voulez-vous enregistrer le résultat?"
+    5: "Voulez-vous enregistrer le résultat?",
+    6: "Faire une nouvelle recherche",
+    7: "Quittez le programme"
 }
 
 REP1 = ["1", "2"]
