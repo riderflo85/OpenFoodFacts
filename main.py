@@ -37,6 +37,9 @@ class DataBase():
         self.__execute(req)
         self.colect_data = self.cursor.fetchall()
         return self.colect_data
+    
+    def close(self):
+        self.conn.close()
 
     def __execute(self, *args):
         self.cursor.execute(*args)
@@ -97,7 +100,7 @@ def search(user):
 
 
 
-db = DataBase("testDist")
+db = DataBase("purbeurre")
 db.connexion(const.HOST, const.USER, const.PWD)
 user = User(const.USERCHOICE)
 def main():
@@ -140,6 +143,7 @@ def main():
                     search(user)
                 
                 elif user.rep == "2":
+                    db.close()
                     sys.exit()
 
             else:
@@ -151,3 +155,4 @@ def main():
 
 
 main()
+db.close()
