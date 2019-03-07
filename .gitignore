@@ -1,7 +1,5 @@
 gitopenfoodfactsAPI
-testBDD.py
-testRequest.py
-testCSV.py
+test*.py
 *.json
 .vscode
 __pycache__
