@@ -30,6 +30,9 @@ class DataBase():
         self.cursor = self.conn.cursor()
 
     def insert_data(self, *args):
+        req = "INSERT INTO {} ({}) VALUES ({});".format(*args)
+        #import pdb; pdb.set_trace()
+        self.__execute(req)
         self.__commit()
     
     def select_data(self, donnees, table):
