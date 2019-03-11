@@ -66,6 +66,15 @@ class User():
     def choice(self):
         self.rep = input(self.select)
         return self.rep
+    
+    def sign_in(self, db):
+        print("Veuillez renseigner votre identifiant: ")
+        self.choice()
+        db.select_data("user_name", "pb_users", "user_name", self.rep)
+        import pdb; pdb.set_trace()
+    
+    def sign_up(self):
+        pass
 
 #-----------------------------------------------------------------------------
 
@@ -146,6 +155,19 @@ def main():
 
         search(user, db)
         print(const.QUESTIONS[5])
+        user.choice()
+        check(user, const.REP)
+        if user.rep == "o" or user.rep == "O":
+            print("Choisissez une option: [1 ou 2]\n")
+            print("1 - Connexion\n2 - Création de compte")
+            user.choice()
+            check(user, const.REP1)
+            if user.rep == "1":
+                # sign_in()
+                pass
+            elif user.rep == "2":
+                # sign_up()
+                pass
 
     elif user.rep == "2":
 
