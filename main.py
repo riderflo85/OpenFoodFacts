@@ -35,11 +35,17 @@ class DataBase():
         self.__execute(req)
         self.__commit()
     
-    def select_data(self, donnees, table):
-        req = "SELECT {} FROM {}".format(donnees, table)
-        self.__execute(req)
-        self.colect_data = self.cursor.fetchall()
-        return self.colect_data
+    def select_data(self, donnees, table, where, cond):
+        if where == None and cond == None:
+            req1 = "SELECT {} FROM {}".format(donnees, table)
+            self.__execute(req1)
+            self.colect_data = self.cursor.fetchall()
+        
+        else:
+            req = "SELECT {} FROM {} WHERE {} = '{}'"
+            req = req.format(donnees, table, where, cond)
+            self.__execute(req)
+            self.colect_data = self.cursor.fetchall()
     
     def close(self):
         self.conn.close()
@@ -89,14 +95,19 @@ def encoding(db):
         if tent == 3:
             return False
 
-def search(user):
+def search(user, db):
     cond = []
     print("\nSélectionnez une catégorie :\n")
-    for k, v in const.CATEGORIES.items():
-            print("{} - {}".format(k, v))
-            cond.append(str(k)) 
+    for x in db.colect_data:
+        print("{} - {}".format(x[0], x[1]))
+        cond.append(str(x[0]))
     user.choice()
     check(user, cond)
+    data = "id_aliments, aliment_name, aliment_shop, aliment_link"
+    foo = int(user.rep)-1
+    done = db.colect_data[foo][1]
+    db.select_data(data, "pb_aliments", "aliment_categorie", done)
+    print(db.colect_data)
 
 #-----------------------------------------------------------------------------
 
@@ -116,7 +127,8 @@ def main():
 
     if user.rep == "1":
 
-        search(user)
+        db.select_data("*", "pb_categories", where=None, cond=None)
+        search(user, db)
 
     elif user.rep == "2":
 
