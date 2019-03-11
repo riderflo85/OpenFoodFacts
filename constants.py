@@ -30,7 +30,7 @@ QUESTIONS = {
     2: "Retrouver mes aliments substitués.",
     3: "Selectionnez la catégorie:",
     4: "Sélectionnez l'aliment:",
-    5: "Voulez-vous enregistrer le résultat?",
+    5: "Voulez-vous enregistrer le résultat? [O/N]",
     6: "Faire une nouvelle recherche",
     7: "Quittez le programme"
 }
