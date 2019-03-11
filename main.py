@@ -38,12 +38,14 @@ class DataBase():
     def select_data(self, donnees, table, where, cond):
         if where == None and cond == None:
             req1 = "SELECT {} FROM {}".format(donnees, table)
+            #import pdb; pdb.set_trace()
             self.__execute(req1)
             self.colect_data = self.cursor.fetchall()
         
         else:
             req = "SELECT {} FROM {} WHERE {} = '{}'"
             req = req.format(donnees, table, where, cond)
+            #import pdb; pdb.set_trace()
             self.__execute(req)
             self.colect_data = self.cursor.fetchall()
     
@@ -62,19 +64,39 @@ class User():
     def __init__(self, select):
         self.select = select
         self.rep = None
+        self.tent = 0
     
     def choice(self):
         self.rep = input(self.select)
         return self.rep
     
     def sign_in(self, db):
-        print("Veuillez renseigner votre identifiant: ")
+        print("\nVeuillez renseigner votre identifiant: ")
         self.choice()
         db.select_data("user_name", "pb_users", "user_name", self.rep)
-        import pdb; pdb.set_trace()
+        #import pdb; pdb.set_trace()
+        if db.colect_data[0][0] == self.rep:
+            print("Identifiant correct,")
+            print("merci de renseignez votre mot de passe")
+            if self.__password(db):
+                print("Mot de passe correct")
     
     def sign_up(self):
         pass
+    
+    def __password(self, db):
+        pwd = getpass()
+        db.select_data("user_passwd", "pb_users", "user_name", self.rep)
+        if pbkdf2_sha256.verify(pwd, db.colect_data[0][0]):
+            return True
+        else:
+            self.tent += 1
+            print("Mot de passe incorrect, tentative {}/3".format(self.tent))
+            if self.tent == 3:
+                return False
+            else:
+                self.__password(db)
+    
 
 #-----------------------------------------------------------------------------
 
@@ -82,27 +104,12 @@ class User():
 #-------------Fonctions-------------------------------------------------------
 def check(user, cond):
     if user.rep in cond:
-        print("la réponse est dans la liste")
+        pass
 
     else:
         print("Mauvaise réponse")
         user.choice()
         check(user, cond)
-
-def encoding(db):
-    tent = 0
-    user_passwd = getpass()
-    key = pbkdf2_sha256.hash(user_passwd)
-    db.select_data(key, "users")
-    done = pbkdf2_sha256.verify(db.colect_data, key)
-    if done:
-        return True
-    else:
-        tent += 1
-        print("Mot de passe incorrect, tentative {}/3".format(tent))
-        encoding(db)
-        if tent == 3:
-            return False
 
 def search(user, db):
     cond = []
@@ -163,8 +170,8 @@ def main():
             user.choice()
             check(user, const.REP1)
             if user.rep == "1":
-                # sign_in()
-                pass
+                user.sign_in(db)
+
             elif user.rep == "2":
                 # sign_up()
                 pass
@@ -180,7 +187,7 @@ def main():
 
             print("Identifiant correct, merci de renseignez votre mot de\
  passe:")
-            if encoding(db):
+            if True:
 
                 print("Mot de passe correct")
                 print("Aliment chercher:  ")
