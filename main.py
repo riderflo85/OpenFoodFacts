@@ -19,7 +19,7 @@ class DataBase():
         self.conn = None
         self.cursor = None
         self.colect_data = None
-    
+
     def connexion(self, host, user, passwd):
         self.conn = mysql.connector.connect(
             host = host,
@@ -34,27 +34,27 @@ class DataBase():
         #import pdb; pdb.set_trace()
         self.__execute(req)
         self.__commit()
-    
+
     def select_data(self, donnees, table, where, cond):
         if where == None and cond == None:
             req1 = "SELECT {} FROM {}".format(donnees, table)
             #import pdb; pdb.set_trace()
             self.__execute(req1)
             self.colect_data = self.cursor.fetchall()
-        
+
         else:
             req = "SELECT {} FROM {} WHERE {} = '{}'"
             req = req.format(donnees, table, where, cond)
             #import pdb; pdb.set_trace()
             self.__execute(req)
             self.colect_data = self.cursor.fetchall()
-    
+
     def close(self):
         self.conn.close()
 
     def __execute(self, *args):
         self.cursor.execute(*args)
-    
+
     def __commit(self):
         self.conn.commit()
 
@@ -63,13 +63,14 @@ class User():
 
     def __init__(self, select):
         self.select = select
+        self.passwd = None
         self.rep = None
         self.tent = 0
-    
+
     def choice(self):
         self.rep = input(self.select)
         return self.rep
-    
+
     def sign_in(self, db):
         print("\nVeuillez renseigner votre identifiant: ")
         self.choice()
@@ -77,26 +78,48 @@ class User():
         #import pdb; pdb.set_trace()
         if db.colect_data[0][0] == self.rep:
             print("Identifiant correct,")
-            print("merci de renseignez votre mot de passe")
-            if self.__password(db):
+            print("merci de renseignez votre mot de passe:")
+            if self.__password(db, create=False):
                 print("Mot de passe correct")
-    
-    def sign_up(self):
-        pass
-    
-    def __password(self, db):
-        pwd = getpass()
-        db.select_data("user_passwd", "pb_users", "user_name", self.rep)
-        if pbkdf2_sha256.verify(pwd, db.colect_data[0][0]):
-            return True
         else:
-            self.tent += 1
-            print("Mot de passe incorrect, tentative {}/3".format(self.tent))
-            if self.tent == 3:
-                return False
+            print("\nL'identifiant n'existe pas, merci de recommencer !")
+            self.sign_in(db)
+
+    def sign_up(self, db):
+        print("\nVeuillez renseigner un identifiant pour votre compte: ")
+        self.choice()
+        db.select_data("user_name", "pb_users", "user_name", self.rep)
+        if db.colect_data == []:
+            print("Identifiant libre,")
+            print("merci de renseignez un mot de passe:")
+            if self.__password(db, create=True):
+                values = "'{}', '{}'".format(self.rep, self.passwd)
+                db.insert_data("pb_users", "user_name, user_passwd", values)
+                print("Identifiant créez avec succès :-)")
+
+
+    def __password(self, db, create):
+        if create:
+            pwd = getpass()
+            hashed = pbkdf2_sha256.hash(pwd)
+            if pbkdf2_sha256.verify(pwd, hashed):
+                self.passwd = hashed
+                return True
             else:
-                self.__password(db)
-    
+                return False
+        else:
+            pwd = getpass()
+            db.select_data("user_passwd", "pb_users", "user_name", self.rep)
+            if pbkdf2_sha256.verify(pwd, db.colect_data[0][0]):
+                return True
+            else:
+                self.tent += 1
+                print("Mot de passe incorrect, tentative {}/3".format(self.tent))
+                if self.tent == 3:
+                    return False
+                else:
+                    self.__password(db)
+
 
 #-----------------------------------------------------------------------------
 
@@ -173,46 +196,27 @@ def main():
                 user.sign_in(db)
 
             elif user.rep == "2":
-                # sign_up()
-                pass
+                user.sign_up(db)
 
     elif user.rep == "2":
 
-        print("Veuillez renseigner votre identifiant: (même si vous en avez\
- pas encore)")
+        user.sign_in(db)
+        print("Aliment chercher:  ")
+        #Afficher les aliments cherchés
+        print("Substitut enregistrés:  ")
+        #Afficher les substituts enregistrés
+        print("Choisissez une option: [1 ou 2]\n")
+        print("1- {}\n2- {}".format(const.QUESTIONS[6], const.QUESTIONS[7]))
         user.choice()
-        db.select_data(user.rep, "users")
+        check(user, const.REP1)
 
-        if user.rep == db.colect_data:
+        if user.rep == "1":
 
-            print("Identifiant correct, merci de renseignez votre mot de\
- passe:")
-            if True:
+            search(user)
 
-                print("Mot de passe correct")
-                print("Aliment chercher:  ")
-                #Afficher les aliments cherchés
-                print("Substitut enregistrés:  ")
-                #Afficher les substituts enregistrés
-                print("Choisissez une option: [1 ou 2]\n")
-                print("1- {}\n2- {}".format(const.QUESTIONS[6], const.QUESTIONS[7]))
-                user.choice()
-                check(user, const.REP1)
-
-                if user.rep == "1":
-
-                    search(user)
-                
-                elif user.rep == "2":
-                    db.close()
-                    sys.exit()
-
-            else:
-
-                print("Vous avez fait trois tentatives sans succès, vos\
- favoris ne sont pas accessible. Le programme se relance...")
-                main()
-
+        elif user.rep == "2":
+            db.close()
+            sys.exit()
 
 
 main()
