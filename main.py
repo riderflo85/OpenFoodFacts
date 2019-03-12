@@ -19,6 +19,7 @@ class DataBase():
         self.conn = None
         self.cursor = None
         self.colect_data = None
+        self.result = None
 
     def connexion(self, host, user, passwd):
         self.conn = mysql.connector.connect(
@@ -35,17 +36,27 @@ class DataBase():
         self.__execute(req)
         self.__commit()
 
-    def select_data(self, donnees, table, where, cond):
-        if where == None and cond == None:
-            req1 = "SELECT {} FROM {}".format(donnees, table)
-            #import pdb; pdb.set_trace()
-            self.__execute(req1)
+    def select_data(self, donnees, table, where, cond, join, *args):
+        if where == None and cond == None and join == False:
+            req = "SELECT {} FROM {}".format(donnees, table)
+            self.__execute(req)
+            self.colect_data = self.cursor.fetchall()
+        
+        elif where == None and cond == None and join:
+            req = "SELECT {} from {} inner join {} on {}={};"
+            req = req.format(donnees, table, *args)
+            self.__execute(req)
+            self.colect_data = self.cursor.fetchall()
+        
+        elif join:
+            req = "SELECT {} from {} inner join {} on {}={} where {}={};"
+            req = req.format(donnees, table, *args, where, cond)
+            self.__execute(req)
             self.colect_data = self.cursor.fetchall()
 
         else:
             req = "SELECT {} FROM {} WHERE {} = '{}'"
             req = req.format(donnees, table, where, cond)
-            #import pdb; pdb.set_trace()
             self.__execute(req)
             self.colect_data = self.cursor.fetchall()
 
@@ -74,7 +85,7 @@ class User():
     def sign_in(self, db):
         print("\nVeuillez renseigner votre identifiant: ")
         self.choice()
-        db.select_data("user_name", "pb_users", "user_name", self.rep)
+        db.select_data("user_name", "pb_users", "user_name", self.rep, False)
         #import pdb; pdb.set_trace()
         if db.colect_data[0][0] == self.rep:
             print("Identifiant correct,")
@@ -88,7 +99,7 @@ class User():
     def sign_up(self, db):
         print("\nVeuillez renseigner un identifiant pour votre compte: ")
         self.choice()
-        db.select_data("user_name", "pb_users", "user_name", self.rep)
+        db.select_data("user_name", "pb_users", "user_name", self.rep, False)
         if db.colect_data == []:
             print("Identifiant libre,")
             print("merci de renseignez un mot de passe:")
@@ -96,6 +107,9 @@ class User():
                 values = "'{}', '{}'".format(self.rep, self.passwd)
                 db.insert_data("pb_users", "user_name, user_passwd", values)
                 print("Identifiant créez avec succès :-)")
+        else:
+            print("\nIdentifiant déjà pris, merci d'en choisir un autre:")
+            self.sign_up(db)
 
 
     def __password(self, db, create):
@@ -109,7 +123,7 @@ class User():
                 return False
         else:
             pwd = getpass()
-            db.select_data("user_passwd", "pb_users", "user_name", self.rep)
+            db.select_data("user_passwd", "pb_users", "user_name", self.rep, False)
             if pbkdf2_sha256.verify(pwd, db.colect_data[0][0]):
                 return True
             else:
@@ -117,8 +131,9 @@ class User():
                 print("Mot de passe incorrect, tentative {}/3".format(self.tent))
                 if self.tent == 3:
                     return False
+                    sys.exit()
                 else:
-                    self.__password(db)
+                    self.__password(db, create=False)
 
 
 #-----------------------------------------------------------------------------
@@ -135,8 +150,9 @@ def check(user, cond):
         check(user, cond)
 
 def search(user, db):
+
     cond = []
-    db.select_data("*", "pb_categories", where=None, cond=None)
+    db.select_data("*", "pb_categories", where=None, cond=None, join=False)
 
     print("\nSélectionnez une catégorie :\n")
     for x in db.colect_data:
@@ -148,7 +164,8 @@ def search(user, db):
     print("\nSélectionnez un aliment :\n")
     foo = int(user.rep)-1
     done = db.colect_data[foo][1]
-    db.select_data("aliment_name", "pb_aliments", "aliment_categorie", done)
+    db.select_data("aliment_name", "pb_aliments", "aliment_categorie",
+        done, False)
     nb = 0
     for x in db.colect_data:
         nb += 1
@@ -160,8 +177,9 @@ def search(user, db):
     where = "aliment_name"
     foo = int(user.rep)-1
     done = db.colect_data[foo][0]
-    db.select_data(data, "pb_aliments", where, done)
+    db.select_data(data, "pb_aliments", where, done, False)
     print("\nAliment sélectionnez : {}".format(db.colect_data[0][0]))
+    db.result = db.colect_data[0][0]
     print("\nBoutique : {}".format(db.colect_data[0][1]))
     print("\nLien internet : {}\n".format(db.colect_data[0][2]))
 
@@ -194,18 +212,32 @@ def main():
             check(user, const.REP1)
             if user.rep == "1":
                 user.sign_in(db)
+                db.select_data("id_aliments", "pb_aliments", "aliment_name",
+                    db.result, join=False)
+                db.insert_data("pb_favoris", "favoris_aliment", 
+                    db.colect_data[0][0])
+                print("\nEnregistrement réussi")
 
             elif user.rep == "2":
                 user.sign_up(db)
+                db.select_data("id_aliments", "pb_aliments", "aliment_name",
+                    db.result, join=False)
+                db.insert_data("pb_favoris", "favoris_aliment", 
+                    db.colect_data[0][0])
+                print("\nEnregistrement réussi")
 
     elif user.rep == "2":
 
         user.sign_in(db)
-        print("Aliment chercher:  ")
+        print("\nAliment chercher:  ")
         #Afficher les aliments cherchés
-        print("Substitut enregistrés:  ")
+        arg = ["pb_favoris", "id_aliments", "favoris_aliment"]
+        db.select_data("aliment_name", "pb_aliments", None, None, True, *arg)
+        print(db.colect_data[0][0])
+
+        print("\nSubstitut enregistrés:  ")
         #Afficher les substituts enregistrés
-        print("Choisissez une option: [1 ou 2]\n")
+        print("\nChoisissez une option: [1 ou 2]\n")
         print("1- {}\n2- {}".format(const.QUESTIONS[6], const.QUESTIONS[7]))
         user.choice()
         check(user, const.REP1)
