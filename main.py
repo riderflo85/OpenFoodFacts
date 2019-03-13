@@ -183,6 +183,16 @@ def search(user, db):
     print("\nBoutique : {}".format(db.colect_data[0][1]))
     print("\nLien internet : {}\n".format(db.colect_data[0][2]))
 
+def end(user):
+    print("\nChoisissez une option: [1 ou 2]\n")
+    print("1- {}\n2- {}".format(const.QUESTIONS[6], const.QUESTIONS[7]))
+    user.choice()
+    check(user, const.REP1)
+    if user.rep == "1":
+        return True
+    else:
+        return False
+
 #-----------------------------------------------------------------------------
 
 
@@ -191,13 +201,14 @@ def search(user, db):
 db = DataBase("purbeurre")
 db.connexion(const.HOST, const.USER, const.PWD)
 user = User(const.USERCHOICE)
-def main():
 
-    print("\n\n\tBonjour et bienvenu sur PurBeurreRecherche !!!\n")
-    print("Choisissez une option: [1 ou 2]\n")
-    print("1- {}\n2- {}".format(const.QUESTIONS[1], const.QUESTIONS[2]))
-    user.choice()
-    check(user, const.REP1)
+print("\n\n\tBonjour et bienvenu sur PurBeurreRecherche !!!\n")
+print("Choisissez une option: [1 ou 2]\n")
+print("1- {}\n2- {}".format(const.QUESTIONS[1], const.QUESTIONS[2]))
+user.choice()
+check(user, const.REP1)
+
+def main():
 
     if user.rep == "1":
 
@@ -226,6 +237,13 @@ def main():
                     db.colect_data[0][0])
                 print("\nEnregistrement réussi")
 
+        if end(user):
+            main()
+
+        else:
+            db.close()
+            sys.exit()
+
     elif user.rep == "2":
 
         user.sign_in(db)
@@ -237,16 +255,11 @@ def main():
 
         print("\nSubstitut enregistrés:  ")
         #Afficher les substituts enregistrés
-        print("\nChoisissez une option: [1 ou 2]\n")
-        print("1- {}\n2- {}".format(const.QUESTIONS[6], const.QUESTIONS[7]))
-        user.choice()
-        check(user, const.REP1)
 
-        if user.rep == "1":
+        if end(user):
+            main()
 
-            search(user)
-
-        elif user.rep == "2":
+        else:
             db.close()
             sys.exit()
 
