@@ -1,0 +1,518 @@
+{
+    "Jambon à l'Ancienne": [
+        "d",
+        4,
+        [],
+        "https://fr.openfoodfacts.org/produit/3268680020276/jambon-a-l-ancienne-tallec"
+    ],
+    "saucilotte": [
+        "d",
+        4,
+        [],
+        "https://fr.openfoodfacts.org/produit/2055324800452/saucilotte-le-tuye"
+    ],
+    "Véritables Knacks d'Alsace": [
+        "e",
+        4,
+        [
+            "auchan"
+        ],
+        "https://fr.openfoodfacts.org/produit/3596710209811/veritables-knacks-d-alsace-mmm"
+    ],
+    "jambon cru Aoste - Dentelles.": [
+        "e",
+        3,
+        [
+            "hyper-u"
+        ],
+        "https://fr.openfoodfacts.org/produit/0210857029783/jambon-cru-aoste-dentelles-aoste-snc"
+    ],
+    "Aiguillettes de poulet Boulgour aux fruits secs Sauce au miel et épices": [
+        "a",
+        4,
+        [
+            "intermarche"
+        ],
+        "https://fr.openfoodfacts.org/produit/3250392485696/aiguillettes-de-poulet-boulgour-aux-fruits-secs-sauce-au-miel-et-epices-monique-ranou"
+    ],
+    "Saucisson à l'ail fumé": [
+        "e",
+        4,
+        [
+            "carrefour"
+        ],
+        "https://fr.openfoodfacts.org/produit/3560071003272/saucisson-a-l-ail-fume-produits-blancs"
+    ],
+    "rillettes de poulet roti en marmite": [
+        "d",
+        4,
+        [],
+        "https://fr.openfoodfacts.org/produit/3350240070316/rillettes-de-poulet-roti-en-marmite-maison-prunier"
+    ],
+    "Rillettes de canard": [
+        "e",
+        4,
+        [],
+        "https://fr.openfoodfacts.org/produit/3261830002085/rillettes-de-canard-duc-de-mestade"
+    ],
+    "Jambon de Bayonne": [
+        "e",
+        3,
+        [],
+        "https://fr.openfoodfacts.org/produit/3257982161626/jambon-de-bayonne"
+    ],
+    "Dés de jambon cuit": [
+        "c",
+        4,
+        [
+            "lidl"
+        ],
+        "https://fr.openfoodfacts.org/produit/20808327/des-de-jambon-cuit-saint-alby"
+    ],
+    "saucisses cocktails": [
+        "d",
+        4,
+        [],
+        "https://fr.openfoodfacts.org/produit/4010198016413/saucisses-cocktails-kenza-halal"
+    ],
+    "4 Knacki, Grillée": [
+        "d",
+        4,
+        [
+            "franprix",
+            "carrefour"
+        ],
+        "https://fr.openfoodfacts.org/produit/3154230084419/4-knacki-grillee-herta"
+    ],
+    "Rosette de Lyon tranchée": [
+        "e",
+        4,
+        [
+            "carrefour"
+        ],
+        "https://fr.openfoodfacts.org/produit/3560071009410/rosette-de-lyon-tranchee-carrefour"
+    ],
+    "Boudins blancs nature": [
+        "d",
+        4,
+        [
+            "auchan"
+        ],
+        "https://fr.openfoodfacts.org/produit/3596710424641/boudins-blancs-nature-auchan"
+    ],
+    "Dés de jambon nature": [
+        "d",
+        4,
+        [
+            "simply-market",
+            "auchan"
+        ],
+        "https://fr.openfoodfacts.org/produit/3596710285457/des-de-jambon-nature-auchan"
+    ],
+    "Jambon supérieur (-25% de sel)": [
+        "c",
+        4,
+        [
+            "auchan"
+        ],
+        "https://fr.openfoodfacts.org/produit/3596710353217/jambon-superieur-25-de-sel-auchan"
+    ],
+    "La Francfort": [
+        "e",
+        4,
+        [
+            "carrefour-market",
+            "magasins-u",
+            "auchan"
+        ],
+        "https://fr.openfoodfacts.org/produit/3235080008654/la-francfort-stoeffler"
+    ],
+    "Fromage de chèvre frais": [
+        "d",
+        "4",
+        [
+            "lidl"
+        ],
+        "https://fr.openfoodfacts.org/produit/20021924/fromage-de-chevre-frais-le-cesarin"
+    ],
+    "Bahier boudin blanc a l'ancienne": [
+        "d",
+        3,
+        [],
+        "https://fr.openfoodfacts.org/produit/3180050462007/bahier-boudin-blanc-a-l-ancienne"
+    ],
+    "Chorizo piquant": [
+        "e",
+        4,
+        [],
+        "https://fr.openfoodfacts.org/produit/5400112721209/chorizo-piquant-delhaize"
+    ],
+    "Saucisse seche": [
+        "e",
+        4,
+        [
+            "netto"
+        ],
+        "https://fr.openfoodfacts.org/produit/3250390862130/saucisse-seche-netto"
+    ],
+    "Boudins noirs à l'ancienne": [
+        "d",
+        3,
+        [
+            "carrefour"
+        ],
+        "https://fr.openfoodfacts.org/produit/3560070506040/boudins-noirs-a-l-ancienne-carrefour"
+    ],
+    "Pétales AOSTE": [
+        "e",
+        3,
+        [
+            "cora",
+            "franprix",
+            "magasins-u"
+        ],
+        "https://fr.openfoodfacts.org/produit/3449844950008/petales-aoste"
+    ],
+    "Le Paris supérieur": [
+        "d",
+        4,
+        [
+            "cora"
+        ],
+        "https://fr.openfoodfacts.org/produit/3257983115406/le-paris-superieur-cora"
+    ],
+    "Lardons \nFumés": [
+        "e",
+        4,
+        [
+            "carrefour"
+        ],
+        "https://fr.openfoodfacts.org/produit/3270190023678/lardons-fumes-carrefour"
+    ],
+    "Tendre Noix à la Broche": [
+        "c",
+        4,
+        [],
+        "https://fr.openfoodfacts.org/produit/7613035831995/tendre-noix-a-la-broche-herta"
+    ],
+    "Blanc de Dinde Doré au four - 4tr.": [
+        "c",
+        4,
+        [
+            "franprix",
+            "magasins-u"
+        ],
+        "https://fr.openfoodfacts.org/produit/3095756308019/blanc-de-dinde-dore-au-four-4tr-fleury-michon"
+    ],
+    "Happy Family": [
+        "c",
+        4,
+        [
+            "super-u"
+        ],
+        "https://fr.openfoodfacts.org/produit/3181232221344/happy-family-charal"
+    ],
+    "Carpaccio, Basilic finement haché & sa marinade": [
+        "a",
+        4,
+        [
+            "carrefour-market",
+            "super-u",
+            "franprix"
+        ],
+        "https://fr.openfoodfacts.org/produit/3181232180559/carpaccio-basilic-finement-hache-sa-marinade-charal"
+    ],
+    "Blanc de poulet aux fines herbes - 4 tranches fines": [
+        "c",
+        4,
+        [
+            "hyper-u",
+            "franprix",
+            "magasins-u"
+        ],
+        "https://fr.openfoodfacts.org/produit/3095758391101/blanc-de-poulet-aux-fines-herbes-4-tranches-fines-fleury-michon"
+    ],
+    "Boudin noir aux pommes x2": [
+        "d",
+        4,
+        [
+            "auchan"
+        ],
+        "https://fr.openfoodfacts.org/produit/3596710170463/boudin-noir-aux-pommes-x2-auchan"
+    ],
+    "Mortadelle Italienne": [
+        "e",
+        4,
+        [
+            "magasins-u"
+        ],
+        "https://fr.openfoodfacts.org/produit/3256221513585/mortadelle-italienne-u"
+    ],
+    "Rillette": [
+        "e",
+        3,
+        [
+            "magasins-u"
+        ],
+        "https://fr.openfoodfacts.org/produit/3024720020176/rillette-bordeau-chesnel"
+    ],
+    "Le Paris sans couenne - 25% de Sel*- 4tr": [
+        "b",
+        4,
+        [
+            "super-u",
+            "magasins-u"
+        ],
+        "https://fr.openfoodfacts.org/produit/3095758857010/le-paris-sans-couenne-25-de-sel-4tr-fleury-michon"
+    ],
+    "Blanc de poulet doré au four - Sans Sel Nitrité - 4 tr": [
+        "c",
+        4,
+        [
+            "super-u",
+            "franprix",
+            "magasins-u"
+        ],
+        "https://fr.openfoodfacts.org/produit/3095756193011/blanc-de-poulet-dore-au-four-sans-sel-nitrite-4-tr-fleury-michon"
+    ],
+    "Délice de charolais": [
+        "d",
+        4,
+        [
+            "magasins-u"
+        ],
+        "https://fr.openfoodfacts.org/produit/3256226157449/delice-de-charolais-u"
+    ],
+    "4 Original Knacki, 100 % Pur Porc (- 25 % de Sel)": [
+        "d",
+        4,
+        [
+            "carrefour-market",
+            "super-u",
+            "franprix",
+            "magasins-u"
+        ],
+        "https://fr.openfoodfacts.org/produit/7613034927040/4-original-knacki-100-pur-porc-25-de-sel-herta"
+    ],
+    "Le Bon Paris Au Torchon (sans Nitrite)": [
+        "c",
+        "4",
+        [
+            "magasins-u"
+        ],
+        "https://fr.openfoodfacts.org/produit/7613035989443/le-bon-paris-au-torchon-sans-nitrite-herta"
+    ],
+    "Rillettes de Thon au Citon BIO": [
+        "d",
+        3,
+        [],
+        "https://fr.openfoodfacts.org/produit/3325815009558/rillettes-de-thon-au-citon-bio-l-ile-bleue"
+    ],
+    "Rillettes de thon": [
+        "b",
+        4,
+        [],
+        "https://fr.openfoodfacts.org/produit/3443705055222/rillettes-de-thon-maison-occitane"
+    ],
+    "Rillettes de thon poivre vert": [
+        "d",
+        4,
+        [],
+        "https://fr.openfoodfacts.org/produit/3770001652221/rillettes-de-thon-poivre-vert-le-cayenne"
+    ],
+    "Rillettes Thon Condimentees": [
+        "b",
+        3,
+        [],
+        "https://fr.openfoodfacts.org/produit/8412439286917/rillettes-thon-condimentees-pain-de-mer"
+    ],
+    "Rillettes de thon à la créole": [
+        "b",
+        3,
+        [],
+        "https://fr.openfoodfacts.org/produit/3760216760491/rillettes-de-thon-a-la-creole-le-comptoir-des-gastronomes"
+    ],
+    "Rillettes thon": [
+        "b",
+        4,
+        [],
+        "https://fr.openfoodfacts.org/produit/3660902945112/rillettes-thon-la-pointe-de-penmarc-h"
+    ],
+    "Rillettes de thon basilic": [
+        "d",
+        3,
+        [],
+        "https://fr.openfoodfacts.org/produit/3760079090421/rillettes-de-thon-basilic-pecheurs-de-l-ouest"
+    ],
+    "Rillettes de Thon": [
+        "d",
+        3,
+        [],
+        "https://fr.openfoodfacts.org/produit/3760056410716/rillettes-de-thon-groix-nature"
+    ],
+    "Rillettes de Thon aux poivrons grillés": [
+        "d",
+        4,
+        [
+            "carrefour"
+        ],
+        "https://fr.openfoodfacts.org/produit/3760023263956/rillettes-de-thon-aux-poivrons-grilles-la-cancalaise"
+    ],
+    "Tartinable thon piquant": [
+        "d",
+        4,
+        [
+            "g20",
+            "magasins-u"
+        ],
+        "https://fr.openfoodfacts.org/produit/3760036824656/tartinable-thon-piquant-delicemer"
+    ],
+    "Rillettes de thon a l'Indienne GROIX ET NATURE": [
+        "d",
+        3,
+        [
+            "magasins-u"
+        ],
+        "https://fr.openfoodfacts.org/produit/3760056410457/rillettes-de-thon-a-l-indienne-groix-et-nature-groix-nature"
+    ],
+    "Rillettes de Thon Blanc Germon": [
+        "c",
+        3,
+        [
+            "carrefour",
+            "magasins-u"
+        ],
+        "https://fr.openfoodfacts.org/produit/3760056410556/rillettes-de-thon-blanc-germon-groix-nature"
+    ],
+    "Rillettes de thon à l'estragon": [
+        "b",
+        4,
+        [],
+        "https://fr.openfoodfacts.org/produit/3760020066062/rillettes-de-thon-a-l-estragon-la-compagnie-bretonne-du-poisson"
+    ],
+    "Rillettes De Thon": [
+        "c",
+        4,
+        [],
+        "https://fr.openfoodfacts.org/produit/3760020066055/rillettes-de-thon-la-compagnie-bretonne-du-poisson"
+    ],
+    "Rillettes thon,piquillo,chorizo": [
+        "d",
+        4,
+        [],
+        "https://fr.openfoodfacts.org/produit/3760007090301/rillettes-thon-piquillo-chorizo-l-atelier-du-poissonnier"
+    ],
+    "Rillettes de thon germon au basilic": [
+        "b",
+        4,
+        [],
+        "https://fr.openfoodfacts.org/produit/3660902522801/rillettes-de-thon-germon-au-basilic-la-pointe-de-penmarc-h"
+    ],
+    "Rillettes de thon et olives": [
+        "a",
+        3,
+        [],
+        "https://fr.openfoodfacts.org/produit/3700966557545/rillettes-de-thon-et-olives-cap-ocean"
+    ],
+    "Rillettes Thon au Piment d’Espelette": [
+        "d",
+        3,
+        [],
+        "https://fr.openfoodfacts.org/produit/3700932600015/rillettes-thon-au-piment-d-espelette-poisson-d-ouest"
+    ],
+    "Les rillettes de thon": [
+        "c",
+        4,
+        [],
+        "https://fr.openfoodfacts.org/produit/3700966554483/les-rillettes-de-thon-cap-ocean"
+    ],
+    "Thon fromage frais et ciboulettes": [
+        "c",
+        4,
+        [],
+        "https://fr.openfoodfacts.org/produit/3700966556166/thon-fromage-frais-et-ciboulettes-cap-ocean"
+    ],
+    "Rillettes de thon aux olives": [
+        "b",
+        4,
+        [],
+        "https://fr.openfoodfacts.org/produit/3700966556395/rillettes-de-thon-aux-olives-cap-ocean"
+    ],
+    "Thon à tartiner aux épices orientales": [
+        "b",
+        4,
+        [],
+        "https://fr.openfoodfacts.org/produit/3660902535009/thon-a-tartiner-aux-epices-orientales-la-pointe-de-penmarc-h"
+    ],
+    "Rillettes de thon à la provençale": [
+        "b",
+        3,
+        [
+            "auchan"
+        ],
+        "https://fr.openfoodfacts.org/produit/3596710455669/rillettes-de-thon-a-la-provencale-auchan"
+    ],
+    "Rillettes de thon fromage frais et ciboulette": [
+        "c",
+        4,
+        [
+            "auchan"
+        ],
+        "https://fr.openfoodfacts.org/produit/3596710453221/rillettes-de-thon-fromage-frais-et-ciboulette-auchan"
+    ],
+    "Rillettes de thon à la moutarde": [
+        "d",
+        4,
+        [
+            "auchan"
+        ],
+        "https://fr.openfoodfacts.org/produit/3596710424009/rillettes-de-thon-a-la-moutarde-auchan"
+    ],
+    "Rillettes de thon fromage ciboulette": [
+        "c",
+        4,
+        [
+            "auchan"
+        ],
+        "https://fr.openfoodfacts.org/produit/3596710404421/rillettes-de-thon-fromage-ciboulette-auchan"
+    ],
+    "Rillettes thon Ronde des Mers": [
+        "c",
+        3,
+        [
+            "leclerc"
+        ],
+        "https://fr.openfoodfacts.org/produit/3564700842447/rillettes-thon-ronde-des-mers"
+    ],
+    "Rillettes thon blanc": [
+        "b",
+        4,
+        [
+            "leclerc"
+        ],
+        "https://fr.openfoodfacts.org/produit/3564709164137/rillettes-thon-blanc-nos-regions-ont-du-talent"
+    ],
+    "Rillettes de thon Fromage ciboulette - 200 g": [
+        "c",
+        4,
+        [
+            "auchan"
+        ],
+        "https://fr.openfoodfacts.org/produit/3596710378722/rillettes-de-thon-fromage-ciboulette-200-g-l-oiseau"
+    ],
+    "Rillettes de Thon au Basilic": [
+        "c",
+        4,
+        [
+            "intermarche",
+            "la-maison-du-pate-henaff"
+        ],
+        "https://fr.openfoodfacts.org/produit/3537580706741/rillettes-de-thon-au-basilic-henaff"
+    ],
+    "Rillette De Thon Zeste De Citron": [
+        "c",
+        3,
+        [],
+        "https://fr.openfoodfacts.org/produit/3537580706444/rillette-de-thon-zeste-de-citron-henaff"
+    ]
+}

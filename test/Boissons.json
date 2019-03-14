@@ -1,0 +1,452 @@
+{
+    "Lait Ribot Tradition": [
+        "a",
+        3,
+        [
+            "la-louve"
+        ],
+        "https://fr.openfoodfacts.org/produit/3442310000016/lait-ribot-tradition-kerguillet"
+    ],
+    "Apfelschorle": [
+        "b",
+        1,
+        [
+            "edeka"
+        ],
+        "https://fr.openfoodfacts.org/produit/4311596435821/apfelschorle-gut-gunstig"
+    ],
+    "Cécémel boisson": [
+        "b",
+        3,
+        [
+            "tabacco",
+            "delhaize"
+        ],
+        "https://fr.openfoodfacts.org/produit/5414150615956/cecemel-boisson-frieslandfoods"
+    ],
+    "Diabolo à la Grenadine": [
+        "e",
+        4,
+        [
+            "auchan"
+        ],
+        "https://fr.openfoodfacts.org/produit/3596710366705/diabolo-a-la-grenadine-auchan"
+    ],
+    "Moyen Coca-Cola": [
+        "e",
+        3,
+        [
+            "mcdonald-s"
+        ],
+        "https://fr.openfoodfacts.org/produit/2000000003783/moyen-coca-cola-mcdonald-s"
+    ],
+    "Moyen Coca Cola Light": [
+        "b",
+        3,
+        [
+            "mcdonald-s"
+        ],
+        "https://fr.openfoodfacts.org/produit/2000000003782/moyen-coca-cola-light-mcdonald-s"
+    ],
+    "Coca Cola": [
+        "e",
+        4,
+        [
+            "restaurant"
+        ],
+        "https://fr.openfoodfacts.org/produit/2000000000255/coca-cola"
+    ],
+    "Coca cola zero sucre": [
+        "b",
+        4,
+        [
+            "carrefour",
+            "hyper-u",
+            "ls-proxy",
+            "maxi"
+        ],
+        "https://fr.openfoodfacts.org/produit/0088009770728/coca-cola-zero-sucre"
+    ],
+    "Coca Cola Cherry": [
+        "d",
+        4,
+        [
+            "carrefour-market",
+            "magasins-u"
+        ],
+        "https://fr.openfoodfacts.org/produit/5449000109255/coca-cola-cherry"
+    ],
+    "PINK GRAPEFRUITSAFT": [
+        "c",
+        1,
+        [],
+        "https://fr.openfoodfacts.org/produit/7613312036020/pink-grapefruitsaft-gold"
+    ],
+    "Monster Energie Original": [
+        "e",
+        4,
+        [],
+        "https://fr.openfoodfacts.org/produit/0070847811190/monster-energie-original-monster-energy"
+    ],
+    "Drink sugarfree": [
+        "b",
+        4,
+        [],
+        "https://fr.openfoodfacts.org/produit/7613269164395/drink-sugarfree-migros"
+    ],
+    "Pulp'saveur orangelight*": [
+        "c",
+        4,
+        [
+            "vival",
+            "casino",
+            "carrefour"
+        ],
+        "https://fr.openfoodfacts.org/produit/3245412730252/pulp-saveur-orangelight-carrefour"
+    ],
+    "Jus d'ananas à base de concentré": [
+        "c",
+        1,
+        [
+            "carrefour"
+        ],
+        "https://fr.openfoodfacts.org/produit/3560071019266/jus-d-ananas-a-base-de-concentre-carrefour"
+    ],
+    "Fruit du verger Pomme poir pêche abricot": [
+        "c",
+        1,
+        [
+            "la-vie-claire"
+        ],
+        "https://fr.openfoodfacts.org/produit/3266191001609/fruit-du-verger-pomme-poir-peche-abricot-la-vie-claire"
+    ],
+    "Skyr drink - Pêche et fruit de la passion": [
+        "a",
+        "4",
+        [
+            "lidl"
+        ],
+        "https://fr.openfoodfacts.org/produit/20851965/skyr-drink-peche-et-fruit-de-la-passion-milbona"
+    ],
+    "Auchan Eau De Source De       Montagne 6x1.5l": [
+        "a",
+        1,
+        [
+            "auchan"
+        ],
+        "https://fr.openfoodfacts.org/produit/3596710387755/auchan-eau-de-source-de-montagne-6x1-5l"
+    ],
+    "Lait de coco": [
+        "d",
+        1,
+        [
+            "magasins-u"
+        ],
+        "https://fr.openfoodfacts.org/produit/4002359006715/lait-de-coco-suzi-wan"
+    ],
+    "Paturages Yab Sav. Fraise": [
+        "b",
+        4,
+        [
+            "intermarche"
+        ],
+        "https://fr.openfoodfacts.org/produit/3250391693009/paturages-yab-sav-fraise"
+    ],
+    "Pulco Pamplemousse": [
+        "d",
+        4,
+        [],
+        "https://fr.openfoodfacts.org/produit/3225355490819/pulco-pamplemousse"
+    ],
+    "Jus Ananas": [
+        "d",
+        1,
+        [
+            "cora"
+        ],
+        "https://fr.openfoodfacts.org/produit/3257980129369/jus-ananas-cora"
+    ],
+    "Viva chocolat  25cl": [
+        "a",
+        3,
+        [],
+        "https://fr.openfoodfacts.org/produit/3533630086542/viva-chocolat-25cl-candia"
+    ],
+    "Smoothie Strawberry & Banana": [
+        "e",
+        "4",
+        [
+            "marks-spencer"
+        ],
+        "https://fr.openfoodfacts.org/produit/00011839/smoothie-strawberry-banana-marks-spencer"
+    ],
+    "Fruchtmus Apfel": [
+        "e",
+        1,
+        [
+            "lidl"
+        ],
+        "https://fr.openfoodfacts.org/produit/20884338/fruchtmus-apfel-freshona"
+    ],
+    "Caffe Latte Macchiato": [
+        "e",
+        4,
+        [
+            "migros",
+            "delhaize"
+        ],
+        "https://fr.openfoodfacts.org/produit/7610900138913/caffe-latte-macchiato-emmi"
+    ],
+    "Lait d'amande grillée non-sucré": [
+        "b",
+        4,
+        [
+            "edeka",
+            "carrefour",
+            "billa",
+            "magasins-u",
+            "geant-casino",
+            "delhaize"
+        ],
+        "https://fr.openfoodfacts.org/produit/5411188112709/lait-d-amande-grillee-non-sucre-alpro"
+    ],
+    "Lait Demi écrémé": [
+        "b",
+        1,
+        [
+            "leclerc"
+        ],
+        "https://fr.openfoodfacts.org/produit/3564700005552/lait-demi-ecreme-delisse"
+    ],
+    "Jus de Pruneau": [
+        "d",
+        1,
+        [
+            "biocoop"
+        ],
+        "https://fr.openfoodfacts.org/produit/3760138610195/jus-de-pruneau-ensemble"
+    ],
+    "Carola": [
+        "a",
+        1,
+        [
+            "carrefour"
+        ],
+        "https://fr.openfoodfacts.org/produit/3268650002011/carola"
+    ],
+    "Thé Glacé Pêche Intense": [
+        "d",
+        "4",
+        [],
+        "https://fr.openfoodfacts.org/produit/90331473/the-glace-peche-intense-fuzetea"
+    ],
+    "Paturages Yab Sav.vanille": [
+        "b",
+        "4",
+        [
+            "intermarche"
+        ],
+        "https://fr.openfoodfacts.org/produit/3250391693184/paturages-yab-sav-vanille"
+    ],
+    "Infusion fruitée bio": [
+        "d",
+        3,
+        [
+            "delhaize"
+        ],
+        "https://fr.openfoodfacts.org/produit/5449000663061/infusion-fruitee-bio-honest"
+    ],
+    "Infusion mûre, pêche, vanille Eléphant": [
+        "c",
+        4,
+        [],
+        "https://fr.openfoodfacts.org/produit/8714100263785/infusion-mure-peche-vanille-elephant"
+    ],
+    "Carola pêche blanche": [
+        "b",
+        1,
+        [],
+        "https://fr.openfoodfacts.org/produit/3268651600001/carola-peche-blanche"
+    ],
+    "Carola Framboise": [
+        "b",
+        4,
+        [],
+        "https://fr.openfoodfacts.org/produit/3268651560008/carola-framboise"
+    ],
+    "Eau de source fortement gazeuse": [
+        "b",
+        1,
+        [],
+        "https://fr.openfoodfacts.org/produit/3268650004053/eau-de-source-fortement-gazeuse-carola"
+    ],
+    "Eau minerale naturelle Wattwiller 50cl": [
+        "a",
+        1,
+        [
+            "intermarche"
+        ],
+        "https://fr.openfoodfacts.org/produit/3448781200009/eau-minerale-naturelle-wattwiller-50cl"
+    ],
+    "Boisson Riz Amande": [
+        "b",
+        4,
+        [
+            "magasins-u"
+        ],
+        "https://fr.openfoodfacts.org/produit/3229820795492/boisson-riz-amande-bjorg"
+    ],
+    "Lait d'amande fraise": [
+        "b",
+        4,
+        [
+            "leclerc"
+        ],
+        "https://fr.openfoodfacts.org/produit/3229820793931/lait-d-amande-fraise-bjorg"
+    ],
+    "Nalu": [
+        "d",
+        4,
+        [],
+        "https://fr.openfoodfacts.org/produit/5060466511880/nalu-coca-cola"
+    ],
+    "Limonade": [
+        "e",
+        "4",
+        [
+            "auchan"
+        ],
+        "https://fr.openfoodfacts.org/produit/3596710388301/limonade-auchan"
+    ],
+    "Jus d'orange": [
+        "c",
+        1,
+        [],
+        "https://fr.openfoodfacts.org/produit/8410175015402/jus-d-orange-hero"
+    ],
+    "Tropicana Antioxydants": [
+        "e",
+        1,
+        [
+            "magasins-u"
+        ],
+        "https://fr.openfoodfacts.org/produit/5410188034660/tropicana-antioxydants"
+    ],
+    "Fruit shoot": [
+        "d",
+        4,
+        [],
+        "https://fr.openfoodfacts.org/produit/3092718605971/fruit-shoot-teisseire"
+    ],
+    "Menthe 0%": [
+        "c",
+        4,
+        [
+            "auchan"
+        ],
+        "https://fr.openfoodfacts.org/produit/3596710454358/menthe-0-auchan"
+    ],
+    "Pur jus multifruits": [
+        "c",
+        1,
+        [
+            "geant-casino",
+            "casino"
+        ],
+        "https://fr.openfoodfacts.org/produit/3222475308604/pur-jus-multifruits-casino-bio"
+    ],
+    "lignaform": [
+        "c",
+        4,
+        [],
+        "https://fr.openfoodfacts.org/produit/00/lignaform"
+    ],
+    "Danone Danonino De Fresa Para Llevar": [
+        "b",
+        4,
+        [],
+        "https://fr.openfoodfacts.org/produit/8410500020453/danone-danonino-de-fresa-para-llevar"
+    ],
+    "Pur Jus de Pomme": [
+        "c",
+        1,
+        [],
+        "https://fr.openfoodfacts.org/produit/3289196260284/pur-jus-de-pomme-vitamont"
+    ],
+    "Aquarius Libre Limón Botella Sin Azúcar": [
+        "b",
+        4,
+        [],
+        "https://fr.openfoodfacts.org/produit/5449000171771/aquarius-libre-limon-botella-sin-azucar"
+    ],
+    "Coca Cola zéro": [
+        "b",
+        "4",
+        [
+            "intermarche",
+            "casino"
+        ],
+        "https://fr.openfoodfacts.org/produit/5000112558265/coca-cola-zero"
+    ],
+    "Boisson au soja": [
+        "a",
+        1,
+        [
+            "casino-hypermarche",
+            "casino"
+        ],
+        "https://fr.openfoodfacts.org/produit/3222477066809/boisson-au-soja-casino"
+    ],
+    "Soja calcium": [
+        "a",
+        3,
+        [],
+        "https://fr.openfoodfacts.org/produit/3701091784264/soja-calcium-natureo"
+    ],
+    "Lait Soja Noir 1L": [
+        "b",
+        4,
+        [],
+        "https://fr.openfoodfacts.org/produit/9556156046955/lait-soja-noir-1l-yeo-s"
+    ],
+    "Boisson au soja (soy bean 8%)": [
+        "b",
+        4,
+        [
+            "tang-freres"
+        ],
+        "https://fr.openfoodfacts.org/produit/9556156046399/boisson-au-soja-soy-bean-8-yeo-s"
+    ],
+    "Lait Soja Pack 6X25 CL": [
+        "b",
+        4,
+        [],
+        "https://fr.openfoodfacts.org/produit/9556156042872/lait-soja-pack-6x25-cl-yeo-s"
+    ],
+    "Vanilla Bliss": [
+        "b",
+        4,
+        [],
+        "https://fr.openfoodfacts.org/produit/9300652013955/vanilla-bliss-sanitarium"
+    ],
+    "Boisson au soja 100% végétale": [
+        "a",
+        3,
+        [],
+        "https://fr.openfoodfacts.org/produit/8423352204384/boisson-au-soja-100-vegetale-monsoy"
+    ],
+    "Thé glacé saveur citron": [
+        "d",
+        4,
+        [
+            "carrefour"
+        ],
+        "https://fr.openfoodfacts.org/produit/5449000017376/the-glace-saveur-citron-nestea"
+    ],
+    "Soy": [
+        "b",
+        4,
+        [],
+        "https://fr.openfoodfacts.org/produit/6903220559065/soy-yeo-s"
+    ]
+}
