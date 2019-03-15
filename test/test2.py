@@ -5,28 +5,41 @@ import json
 
 
 # categories = []
+testA = []
+testB = []
+dico = {}
+#name_cate = ["boissons", "fruits", "legumes-et-derives", "produits-laitiers",
+#"poissons", "viandes", "desserts", "cereales-et-derives"]
+name_cate = ["boissons", "fruits", "legumes-et-derives", "produits-laitiers",
+"poissons", "viandes", "desserts", "cereales-et-derives"]
 
-def insert_data(*args):
-    req = "INSERT INTO {} ({}) VALUES ({});".format(*args)
-    print(req)
-
-with open("../ressources/all.json", "r") as file:
+with open("all.json", "r") as file:
     data = json.load(file)
 
-    for foo in data:
-        categories = foo
-        values = "'{}'".format(foo)
-        insert_data("pb_categories", "categorie_name", values)
-        for x in data[categories]:
-            al_na = x[0]
-            al_ca = categories
-            al_nu = str(x[1])
-            al_no = x[2]
-            al_sh = x[3]
-            al_li = x[4]
-            ali_cat = "aliment_name, aliment_categorie, aliment_nutrition,\
- aliment_nova_group, aliment_shop, aliment_link"
-            values = "'{}','{}','{}','{}','{}','{}'"
-            values = values.format(al_na, al_ca, al_nu, al_no, al_sh, al_li)
-            insert_data("pb_aliments", ali_cat, values)
-            #print("{} | {} | {} | {} | {} | {}".format(al_na, al_ca, al_nu, al_no, al_sh, al_li))
+    for cat in name_cate:
+        for foo in data[cat]:
+            alim_list = foo
+            #print(alim_list)
+            testA.append(alim_list)
+
+        print(len(testA))
+        nb = -1
+        for x in testA[:]:
+            nb += 1
+            if x[0] not in testB:
+                testB.append(x[0])
+            else:
+                del(testA[nb])
+                nb -= 1
+        dico[cat] = testA
+        #print("\n")
+        #print(testB)
+        #print("\n")
+        #print(testA)
+        print(len(testA))
+        testA = []
+        testB = []
+
+
+#with open("all.json", "w") as file:
+#    json.dump(dico, file, indent=4, ensure_ascii=False)
