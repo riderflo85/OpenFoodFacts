@@ -9,21 +9,12 @@ USER = "distant"
 PWD = "test"
 # -----------------------------------------------------------------------------
 
+FOODFILE = "../ressources/all.json"
+
 USERCHOICE = ">>> "
 
-CATEGORIES = {
-    1: "Boissons",
-    2: "Fruits",
-    3: "Légumes",
-    4: "Céréales",
-    5: "Féculents",
-    6: "Produits laitiers",
-    7: "Viande",
-    8: "Poisson",
-    9: "Oeuf",
-    10: "Corps gras",
-    11: "Sucre"
-}
+CATEGORIES = ["boissons", "fruits", "legumes-et-derives", "produits-laitiers",
+"poissons", "viandes", "desserts", "cereales-et-derives"]
 
 QUESTIONS = {
     1: "Quel aliment souhaitez-vous remplacer ?",

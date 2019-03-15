@@ -16,12 +16,12 @@ CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 CREATE TABLE pb_aliments
 (
     id_aliments INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    aliment_name VARCHAR(45) NOT NULL UNIQUE,
+    aliment_name VARCHAR(140) NOT NULL UNIQUE,
     aliment_categorie VARCHAR(45) NOT NULL,
     alimment_nutrition VARCHAR(2),
     aliment_nova_group VARCHAR(2),
     aliment_shop VARCHAR(45),
-    aliment_link VARCHAR(120),
+    aliment_link VARCHAR(140),
     PRIMARY KEY(id_aliments)
 )
 CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
