@@ -1,6 +1,11 @@
 #! /usr/bin python3
 # conding: utf-8
 
+import json
+import requests
+import os
+import time
+
 # My module
 from . import constants as const
 
@@ -68,12 +73,15 @@ def end(user):
 
 
 def pull_data():
+    directory = os.path.dirname(__file__)
+    folder = "../ressources/"
+    food_file = os.path.join(directory, folder, "all.json")
     dico = {}
     for cat in const.CATEGORIES:
         nb = 1
         my_list = []
         print(cat)
-        while nb <= 30:
+        while nb <= 3:
             api = "https://fr.openfoodfacts.org/categorie/{}/{}"
             api = api.format(cat, str(nb))
             payload = {"json": 1}
@@ -96,12 +104,15 @@ def pull_data():
                     pass
             nb += 1
 
-    with open(const.FOODFILE, "w") as file:
+    with open(food_file, "w") as file:
                 json.dump(dico, file, indent=4, ensure_ascii=False)
 
 
 def push_data(db):
-    with open(const.FOODFILE, "r") as file:
+    directory = os.path.dirname(__file__)
+    folder = "../ressources/"
+    food_file = os.path.join(directory, folder, "all.json")
+    with open(food_file, "r") as file:
         data = json.load(file)
 
     for foo in data:
@@ -117,6 +128,7 @@ def push_data(db):
             al_li = x[4]
             ali_champs = "aliment_name, aliment_categorie, aliment_nutrition,\
  aliment_nova_group, aliment_shop, aliment_link"
-            values = "'{}','{}','{}','{}','{}','{}'"
+            values = "\"{}\",\"{}\",\"{}\",\"{}\",\"{}\",\"{}\""
             values = values.format(al_na, al_ca, al_nu, al_no, al_sh, al_li)
             db.insert_data("pb_aliments", ali_champs, values)
+            time.sleep(0.2)
