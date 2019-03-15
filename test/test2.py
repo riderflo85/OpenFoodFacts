@@ -4,9 +4,29 @@
 import json
 
 
-with open("BoissonsPage1.json", "r") as file:
+# categories = []
+
+def insert_data(*args):
+    req = "INSERT INTO {} ({}) VALUES ({});".format(*args)
+    print(req)
+
+with open("../ressources/all.json", "r") as file:
     data = json.load(file)
-    foo = data["product"]
-    print(foo[0])           # -> ['Apfelschorle', 'https://fr.openfoodfacts.org/produit/4311596435821/apfelschorle-gut-gunstig']
-    print(foo[0][0])        # -> Apfelschorle
-    print(foo[0][1])        # -> https://fr.openfoodfacts.org/produit/4311596435821/apfelschorle-gut-gunstig
+
+    for foo in data:
+        categories = foo
+        values = "'{}'".format(foo)
+        insert_data("pb_categories", "categorie_name", values)
+        for x in data[categories]:
+            al_na = x[0]
+            al_ca = categories
+            al_nu = str(x[1])
+            al_no = x[2]
+            al_sh = x[3]
+            al_li = x[4]
+            ali_cat = "aliment_name, aliment_categorie, aliment_nutrition,\
+ aliment_nova_group, aliment_shop, aliment_link"
+            values = "'{}','{}','{}','{}','{}','{}'"
+            values = values.format(al_na, al_ca, al_nu, al_no, al_sh, al_li)
+            insert_data("pb_aliments", ali_cat, values)
+            #print("{} | {} | {} | {} | {} | {}".format(al_na, al_ca, al_nu, al_no, al_sh, al_li))
