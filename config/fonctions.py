@@ -4,13 +4,14 @@
 import json
 import requests
 import os
-import time
+import mysql.connector
 
 # My module
 from . import constants as const
 
 
 def check(user, cond):
+
     if user.rep in cond:
         pass
 
@@ -21,6 +22,7 @@ def check(user, cond):
 
 
 def search(user, db):
+
     cond = []
     db.select_data("*", "pb_categories", where=None, cond=None, join=False)
     print("\nSélectionnez une catégorie :\n")
@@ -60,6 +62,7 @@ def search(user, db):
 
 
 def end(user):
+
     print("\nChoisissez une option: [1 ou 2]\n")
     print("1- {}\n2- {}".format(const.QUESTIONS[6], const.QUESTIONS[7]))
     user.choice()
@@ -73,26 +76,33 @@ def end(user):
 
 
 def pull_data():
+
     directory = os.path.dirname(__file__)
     folder = "../ressources/"
     food_file = os.path.join(directory, folder, "all.json")
     dico = {}
+
     for cat in const.CATEGORIES:
         page = 1
         my_list = []
         print(cat)
-        while page <= 3:
+
+        while page <= 30:
             api = "https://fr.openfoodfacts.org/categorie/{}/{}"
             api = api.format(cat, str(page))
             payload = {"json": 1}
             r = requests.get(url=api, params=payload)
             print(r.url)
-            rep = r.json()
+
+            try:
+                rep = r.json()
+
+            except json.decoder.JSONDecodeError:
+                pass
 
             for x in rep["products"]:
-
                 try:
-                    pn = x["product_name_fr"]
+                    pn = x["product_name_fr"].replace("\n", " ")
                     ng = x["nutrition_grade_fr"]
                     nova = x["nova_groups"]
                     st = x["stores_tags"]
@@ -100,26 +110,33 @@ def pull_data():
                     if pn!="" and ng!="" and nova!="" and st!="" and url!="":
                         my_list.append([pn, ng, nova, st, url])
                         dico[cat] = my_list
+
                 except:
                     pass
+
             page += 1
 
     with open(food_file, "w") as file:
-                json.dump(dico, file, indent=4, ensure_ascii=False)
-    time.sleep(0.2)
+        json.dump(dico, file, indent=4, ensure_ascii=False)
 
 
 def push_data(db):
+
     directory = os.path.dirname(__file__)
     folder = "../ressources/"
     food_file = os.path.join(directory, folder, "all.json")
+
     with open(food_file, "r") as file:
         data = json.load(file)
+
+    print("\n---------- Transfert des données en cours ----------\n")
+    print("-> Ceci peut prendre plusieurs minutes, merci de patienter")
 
     for foo in data:
         categories = foo
         values = "'{}'".format(foo)
         db.insert_data("pb_categories", "categorie_name", values)
+
         for x in data[categories]:
             al_na = x[0]
             al_ca = categories
@@ -131,11 +148,18 @@ def push_data(db):
  aliment_nova_group, aliment_shop, aliment_link"
             values = "\"{}\",\"{}\",\"{}\",\"{}\",\"{}\",\"{}\""
             values = values.format(al_na, al_ca, al_nu, al_no, al_sh, al_li)
-            db.insert_data("pb_aliments", ali_champs, values)
-            time.sleep(0.2)
+
+            try:
+                db.insert_data("pb_aliments", ali_champs, values)
+
+            except mysql.connector.errors.IntegrityError:
+                pass
+
+    print("\n---------- Transfert terminé ------------------\n")
 
 
 def delete_duplicates():
+
     """ Fonction de tri de données. Supprime les doublons présent dans un fichier
     .json"""
 
@@ -148,8 +172,9 @@ def delete_duplicates():
     all_temp = []
     dico = {}
 
-    name_cate = ["boissons", "fruits", "legumes-et-derives", "produits-laitiers",
-    "poissons", "viandes", "desserts", "cereales-et-derives"]
+    name_cate = ["boissons", "fruits", "legumes-et-derives",
+    "produits-laitiers", "poissons", "viandes", "desserts",
+    "cereales-et-derives"]
 
     with open(food_file, "r") as file:
         data = json.load(file)
@@ -181,14 +206,15 @@ def delete_duplicates():
                     del(list_sort[index])
                     index -= 1
 
-            # On ajoute le nom de la catégorie actuel ainsi que tout ses aliments
-            # triés dans un dictionnaire
+            # On ajoute le nom de la catégorie actuel ainsi que tout ses
+            # aliments triés dans un dictionnaire
             dico[cat] = list_sort
 
             # On vide le contenu des deux listes pour pouvoir refaire la même
             # opération pour la catégorie suivante
             list_sort = []
             temp = []
+
     all_temp = []
 
     with open(food_file, "w") as file:
