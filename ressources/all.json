@@ -1,255 +1,107 @@
 {
     "boissons": [
         [
-            "Tropical 2 litres",
-            "e",
-            "4",
-            [
-                "aldi"
-            ],
-            "https://fr.openfoodfacts.org/produit/26003214/tropical-2-litres-fruima"
-        ],
-        [
-            "Pomme pur fruit pressé",
-            "c",
-            1,
-            [
-                "lidl"
-            ],
-            "https://fr.openfoodfacts.org/produit/20376451/pomme-pur-fruit-presse-solevita"
-        ],
-        [
-            "Choco Caramel",
-            "b",
-            4,
-            [
-                "auchan"
-            ],
-            "https://fr.openfoodfacts.org/produit/7622210263650/choco-caramel-milka"
-        ],
-        [
-            "Jus de Citron de Sicile",
-            "b",
-            3,
-            [
-                "leclerc"
-            ],
-            "https://fr.openfoodfacts.org/produit/3564700737194/jus-de-citron-de-sicile-rustica"
-        ],
-        [
-            "Pur jus de citron vert",
-            "b",
-            1,
-            [
-                "magasins-u"
-            ],
-            "https://fr.openfoodfacts.org/produit/3478820088879/pur-jus-de-citron-vert-jardin-bio"
-        ],
-        [
-            "Choco Caramel",
-            "b",
-            4,
-            [
-                "auchan"
-            ],
-            "https://fr.openfoodfacts.org/produit/7622210263650/choco-caramel-milka"
-        ],
-        [
-            "Yaourt à boire nature sucré - A la Grecque",
-            "c",
-            4,
-            [
-                "casino"
-            ],
-            "https://fr.openfoodfacts.org/produit/3222476448910/yaourt-a-boire-nature-sucre-a-la-grecque-casino"
-        ],
-        [
-            "Kefir",
-            "b",
-            1,
-            [
-                "plushfresh"
-            ],
-            "https://fr.openfoodfacts.org/produit/8410500022419/kefir-danone"
-        ],
-        [
-            "OGEU Pyrénées",
-            "a",
-            1,
-            [
-                "hyper-casino",
-                "carrefour"
-            ],
-            "https://fr.openfoodfacts.org/produit/3119070064090/ogeu-pyrenees"
-        ],
-        [
-            "Yaourt à boire nature sucré - A la Grecque",
-            "c",
-            4,
-            [
-                "casino"
-            ],
-            "https://fr.openfoodfacts.org/produit/3222476448910/yaourt-a-boire-nature-sucre-a-la-grecque-casino"
-        ],
-        [
-            "Alpro Soja Non Sucré",
-            "a",
-            4,
-            [],
-            "https://fr.openfoodfacts.org/produit/5411188115496/alpro-soja-non-sucre"
-        ],
-        [
-            "Tourtel twist au jus citron",
+            "CAFÉ AU LAIT",
             "d",
-            "3",
-            [
-                "super-u",
-                "leclerc"
-            ],
-            "https://fr.openfoodfacts.org/produit/3080216043807/tourtel-twist-au-jus-citron"
-        ],
-        [
-            "410G Yaourt Brasse Nefles",
-            "a",
-            1,
-            [],
-            "https://fr.openfoodfacts.org/produit/3442310010787/410g-yaourt-brasse-nefles-kerguillet"
-        ],
-        [
-            "Yop, Parfum Framboise",
-            "b",
-            "4",
-            [
-                "magasins-u"
-            ],
-            "https://fr.openfoodfacts.org/produit/3329770053533/yop-parfum-framboise-yoplait"
-        ],
-        [
-            "Jus d'orange avec pulpe",
-            "c",
-            1,
-            [
-                "super-u",
-                "magasins-u"
-            ],
-            "https://fr.openfoodfacts.org/produit/3502110009401/jus-d-orange-avec-pulpe-tropicana"
-        ],
-        [
-            "410G Yaourt Brasse Nefles",
-            "a",
-            1,
-            [],
-            "https://fr.openfoodfacts.org/produit/3442310010787/410g-yaourt-brasse-nefles-kerguillet"
-        ],
-        [
-            "Pom' Potes brassés aux fruits mixés banane",
-            "b",
             4,
             [
-                "magasins-u"
+                "delhaize"
             ],
-            "https://fr.openfoodfacts.org/produit/3021760404195/pom-potes-brasses-aux-fruits-mixes-banane-materne"
+            "https://fr.openfoodfacts.org/produit/7613034365774/cafe-au-lait-nescafe"
         ],
         [
-            "Rivella Bleu",
-            "b",
-            "4",
-            [],
-            "https://fr.openfoodfacts.org/produit/7610097112079/rivella-bleu"
-        ],
-        [
-            "Eau minérale Cristaline",
-            "a",
-            1,
-            [
-                "cora"
-            ],
-            "https://fr.openfoodfacts.org/produit/3254381025887/eau-minerale-cristaline"
-        ],
-        [
-            "Pur jus de pomme trouble",
-            "c",
-            1,
-            [
-                "carrefour"
-            ],
-            "https://fr.openfoodfacts.org/produit/3289196040534/pur-jus-de-pomme-trouble-le-jardin-bio"
-        ],
-        [
-            "Jus de pomme",
-            "c",
-            1,
-            [
-                "leclerc"
-            ],
-            "https://fr.openfoodfacts.org/produit/3564700002872/jus-de-pomme-jafaden"
-        ],
-        [
-            "Force Bio pur jus de cranberry frais",
+            "Chai latte",
             "e",
-            "4",
-            [],
-            "https://fr.openfoodfacts.org/produit/3760186970081/force-bio-pur-jus-de-cranberry-frais"
+            4,
+            [
+                "hyper-u",
+                "irma-dk"
+            ],
+            "https://fr.openfoodfacts.org/produit/7613032713065/chai-latte-nescafe"
         ],
         [
-            "Pur jus de pomme trouble",
+            "Bon Choco vitamines fer zinc",
+            "e",
+            4,
+            [
+                "leclerc"
+            ],
+            "https://fr.openfoodfacts.org/produit/3564700022214/bon-choco-vitamines-fer-zinc"
+        ],
+        [
+            "Lait d'amande grillée non-sucré",
+            "b",
+            4,
+            [
+                "edeka",
+                "carrefour",
+                "billa",
+                "magasins-u",
+                "geant-casino",
+                "delhaize"
+            ],
+            "https://fr.openfoodfacts.org/produit/5411188112709/lait-d-amande-grillee-non-sucre-alpro"
+        ],
+        [
+            "Coca Cola zéro",
+            "b",
+            4,
+            [],
+            "https://fr.openfoodfacts.org/produit/5000112554359/coca-cola-zero"
+        ],
+        [
+            "Jus de fruits multifruits",
             "c",
             1,
             [
-                "carrefour"
-            ],
-            "https://fr.openfoodfacts.org/produit/3289196040534/pur-jus-de-pomme-trouble-le-jardin-bio"
-        ],
-        [
-            "Eau de source",
-            "b",
-            1,
-            [],
-            "https://fr.openfoodfacts.org/produit/3289090601008/eau-de-source-chanflor"
-        ],
-        [
-            "100 % pur jus tomate & légumes",
-            "b",
-            4,
-            [
-                "leclerc"
-            ],
-            "https://fr.openfoodfacts.org/produit/3564707109628/100-pur-jus-tomate-legumes-bio-village"
-        ],
-        [
-            "Deli'Max",
-            "b",
-            4,
-            [
-                "leclerc"
-            ],
-            "https://fr.openfoodfacts.org/produit/3564700693087/deli-max-delisse"
-        ],
-        [
-            "Bebida végétal de almendra",
-            "b",
-            1,
-            [
-                "carrefour",
-                "alcampo"
-            ],
-            "https://fr.openfoodfacts.org/produit/8422584315714/bebida-vegetal-de-almendra-ecocesta"
-        ],
-        [
-            "Eau minérale naturelle avec adjonction de gaz carbonique",
-            "a",
-            1,
-            [
-                "carrefour",
-                "intermarche",
-                "systeme-u",
-                "e-leclerc",
                 "auchan"
             ],
-            "https://fr.openfoodfacts.org/produit/8002270014901/eau-minerale-naturelle-avec-adjonction-de-gaz-carbonique-san-pellegrino"
+            "https://fr.openfoodfacts.org/produit/3596710420193/jus-de-fruits-multifruits-auchan"
+        ],
+        [
+            "Soupe Velours de Crevettes et Langoustines",
+            "e",
+            4,
+            [],
+            "https://fr.openfoodfacts.org/produit/7613033902406/soupe-velours-de-crevettes-et-langoustines-maggi"
         ]
     ],
     "fruits": [
+        [
+            "Freson de palos",
+            "a",
+            1,
+            [
+                "bonarea"
+            ],
+            "https://fr.openfoodfacts.org/produit/8425697002243/freson-de-palos"
+        ],
+        [
+            "Citrons",
+            "a",
+            1,
+            [
+                "auchan"
+            ],
+            "https://fr.openfoodfacts.org/produit/3254560116351/citrons-auchan-bio"
+        ],
+        [
+            "Fraises",
+            "a",
+            1,
+            [
+                "netto",
+                "cora"
+            ],
+            "https://fr.openfoodfacts.org/produit/8400050335084/fraises-fruits-rouges-co"
+        ],
+        [
+            "Ananas",
+            "a",
+            1,
+            [],
+            "https://fr.openfoodfacts.org/produit/5099400008360/ananas-keelings"
+        ],
         [
             "Citrons Non Traités après Récolte",
             "a",
@@ -267,53 +119,115 @@
                 "auchan"
             ],
             "https://fr.openfoodfacts.org/produit/3800065711760/go-tiny-sweet-plus"
-        ],
-        [
-            "Bio orange",
-            "a",
-            1,
-            [
-                "monoprix"
-            ],
-            "https://fr.openfoodfacts.org/produit/3350030218713/bio-orange-monoprix-bio"
-        ],
-        [
-            "Kiwis",
-            "a",
-            1,
-            [
-                "lidl"
-            ],
-            "https://fr.openfoodfacts.org/produit/20656904/kiwis-lidl"
-        ],
-        [
-            "Bio orange",
-            "a",
-            1,
-            [
-                "monoprix"
-            ],
-            "https://fr.openfoodfacts.org/produit/3350030218713/bio-orange-monoprix-bio"
         ]
     ],
     "legumes-et-derives": [
         [
-            "Purée de tomates",
-            "a",
-            4,
-            [
-                "carrefour"
-            ],
-            "https://fr.openfoodfacts.org/produit/3560070811373/puree-de-tomates-carrefour"
-        ],
-        [
-            "Polpa tomates concassées fines",
+            "Champignons de Paris en persillade",
             "a",
             3,
             [
-                "intermarche"
+                "magasins-u"
             ],
-            "https://fr.openfoodfacts.org/produit/80042556/polpa-tomates-concassees-fines-mutti"
+            "https://fr.openfoodfacts.org/produit/3256221407501/champignons-de-paris-en-persillade-u"
+        ],
+        [
+            "Champignons de Paris à la persillade",
+            "a",
+            3,
+            [
+                "casino"
+            ],
+            "https://fr.openfoodfacts.org/produit/3222475327346/champignons-de-paris-a-la-persillade-casino"
+        ],
+        [
+            "Judías verdes",
+            "a",
+            3,
+            [
+                "carrefour"
+            ],
+            "https://fr.openfoodfacts.org/produit/8431876012422/judias-verdes-carrefour"
+        ],
+        [
+            "Cornichons aigres-doux en lamelles",
+            "b",
+            4,
+            [],
+            "https://fr.openfoodfacts.org/produit/3275550005271/cornichons-aigres-doux-en-lamelles-alelor"
+        ],
+        [
+            "Maïs ultra croquant",
+            "a",
+            3,
+            [
+                "leclerc",
+                "magasins-u"
+            ],
+            "https://fr.openfoodfacts.org/produit/3017800109328/mais-ultra-croquant-d-aucy"
+        ],
+        [
+            "Maïs doux ECO+",
+            "a",
+            3,
+            [
+                "e-leclerc"
+            ],
+            "https://fr.openfoodfacts.org/produit/3450970103916/mais-doux-eco"
+        ],
+        [
+            "Carottes Extra-Fines",
+            "a",
+            3,
+            [
+                "carrefour"
+            ],
+            "https://fr.openfoodfacts.org/produit/3560070302161/carottes-extra-fines-carrefour"
+        ],
+        [
+            "Cornichons Extra-fins",
+            "a",
+            "4",
+            [
+                "franprix"
+            ],
+            "https://fr.openfoodfacts.org/produit/3263850560910/cornichons-extra-fins-franprix"
+        ],
+        [
+            "Pomodori pelati",
+            "a",
+            4,
+            [
+                "lidl"
+            ],
+            "https://fr.openfoodfacts.org/produit/20198107/pomodori-pelati-nostia"
+        ],
+        [
+            "Tomate triturado",
+            "a",
+            4,
+            [
+                "mercadona"
+            ],
+            "https://fr.openfoodfacts.org/produit/8480000160171/tomate-triturado-hacendado"
+        ],
+        [
+            "Purée de tomates",
+            "a",
+            3,
+            [
+                "lidl"
+            ],
+            "https://fr.openfoodfacts.org/produit/20004125/puree-de-tomates-freshona"
+        ],
+        [
+            "Petis pois et jeunes carottes à l'étuvée - extra fins",
+            "a",
+            4,
+            [
+                "leclerc"
+            ],
+            "https://fr.openfoodfacts.org/produit/3564700004791/petis-pois-et-jeunes-carottes-a-l-etuvee-extra-fins-notre-jardin"
         ],
         [
             "Asperges vertes",
@@ -325,85 +239,58 @@
             "https://fr.openfoodfacts.org/produit/3270160100903/asperges-vertes-picard"
         ],
         [
-            "Petits pois à l'étuvée extra fins",
-            "a",
-            4,
-            [
-                "intermarche"
-            ],
-            "https://fr.openfoodfacts.org/produit/3250390000747/petits-pois-a-l-etuvee-extra-fins-saint-eloi"
-        ],
-        [
-            "Purée de tomate la rossa",
-            "a",
-            "3",
-            [
-                "magasins-u"
-            ],
-            "https://fr.openfoodfacts.org/produit/80042563/puree-de-tomate-la-rossa-mutti"
-        ],
-        [
-            "Brocolis surgelés",
+            "Haricots Verts extra fins surgelés",
             "a",
             1,
             [
-                "intermarche"
+                "picard"
             ],
-            "https://fr.openfoodfacts.org/produit/3250390024217/brocolis-surgeles-saint-eloi"
+            "https://fr.openfoodfacts.org/produit/3270160065424/haricots-verts-extra-fins-surgeles-picard"
         ],
         [
-            "Haricots verts extra-fins",
+            "Choux-fleurs en Fleurettes",
             "a",
             1,
             [
-                "intermarche"
+                "picard"
             ],
-            "https://fr.openfoodfacts.org/produit/3250390022954/haricots-verts-extra-fins-saint-eloi"
+            "https://fr.openfoodfacts.org/produit/3270160017096/choux-fleurs-en-fleurettes-picard"
         ],
         [
-            "Poudre de Tomate",
-            "a",
+            "Jus de Tomate",
+            "b",
             4,
             [
-                "casino"
+                "migros"
             ],
-            "https://fr.openfoodfacts.org/produit/3222475951336/poudre-de-tomate-casino"
+            "https://fr.openfoodfacts.org/produit/7613269303282/jus-de-tomate-sarasay"
         ],
         [
-            "Rioverde Mazorquitas Maiz 170 g",
-            "c",
-            4,
-            [
-                "plusfresh"
-            ],
-            "https://fr.openfoodfacts.org/produit/8410954005075/rioverde-mazorquitas-maiz-170-g"
-        ],
-        [
-            "Macédoine de légumes",
+            "Betteraves Rouges Entières",
             "a",
-            "3",
+            1,
             [
                 "leclerc"
             ],
-            "https://fr.openfoodfacts.org/produit/3564700004845/macedoine-de-legumes-notre-jardin"
+            "https://fr.openfoodfacts.org/produit/3564700021903/betteraves-rouges-entieres-notre-jardin"
         ],
         [
-            "Cœurs d'artichauts",
+            "Betteraves en dés",
             "a",
             "4",
-            [],
-            "https://fr.openfoodfacts.org/produit/3560070335183/coeurs-d-artichauts-produits-blancs"
+            [
+                "casino"
+            ],
+            "https://fr.openfoodfacts.org/produit/3222474641795/betteraves-en-des-casino"
         ],
         [
-            "Haricots verts extra-fins & rangés - 800 g - Bonduelle",
+            "Maïs doux aux 2 poivrons",
             "a",
-            3,
+            "3",
             [
-                "auchan",
-                "intermarche",
-                "magasins-u"
+                "casino"
             ],
-            "https://fr.openfoodfacts.org/produit/3083680074803/haricots-verts-extra-fins-ranges-800-g-bonduelle"
+            "https://fr.openfoodfacts.org/produit/3222471017036/mais-doux-aux-2-poivrons-casino"
         ],
         [
             "Mais Croquant",
@@ -415,324 +302,393 @@
             "https://fr.openfoodfacts.org/produit/20153229/mais-croquant-freshona"
         ],
         [
-            "Tomate frito",
-            "c",
-            1,
-            [
-                "mercadona"
-            ],
-            "https://fr.openfoodfacts.org/produit/8480000171634/tomate-frito-hacendado"
-        ],
-        [
-            "Cornichon",
-            "c",
+            "Tomates pelées en morceaux",
+            "a",
             4,
             [
-                "carrefour"
+                "lidl"
             ],
-            "https://fr.openfoodfacts.org/produit/27044087/cornichon-carrefour"
+            "https://fr.openfoodfacts.org/produit/20004132/tomates-pelees-en-morceaux-nostia"
         ],
         [
-            "Pois et carottes",
+            "Pommes de terre entières",
             "a",
             3,
             [
-                "delhaize"
+                "magasins-u"
             ],
-            "https://fr.openfoodfacts.org/produit/3083681012804/pois-et-carottes-bonduelle"
-        ],
-        [
-            "Cornichon",
-            "c",
-            4,
-            [
-                "delhaize"
-            ],
-            "https://fr.openfoodfacts.org/produit/5414972109206/cornichon-d-l"
+            "https://fr.openfoodfacts.org/produit/3256222113715/pommes-de-terre-entieres-u"
         ]
     ],
     "produits-laitiers": [
         [
-            "Beurre Salé",
-            "e",
-            2,
-            [
-                "delhaize"
-            ],
-            "https://fr.openfoodfacts.org/produit/5410603015069/beurre-sale-etienne-bodart"
-        ],
-        [
-            "Beurre salé",
-            "e",
-            2,
-            [],
-            "https://fr.openfoodfacts.org/produit/3483130042510/beurre-sale-fleur-de-re"
-        ],
-        [
-            "La Plaquette d'Emile Bridel Doux (60% MG)",
-            "d",
-            4,
-            [
-                "magasins-u"
-            ],
-            "https://fr.openfoodfacts.org/produit/3155250359396/la-plaquette-d-emile-bridel-doux-60-mg"
-        ],
-        [
-            "La Vache qui rit Saveur Jambon (23% MG)",
-            "e",
-            4,
-            [
-                "cora",
-                "magasins-u",
-                "e-leclerc",
-                "delhaize"
-            ],
-            "https://fr.openfoodfacts.org/produit/3073780794626/la-vache-qui-rit-saveur-jambon-23-mg"
-        ],
-        [
-            "Frozen Yogurt Sauce Fruit Rouges Muesli",
-            "c",
-            4,
-            [
-                "picard"
-            ],
-            "https://fr.openfoodfacts.org/produit/3270160730254/frozen-yogurt-sauce-fruit-rouges-muesli-picard"
-        ],
-        [
-            "Emprésuré chocolat",
-            "b",
-            3,
-            [],
-            "https://fr.openfoodfacts.org/produit/3278693604076/empresure-chocolat-malo"
-        ],
-        [
-            "Perle de Lait Eclats de Chocolat stracciatella Parfum Vanille",
-            "d",
-            4,
-            [
-                "auchan"
-            ],
-            "https://fr.openfoodfacts.org/produit/3329770062269/perle-de-lait-eclats-de-chocolat-stracciatella-parfum-vanille"
-        ],
-        [
-            "Crème dessert artisanale chocolat",
-            "c",
-            4,
-            [],
-            "https://fr.openfoodfacts.org/produit/3760206160775/creme-dessert-artisanale-chocolat-ibaski"
-        ],
-        [
-            "Rik & Rok Creme dessert lait & chocolat 6 yaourts",
-            "c",
-            1,
-            [
-                "auchan"
-            ],
-            "https://fr.openfoodfacts.org/produit/3596710303595/rik-rok-creme-dessert-lait-chocolat-6-yaourts-auchan"
-        ],
-        [
-            "Yaourts Chocolat Petits Délis, 6x100g",
-            "c",
-            4,
-            [
-                "leclerc"
-            ],
-            "https://fr.openfoodfacts.org/produit/3564700393000/yaourts-chocolat-petits-delis-6x100g-marque-repere"
-        ],
-        [
-            "Dessert végétal de riz - Douceur chocolat",
+            "Faisselles nature 6%",
             "c",
             3,
             [],
-            "https://fr.openfoodfacts.org/produit/3280249990073/dessert-vegetal-de-riz-douceur-chocolat-june"
+            "https://fr.openfoodfacts.org/produit/3184670003909/faisselles-nature-6-rians"
         ],
         [
-            "Yaourt & crème stracciatella, à la crème et aux copeaux de chocolat",
-            "c",
-            4,
+            "Beurre Gastronomique Doux (82% MG)",
+            "e",
+            "3",
             [
                 "intermarche"
             ],
-            "https://fr.openfoodfacts.org/produit/3250391002627/yaourt-creme-stracciatella-a-la-creme-et-aux-copeaux-de-chocolat-paturages"
+            "https://fr.openfoodfacts.org/produit/3250390010180/beurre-gastronomique-doux-82-mg-paturages"
         ],
         [
-            "Yaourt chocolat soja",
-            "b",
-            1,
-            [
-                "carrefour"
-            ],
-            "https://fr.openfoodfacts.org/produit/3245413693334/yaourt-chocolat-soja-carrefour"
+            "Crème fraîche crue",
+            "d",
+            3,
+            [],
+            "https://fr.openfoodfacts.org/produit/3424140000503/creme-fraiche-crue-ferme-du-bourg-groux"
         ],
         [
-            "Crème Casino Chocolat 4 x 100g",
+            "Riz au lait à la vanille",
             "c",
+            3,
+            [
+                "magasins-u"
+            ],
+            "https://fr.openfoodfacts.org/produit/3479574112612/riz-au-lait-a-la-vanille-teurgoule-de-janville"
+        ],
+        [
+            "Riz au lait à la cannelle",
+            "c",
+            3,
+            [],
+            "https://fr.openfoodfacts.org/produit/3479531000013/riz-au-lait-a-la-cannelle-teurgoule-de-janville"
+        ],
+        [
+            "Préparation culinaire a base de crème et citron estragon",
+            "d",
+            3,
+            [],
+            "https://fr.openfoodfacts.org/produit/3254550016487/preparation-culinaire-a-base-de-creme-et-citron-estragon-isigny-ste-mere"
+        ],
+        [
+            "Creme fraiche de Normandie Epaisse 40%",
+            "d",
+            3,
+            [
+                "magasins-u"
+            ],
+            "https://fr.openfoodfacts.org/produit/3332621038054/creme-fraiche-de-normandie-epaisse-40-reo"
+        ],
+        [
+            "Crème fraîche d'Isigny 38% M.G.",
+            "d",
+            1,
+            [],
+            "https://fr.openfoodfacts.org/produit/3265776108108/creme-fraiche-d-isigny-38-m-g-maitres-laitiers-en-normandie"
+        ],
+        [
+            "Beurre demi-écrémé Oméga-3 au sel marin",
+            "d",
             4,
+            [
+                "delhaize"
+            ],
+            "https://fr.openfoodfacts.org/produit/5411156008669/beurre-demi-ecreme-omega-3-au-sel-marin-balade"
+        ],
+        [
+            "Camembert Moulé à la louche au lait de Normandie (22% MG)",
+            "d",
+            3,
+            [
+                "auchan"
+            ],
+            "https://fr.openfoodfacts.org/produit/3254560388635/camembert-moule-a-la-louche-au-lait-de-normandie-22-mg-auchan"
+        ],
+        [
+            "Beurre frigotartinable au sel marin",
+            "e",
+            4,
+            [
+                "delhaize"
+            ],
+            "https://fr.openfoodfacts.org/produit/5411156000472/beurre-frigotartinable-au-sel-marin-carlsbourg"
+        ],
+        [
+            "Beurre Moulé Grand Fermage, Cristaux Sel Noirmoutier",
+            "e",
+            2,
+            [],
+            "https://fr.openfoodfacts.org/produit/3523230000468/beurre-moule-grand-fermage-cristaux-sel-noirmoutier"
+        ],
+        [
+            "Beurre cru à la baratte bois moulé à la main 1/2 sel",
+            "e",
+            3,
+            [],
+            "https://fr.openfoodfacts.org/produit/3483130050010/beurre-cru-a-la-baratte-bois-moule-a-la-main-1-2-sel-beillevaire"
+        ],
+        [
+            "Beurre baratte sel de Guérande 80% de MG, PAYSAN BRETON",
+            "e",
+            3,
+            [],
+            "https://fr.openfoodfacts.org/produit/3412290018219/beurre-baratte-sel-de-guerande-80-de-mg-paysan-breton"
+        ],
+        [
+            "Beurre de baratte AOP de Charente Poitou au sel de Guérande 80% de MG",
+            "e",
+            3,
+            [
+                "magasins-u"
+            ],
+            "https://fr.openfoodfacts.org/produit/3368953003644/beurre-de-baratte-aop-de-charente-poitou-au-sel-de-guerande-80-de-mg-u-saveurs"
+        ],
+        [
+            "Beurre demi sel moulé",
+            "e",
+            2,
+            [],
+            "https://fr.openfoodfacts.org/produit/3278310001384/beurre-demi-sel-moule-edouard-briois"
+        ],
+        [
+            "Beurre de baratte au sel de Guérande 1 / 2 Sel",
+            "e",
+            3,
+            [],
+            "https://fr.openfoodfacts.org/produit/3273220542217/beurre-de-baratte-au-sel-de-guerande-1-2-sel-vrai"
+        ],
+        [
+            "Beurre moulé cristaux de sel (80 % MG)",
+            "e",
+            3,
+            [
+                "franprix"
+            ],
+            "https://fr.openfoodfacts.org/produit/3263856410219/beurre-moule-cristaux-de-sel-80-mg-franprix"
+        ],
+        [
+            "125G Beurre De Baratte Bio Au Sel De Guerande Le Gall",
+            "e",
+            3,
+            [],
+            "https://fr.openfoodfacts.org/produit/3252920015498/125g-beurre-de-baratte-bio-au-sel-de-guerande-le-gall-laiterie-le-gall"
+        ],
+        [
+            "Beurre de Baratte Fleur de Sel de Guérande",
+            "e",
+            3,
+            [
+                "carre-des-halles"
+            ],
+            "https://fr.openfoodfacts.org/produit/3252920014194/beurre-de-baratte-fleur-de-sel-de-guerande-le-gall"
+        ],
+        [
+            "Beurre au sel de Guérande",
+            "e",
+            2,
             [
                 "casino"
             ],
-            "https://fr.openfoodfacts.org/produit/3222472384120/creme-casino-chocolat-4-x-100g"
+            "https://fr.openfoodfacts.org/produit/3222476211682/beurre-au-sel-de-guerande-casino"
         ],
         [
-            "Creme Dessert Chocolat",
-            "c",
-            4,
+            "Beurre 1 / 2 Sel 250g",
+            "e",
+            2,
             [
-                "hyper-u",
-                "carrefour",
-                "ls-proxy"
+                "leader-price"
             ],
-            "https://fr.openfoodfacts.org/produit/3161910326929/creme-dessert-chocolat-elle-vire"
+            "https://fr.openfoodfacts.org/produit/3155250082034/beurre-1-2-sel-250g-leader-price"
         ],
         [
-            "Viennois chocolat",
-            "c",
-            4,
+            "Beurre Au Sel De Mer De Noirmoutier",
+            "e",
+            2,
             [],
-            "https://fr.openfoodfacts.org/produit/3023290455173/viennois-chocolat-nestle"
+            "https://fr.openfoodfacts.org/produit/26065755/beurre-au-sel-de-mer-de-noirmoutier-champre"
         ],
         [
-            "Yaourts Chocolat viennois",
-            "c",
-            4,
-            [],
-            "https://fr.openfoodfacts.org/produit/3023290232002/yaourts-chocolat-viennois-nestle"
-        ],
-        [
-            "Carré frais",
-            "c",
+            "Beurre pamplie fleur de sel île de ré",
+            "e",
             3,
-            [
-                "intermarche"
-            ],
-            "https://fr.openfoodfacts.org/produit/3480341001992/carre-frais-elle-vire"
-        ],
-        [
-            "Sveltesse Ferme et Fondant chocolat",
-            "a",
-            4,
-            [],
-            "https://fr.openfoodfacts.org/produit/3023290216743/sveltesse-ferme-et-fondant-chocolat"
-        ],
-        [
-            "Yaourts Chocolat Ferme & Fondant de Sveltesse",
-            "a",
-            4,
             [
                 "magasins-u"
             ],
-            "https://fr.openfoodfacts.org/produit/3023290008454/yaourts-chocolat-ferme-fondant-de-sveltesse-nestle"
+            "https://fr.openfoodfacts.org/produit/3485690001266/beurre-pamplie-fleur-de-sel-ile-de-re"
         ],
         [
-            "Muesli Yaourt Chocolat",
-            "c",
-            3,
-            [
-                "aldi"
-            ],
-            "https://fr.openfoodfacts.org/produit/27039267/muesli-yaourt-chocolat-milsani"
-        ],
-        [
-            "Emprésuré Chocolat saveur Noisette",
-            "c",
-            4,
-            [
-                "cora",
-                "magasins-u"
-            ],
-            "https://fr.openfoodfacts.org/produit/3278690085684/empresure-chocolat-saveur-noisette-malo"
-        ],
-        [
-            "L'Emprésuré Chocolat",
-            "b",
-            3,
-            [
-                "auchan",
-                "magasins-u"
-            ],
-            "https://fr.openfoodfacts.org/produit/3278693504076/l-empresure-chocolat-malo"
-        ],
-        [
-            "Yaourt & crème Stracciatella",
-            "c",
-            4,
-            [
-                "leclerc"
-            ],
-            "https://fr.openfoodfacts.org/produit/3564700334799/yaourt-creme-stracciatella-delisse"
-        ],
-        [
-            "Yaourts Chocolat - Caramel",
-            "c",
-            4,
-            [
-                "carrefour"
-            ],
-            "https://fr.openfoodfacts.org/produit/3661344057159/yaourts-chocolat-caramel-les-2-vaches"
-        ],
-        [
-            "Leerdammer",
-            "d",
+            "Beurre cru à la fleur de sel de l'île de Ré",
+            "e",
             3,
             [
                 "monoprix"
             ],
-            "https://fr.openfoodfacts.org/produit/3073781101072/leerdammer"
+            "https://fr.openfoodfacts.org/produit/3350033012998/beurre-cru-a-la-fleur-de-sel-de-l-ile-de-re-monoprix-gourmet"
         ],
         [
-            "Taillefine fondants Chocolat de Tanzanie (0,9% M.G)",
-            "b",
-            4,
-            [],
-            "https://fr.openfoodfacts.org/produit/3033490905316/taillefine-fondants-chocolat-de-tanzanie-0-9-m-g-danone"
-        ],
-        [
-            "Sojasun nature",
-            "a",
-            1,
+            "Beurre de baratte aux cristaux de sel de guérande",
+            "e",
+            2,
             [
-                "super-u",
+                "magasins-u",
+                "delhaize"
+            ],
+            "https://fr.openfoodfacts.org/produit/3254550025991/beurre-de-baratte-aux-cristaux-de-sel-de-guerande-isigny-ste-mere"
+        ],
+        [
+            "Beurre de Baratte à la fleur de sel de Guérande Le Gall",
+            "e",
+            "3",
+            [
+                "carrefour",
+                "franprix",
                 "magasins-u"
             ],
-            "https://fr.openfoodfacts.org/produit/3273220081068/sojasun-nature"
+            "https://fr.openfoodfacts.org/produit/3252920011599/beurre-de-baratte-a-la-fleur-de-sel-de-guerande-le-gall"
+        ],
+        [
+            "Beurre de baratte à la fleur de sel de Guérande",
+            "e",
+            3,
+            [],
+            "https://fr.openfoodfacts.org/produit/3245390031761/beurre-de-baratte-a-la-fleur-de-sel-de-guerande-reflets-de-france"
+        ],
+        [
+            "Beurre aux cristaux de Sel de Mer Noirmoutier",
+            "e",
+            "2",
+            [
+                "lidl"
+            ],
+            "https://fr.openfoodfacts.org/produit/20155575/beurre-aux-cristaux-de-sel-de-mer-noirmoutier-saveurs-de-nos-regions"
         ]
     ],
     "poissons": [
         [
-            "Saumon au naturel",
-            "a",
+            "Atun claro aceite oliva",
+            "d",
             1,
             [
                 "mercadona"
             ],
-            "https://fr.openfoodfacts.org/produit/8480000188175/saumon-au-naturel-hacendado"
+            "https://fr.openfoodfacts.org/produit/8480000180278/atun-claro-aceite-oliva-hacendado"
         ],
         [
-            "Sardines millésimées à l'huile d'olive vierge extra",
-            "d",
-            3,
-            [
-                "intermarche"
-            ],
-            "https://fr.openfoodfacts.org/produit/3250391137329/sardines-millesimees-a-l-huile-d-olive-vierge-extra-capitaine-cook"
-        ],
-        [
-            "Thon albacore\nEn tranches",
-            "b",
-            3,
-            [
-                "carrefour"
-            ],
-            "https://fr.openfoodfacts.org/produit/3270190184577/thon-albacore-en-tranches-carrefour"
-        ],
-        [
-            "Filets de limande du nord",
+            "Thon entier au naturel cuisson à coeur",
             "b",
             4,
             [
+                "auchan",
+                "carrefour"
+            ],
+            "https://fr.openfoodfacts.org/produit/3165950215632/thon-entier-au-naturel-cuisson-a-coeur-saupiquet"
+        ],
+        [
+            "Filets de Maquereaux (Sauce Escabèche)",
+            "c",
+            4,
+            [
+                "leclerc"
+            ],
+            "https://fr.openfoodfacts.org/produit/3564700513965/filets-de-maquereaux-sauce-escabeche-peche-ocean"
+        ],
+        [
+            "Filets de hareng marinés",
+            "d",
+            "4",
+            [
+                "lidl"
+            ],
+            "https://fr.openfoodfacts.org/produit/20105440/filets-de-hareng-marines-alpengut"
+        ],
+        [
+            "Sardines à l'huile d'olive vierge extra",
+            "c",
+            3,
+            [
+                "intermarche",
+                "magasins-u"
+            ],
+            "https://fr.openfoodfacts.org/produit/3263670012347/sardines-a-l-huile-d-olive-vierge-extra-connetable"
+        ],
+        [
+            "Sardines sans arêtes au piment à l'huile d'olive",
+            "c",
+            4,
+            [
+                "magasins-u"
+            ],
+            "https://fr.openfoodfacts.org/produit/3263670126914/sardines-sans-aretes-au-piment-a-l-huile-d-olive-connetable"
+        ],
+        [
+            "Brandade de morue à la Nimoise",
+            "d",
+            4,
+            [
+                "carrefour"
+            ],
+            "https://fr.openfoodfacts.org/produit/3245390031297/brandade-de-morue-a-la-nimoise-reflets-de-france"
+        ],
+        [
+            "Sardines à l'huile d'olive et citron",
+            "b",
+            "3",
+            [],
+            "https://fr.openfoodfacts.org/produit/3580282360544/sardines-a-l-huile-d-olive-et-citron-agidra"
+        ],
+        [
+            "Sardines au piment d'Espelette",
+            "d",
+            "3",
+            [],
+            "https://fr.openfoodfacts.org/produit/3580282360551/sardines-au-piment-d-espelette-sans-marque"
+        ],
+        [
+            "Sardines sans arêtes au citron Connétable",
+            "c",
+            "3",
+            [
+                "magasins-u"
+            ],
+            "https://fr.openfoodfacts.org/produit/3263670126211/sardines-sans-aretes-au-citron-connetable"
+        ],
+        [
+            "Filets de Sardines (Nature)",
+            "d",
+            "3",
+            [
                 "casino"
             ],
-            "https://fr.openfoodfacts.org/produit/3492500037520/filets-de-limande-du-nord-cite-marine"
+            "https://fr.openfoodfacts.org/produit/3019080010639/filets-de-sardines-nature-petit-navire"
+        ],
+        [
+            "Maquereau Fume Nature Filet X2",
+            "d",
+            1,
+            [],
+            "https://fr.openfoodfacts.org/produit/3760048920469/maquereau-fume-nature-filet-x2-herens"
+        ],
+        [
+            "Coeurs de filet de saumon, sans arêtes, surgelés",
+            "a",
+            1,
+            [
+                "monoprix"
+            ],
+            "https://fr.openfoodfacts.org/produit/3350030179649/coeurs-de-filet-de-saumon-sans-aretes-surgeles-monoprix"
+        ],
+        [
+            "Thunfisch filets",
+            "b",
+            3,
+            [],
+            "https://fr.openfoodfacts.org/produit/4250073450653/thunfisch-filets-followfish"
+        ],
+        [
+            "Filets de hareng fumes",
+            "c",
+            3,
+            [
+                "magasins-u"
+            ],
+            "https://fr.openfoodfacts.org/produit/3474608700155/filets-de-hareng-fumes-paralleles"
         ],
         [
             "Thon entier au naturel x 4",
@@ -742,886 +698,1173 @@
             "https://fr.openfoodfacts.org/produit/3019084607125/thon-entier-au-naturel-x-4-petit-navire"
         ],
         [
-            "Thon Grillé Légumes En Ratatouille Et Pommes De Terre",
-            "a",
+            "Filets de maquereaux au vin blanc",
+            "c",
             4,
             [
-                "carrefour"
+                "intermarche",
+                "carrefour",
+                "magasins-u"
             ],
-            "https://fr.openfoodfacts.org/produit/3560070976324/thon-grille-legumes-en-ratatouille-et-pommes-de-terre-carrefour"
+            "https://fr.openfoodfacts.org/produit/3165958350014/filets-de-maquereaux-au-vin-blanc-saupiquet"
         ],
         [
-            "Filets d’anchois à l'huile d'olive",
+            "Saumon Atlantique fumé Bio",
             "d",
             3,
             [
-                "leclerc",
-                "lidl"
+                "monoprix"
             ],
-            "https://fr.openfoodfacts.org/produit/20040130/filets-d-anchois-a-l-huile-d-olive-italiamo"
+            "https://fr.openfoodfacts.org/produit/3350033045859/saumon-atlantique-fume-bio-monoprix-bio"
         ],
         [
-            "Tuna & Grains",
+            "2 pavés de Saumon Bio Monoprix",
             "b",
-            4,
-            [],
-            "https://fr.openfoodfacts.org/produit/5400113613749/tuna-grains-delhaize"
-        ],
-        [
-            "Saumon Fumé Biologique",
-            "d",
-            3,
+            1,
             [
-                "lidl"
+                "monoprix"
             ],
-            "https://fr.openfoodfacts.org/produit/20442484/saumon-fume-biologique-ocean-sea"
+            "https://fr.openfoodfacts.org/produit/3350030196011/2-paves-de-saumon-bio-monoprix"
         ],
         [
-            "Sardines de Garde Millésimées à l'Huile d'Olive vierge extra",
+            "Filets de maquereaux au naturel",
             "c",
             3,
             [
-                "auchan"
+                "leclerc"
             ],
-            "https://fr.openfoodfacts.org/produit/3263670113013/sardines-de-garde-millesimees-a-l-huile-d-olive-vierge-extra-connetable"
+            "https://fr.openfoodfacts.org/produit/3564700747322/filets-de-maquereaux-au-naturel-peche-ocean"
         ],
         [
-            "Saumon Fumé l'Écosse",
+            "Filets de maquereaux grillé nature",
+            "c",
+            3,
+            [
+                "hyper-u",
+                "magasins-u"
+            ],
+            "https://fr.openfoodfacts.org/produit/3019080042029/filets-de-maquereaux-grille-nature-petit-navire"
+        ],
+        [
+            "Filets d'anchois, allongés, à l'huile d'olive",
             "d",
             3,
             [
-                "franprix"
+                "leclerc"
             ],
-            "https://fr.openfoodfacts.org/produit/3033610072010/saumon-fume-l-ecosse-labeyrie"
+            "https://fr.openfoodfacts.org/produit/3564700025345/filets-d-anchois-allonges-a-l-huile-d-olive-ronde-des-mers"
         ],
         [
-            "Rillettes de Thon au Citon BIO",
+            "Saumon fumé - Tranches pour toast",
             "d",
             3,
+            [
+                "leclerc"
+            ],
+            "https://fr.openfoodfacts.org/produit/3564700128084/saumon-fume-tranches-pour-toast-marque-repere"
+        ],
+        [
+            "Sardines de saint gilles",
+            "b",
+            3,
             [],
-            "https://fr.openfoodfacts.org/produit/3325815009558/rillettes-de-thon-au-citon-bio-l-ile-bleue"
+            "https://fr.openfoodfacts.org/produit/3760148291414/sardines-de-saint-gilles-la-perle-des-dieux"
         ]
     ],
     "viandes": [
         [
-            "jamon cocido grand bouquet",
-            "c",
-            4,
-            [
-                "correfour"
-            ],
-            "https://fr.openfoodfacts.org/produit/8410783321384/jamon-cocido-grand-bouquet-noel"
-        ],
-        [
-            "Allumettes de poulet",
-            "d",
-            4,
-            [
-                "auchan"
-            ],
-            "https://fr.openfoodfacts.org/produit/3459860004111/allumettes-de-poulet-isla-mondial"
-        ],
-        [
-            "Jambon Degraisse",
-            "b",
-            "4",
-            [
-                "aldi"
-            ],
-            "https://fr.openfoodfacts.org/produit/27067444/jambon-degraisse-delifin"
-        ],
-        [
-            "Lard petit déjeuner nature",
+            "4 véritables knacks d'Alsace",
             "e",
             "4",
-            [
-                "delhaize"
-            ],
-            "https://fr.openfoodfacts.org/produit/5400112526255/lard-petit-dejeuner-nature-delhaize"
-        ],
-        [
-            "Pechuga de pollo",
-            "c",
-            4,
-            [
-                "mercadona"
-            ],
-            "https://fr.openfoodfacts.org/produit/8480000561695/pechuga-de-pollo-hacendado"
-        ],
-        [
-            "Le torchon cuit à l'étouffée tranches fines - 6 tranches fines",
-            "c",
-            "4",
-            [
-                "auchan"
-            ],
-            "https://fr.openfoodfacts.org/produit/3095757603106/le-torchon-cuit-a-l-etouffee-tranches-fines-6-tranches-fines-fleury-michon"
-        ],
-        [
-            "Le Jambon Supérieur avec Couenne",
-            "c",
-            4,
-            [
-                "lidl"
-            ],
-            "https://fr.openfoodfacts.org/produit/20021030/le-jambon-superieur-avec-couenne-saint-alby"
-        ],
-        [
-            "L'Aiguillette de Poulet",
-            "a",
-            1,
             [],
-            "https://fr.openfoodfacts.org/produit/3283440301389/l-aiguillette-de-poulet-le-gaulois"
+            "https://fr.openfoodfacts.org/produit/3287241904411/4-veritables-knacks-d-alsace-tempe"
         ],
         [
-            "Blanc de poulet doré au four - Sans Sel Nitrité - 4 tr",
+            "Jambon sans nitrites",
             "c",
-            4,
-            [
-                "super-u",
-                "franprix",
-                "magasins-u"
-            ],
-            "https://fr.openfoodfacts.org/produit/3095756193011/blanc-de-poulet-dore-au-four-sans-sel-nitrite-4-tr-fleury-michon"
-        ],
-        [
-            "Lardons\nFumés",
-            "d",
-            4,
-            [
-                "carrefour-market",
-                "carrefour"
-            ],
-            "https://fr.openfoodfacts.org/produit/3560071012854/lardons-fumes-carrefour"
-        ],
-        [
-            "Knacki",
-            "d",
-            4,
-            [
-                "magasins-u"
-            ],
-            "https://fr.openfoodfacts.org/produit/7613034942920/knacki-herta"
-        ],
-        [
-            "Saucisse de Montbéliard",
-            "e",
-            4,
-            [],
-            "https://fr.openfoodfacts.org/produit/2643314029985/saucisse-de-montbeliard-reflets-de-france"
-        ],
-        [
-            "Blanc de Dinde Doré au four - 4tr.",
-            "c",
-            "4",
-            [
-                "franprix",
-                "magasins-u"
-            ],
-            "https://fr.openfoodfacts.org/produit/3095756308019/blanc-de-dinde-dore-au-four-4tr-fleury-michon"
-        ],
-        [
-            "Jambon Supérieur sans couenne Bio, -25% de sel* - 4 tranches fines",
-            "c",
-            "3",
-            [],
-            "https://fr.openfoodfacts.org/produit/3095759494016/jambon-superieur-sans-couenne-bio-25-de-sel-4-tranches-fines-fleury-michon"
-        ],
-        [
-            "Jambon à l'Ancienne",
-            "d",
-            4,
-            [],
-            "https://fr.openfoodfacts.org/produit/3268680020276/jambon-a-l-ancienne-tallec"
-        ],
-        [
-            "saucilotte",
-            "d",
-            4,
-            [],
-            "https://fr.openfoodfacts.org/produit/2055324800452/saucilotte-le-tuye"
-        ],
-        [
-            "Véritables Knacks d'Alsace",
-            "e",
-            4,
-            [
-                "super-u"
-            ],
-            "https://fr.openfoodfacts.org/produit/3368954600262/veritables-knacks-d-alsace-u-saveurs"
-        ],
-        [
-            "Véritables Knacks d'Alsace",
-            "e",
-            4,
-            [
-                "auchan"
-            ],
-            "https://fr.openfoodfacts.org/produit/3596710209811/veritables-knacks-d-alsace-mmm"
-        ],
-        [
-            "jambon cru Aoste - Dentelles.",
-            "e",
-            3,
-            [
-                "hyper-u"
-            ],
-            "https://fr.openfoodfacts.org/produit/0210857029783/jambon-cru-aoste-dentelles-aoste-snc"
-        ],
-        [
-            "Aiguillettes de poulet Boulgour aux fruits secs Sauce au miel et épices",
-            "a",
             4,
             [
                 "intermarche"
             ],
-            "https://fr.openfoodfacts.org/produit/3250392485696/aiguillettes-de-poulet-boulgour-aux-fruits-secs-sauce-au-miel-et-epices-monique-ranou"
+            "https://fr.openfoodfacts.org/produit/3250392602239/jambon-sans-nitrites-monique-ranou"
         ],
         [
-            "Saucisson à l'ail fumé",
+            "Forestier tranche",
             "e",
             4,
-            [
-                "carrefour"
-            ],
-            "https://fr.openfoodfacts.org/produit/3560071003272/saucisson-a-l-ail-fume-produits-blancs"
-        ],
-        [
-            "rillettes de poulet roti en marmite",
-            "d",
-            4,
             [],
-            "https://fr.openfoodfacts.org/produit/3350240070316/rillettes-de-poulet-roti-en-marmite-maison-prunier"
-        ]
-    ],
-    "desserts": [
+            "https://fr.openfoodfacts.org/produit/3350240232073/forestier-tranche-maison-prunier"
+        ],
         [
-            "Frozen Yogurt Sauce Fruit Rouges Muesli",
+            "Dés de Jambon",
             "c",
             4,
-            [
-                "picard"
-            ],
-            "https://fr.openfoodfacts.org/produit/3270160730254/frozen-yogurt-sauce-fruit-rouges-muesli-picard"
-        ],
-        [
-            "Yaourts Glacés au Chocolat (Servi Mous)",
-            "d",
-            3,
-            [
-                "bio-co"
-            ],
-            "https://fr.openfoodfacts.org/produit/80603009/yaourts-glaces-au-chocolat-servi-mous-gelato-rachelli"
-        ],
-        [
-            "Crème dessert artisanale chocolat",
-            "c",
-            4,
-            [],
-            "https://fr.openfoodfacts.org/produit/3760206160775/creme-dessert-artisanale-chocolat-ibaski"
-        ],
-        [
-            "Rik & Rok Creme dessert lait & chocolat 6 yaourts",
-            "c",
-            1,
-            [
-                "auchan"
-            ],
-            "https://fr.openfoodfacts.org/produit/3596710303595/rik-rok-creme-dessert-lait-chocolat-6-yaourts-auchan"
-        ],
-        [
-            "Dessert végétal de riz - Douceur chocolat",
-            "c",
-            3,
-            [],
-            "https://fr.openfoodfacts.org/produit/3280249990073/dessert-vegetal-de-riz-douceur-chocolat-june"
-        ],
-        [
-            "Yaourt chocolat soja",
-            "b",
-            1,
-            [
-                "carrefour"
-            ],
-            "https://fr.openfoodfacts.org/produit/3245413693334/yaourt-chocolat-soja-carrefour"
-        ],
-        [
-            "Crème Casino Chocolat 4 x 100g",
-            "c",
-            4,
-            [
-                "casino"
-            ],
-            "https://fr.openfoodfacts.org/produit/3222472384120/creme-casino-chocolat-4-x-100g"
-        ],
-        [
-            "Creme Dessert Chocolat",
-            "c",
-            4,
-            [
-                "hyper-u",
-                "carrefour",
-                "ls-proxy"
-            ],
-            "https://fr.openfoodfacts.org/produit/3161910326929/creme-dessert-chocolat-elle-vire"
-        ],
-        [
-            "Viennois chocolat",
-            "c",
-            4,
-            [],
-            "https://fr.openfoodfacts.org/produit/3023290455173/viennois-chocolat-nestle"
-        ],
-        [
-            "Yaourts Chocolat viennois",
-            "c",
-            4,
-            [],
-            "https://fr.openfoodfacts.org/produit/3023290232002/yaourts-chocolat-viennois-nestle"
-        ],
-        [
-            "L'Emprésuré Chocolat",
-            "b",
-            3,
-            [
-                "auchan",
-                "magasins-u"
-            ],
-            "https://fr.openfoodfacts.org/produit/3278693504076/l-empresure-chocolat-malo"
-        ],
-        [
-            "Yaourts Chocolat - Caramel",
-            "c",
-            4,
-            [
-                "carrefour"
-            ],
-            "https://fr.openfoodfacts.org/produit/3661344057159/yaourts-chocolat-caramel-les-2-vaches"
-        ],
-        [
-            "Sojasun nature",
-            "a",
-            1,
-            [
-                "super-u",
-                "magasins-u"
-            ],
-            "https://fr.openfoodfacts.org/produit/3273220081068/sojasun-nature"
-        ],
-        [
-            "Perle de lait sur lit d’abricot au miel",
-            "c",
-            4,
-            [],
-            "https://fr.openfoodfacts.org/produit/3329770061385/perle-de-lait-sur-lit-d-abricot-au-miel-yoplait"
-        ],
-        [
-            "Perle de lait framboise litchi",
-            "c",
-            4,
-            [
-                "magasins-u"
-            ],
-            "https://fr.openfoodfacts.org/produit/3329770061323/perle-de-lait-framboise-litchi-yoplait"
-        ],
-        [
-            "Perle de lait sur lit creme de marron",
-            "c",
-            4,
-            [
-                "magasins-u"
-            ],
-            "https://fr.openfoodfacts.org/produit/3329770061354/perle-de-lait-sur-lit-creme-de-marron-yoplait"
-        ],
-        [
-            "Yaourt sucré",
-            "b",
-            "3",
-            [
-                "carrefour-city",
-                "magasins-u"
-            ],
-            "https://fr.openfoodfacts.org/produit/3278692211142/yaourt-sucre-malo"
-        ],
-        [
-            "YAOS LE YAOURT A LA GRECQUE",
-            "d",
-            4,
-            [],
-            "https://fr.openfoodfacts.org/produit/10232903/yaos-le-yaourt-a-la-grecque-nestle"
-        ],
-        [
-            "Yaos yaourt grec stracciatella",
-            "c",
-            4,
-            [
-                "auchan"
-            ],
-            "https://fr.openfoodfacts.org/produit/3023290022566/yaos-yaourt-grec-stracciatella-nestle"
-        ],
-        [
-            "Yaourt à la Grecque Bio",
-            "c",
-            4,
-            [
-                "carrefour"
-            ],
-            "https://fr.openfoodfacts.org/produit/3280249109000/yaourt-a-la-grecque-bio-le-petit-basque"
-        ],
-        [
-            "Yaourt Brassé Nature 0% Mat. Gr",
-            "a",
-            4,
-            [],
-            "https://fr.openfoodfacts.org/produit/3661344595705/yaourt-brasse-nature-0-mat-gr-les-2-vaches"
-        ],
-        [
-            "Nature Légère (0 % MG)",
-            "a",
-            4,
-            [
-                "carrefour"
-            ],
-            "https://fr.openfoodfacts.org/produit/3661344322783/nature-legere-0-mg-les-2-vaches"
-        ],
-        [
-            "Yaourt de brebis à la grecque Biologique",
-            "c",
-            3,
-            [
-                "casino"
-            ],
-            "https://fr.openfoodfacts.org/produit/3222475309830/yaourt-de-brebis-a-la-grecque-biologique-casino-bio"
-        ],
-        [
-            "Déli'light brassé Nature (0 % MG) 8 pots",
-            "a",
-            4,
-            [
-                "leclerc"
-            ],
-            "https://fr.openfoodfacts.org/produit/3564700222454/deli-light-brasse-nature-0-mg-8-pots-delisse"
-        ],
-        [
-            "Sans sucres ajoutés*\n*Contient des sucres naturellement présents",
-            "a",
-            1,
-            [
-                "carrefour"
-            ],
-            "https://fr.openfoodfacts.org/produit/3245412891175/sans-sucres-ajoutes-contient-des-sucres-naturellement-presents-carrefour"
-        ],
-        [
-            "Crème Dessert au Chocolat Noir",
-            "b",
-            4,
-            [
-                "carrefour"
-            ],
-            "https://fr.openfoodfacts.org/produit/3560070372560/creme-dessert-au-chocolat-noir-carrefour"
-        ],
-        [
-            "Fromage Blanc\nNature",
-            "a",
-            3,
             [
                 "carrefour",
                 "carrefour-market"
             ],
-            "https://fr.openfoodfacts.org/produit/3270190021087/fromage-blanc-nature-carrefour"
+            "https://fr.openfoodfacts.org/produit/3270190199359/des-de-jambon-carrefour"
         ],
         [
-            "Milka Noisette Entières",
+            "Chipolata supérieur",
+            "d",
+            4,
+            [],
+            "https://fr.openfoodfacts.org/produit/0203461026248/chipolata-superieur"
+        ],
+        [
+            "12 escargots préparés à la Bourguignonne",
             "e",
-            4,
-            [
-                "carrefour",
-                "magasins-u"
-            ],
-            "https://fr.openfoodfacts.org/produit/3045140118106/milka-noisette-entieres"
-        ],
-        [
-            "Activia Saveur Pêche",
-            "b",
-            4,
-            [
-                "casino"
-            ],
-            "https://fr.openfoodfacts.org/produit/3033491024467/activia-saveur-peche-danone"
-        ],
-        [
-            "Activia (Nature) 12 Pots",
-            "b",
-            4,
-            [
-                "banque-alimentaire"
-            ],
-            "https://fr.openfoodfacts.org/produit/3033491010873/activia-nature-12-pots-danone"
-        ],
-        [
-            "B'A au Bifidus (4 Pots)",
-            "b",
             3,
             [
-                "casino"
+                "aldi"
             ],
-            "https://fr.openfoodfacts.org/produit/3428200325278/b-a-au-bifidus-4-pots-nestle"
+            "https://fr.openfoodfacts.org/produit/26053141/12-escargots-prepares-a-la-bourguignonne-la-suggestion-du-chef"
         ],
         [
-            "Activia (Nature) 16 Pots",
-            "b",
+            "Rillettes de sardines",
+            "d",
+            4,
+            [],
+            "https://fr.openfoodfacts.org/produit/3394610000428/rillettes-de-sardines-le-pere-eugene"
+        ],
+        [
+            "Mélange de Viandes hachées porc & boeuf",
+            "c",
+            1,
+            [
+                "lidll"
+            ],
+            "https://fr.openfoodfacts.org/produit/20062156/melange-de-viandes-hachees-porc-boeuf-l-etal-du-boucher"
+        ],
+        [
+            "Mini Saucissons Secs",
+            "e",
             4,
             [
                 "carrefour"
             ],
-            "https://fr.openfoodfacts.org/produit/3033490853594/activia-nature-16-pots-danone"
+            "https://fr.openfoodfacts.org/produit/3560070692842/mini-saucissons-secs-carrefour"
         ],
         [
-            "Activia (Nature) 12 pots + 4 Gratuits",
-            "b",
+            "Saucisse de morteau",
+            "e",
+            4,
+            [
+                "auchan"
+            ],
+            "https://fr.openfoodfacts.org/produit/3039050332639/saucisse-de-morteau-auchan"
+        ],
+        [
+            "Rillettes de canard",
+            "e",
+            "3",
+            [
+                "leclerc"
+            ],
+            "https://fr.openfoodfacts.org/produit/3700518702638/rillettes-de-canard-les-thomasines"
+        ],
+        [
+            "Rôti de Poulet 100% Filet",
+            "c",
+            4,
+            [
+                "intermarche"
+            ],
+            "https://fr.openfoodfacts.org/produit/3250391782598/roti-de-poulet-100-filet-monique-ranou"
+        ],
+        [
+            "Jambon Serrano Tranches Fines 100 g",
+            "d",
+            3,
+            [],
+            "https://fr.openfoodfacts.org/produit/3449860404165/jambon-serrano-tranches-fines-100-g-aoste"
+        ],
+        [
+            "Jambon Cuit Supérieur Blanc 4 Tranches Élaboré sans Nitrite",
+            "c",
+            4,
+            [
+                "auchan"
+            ],
+            "https://fr.openfoodfacts.org/produit/3760246512404/jambon-cuit-superieur-blanc-4-tranches-elabore-sans-nitrite-salaison-du-terroir"
+        ],
+        [
+            "Lardons fumés bio",
+            "e",
+            3,
+            [
+                "casino"
+            ],
+            "https://fr.openfoodfacts.org/produit/3222474211127/lardons-fumes-bio-casino"
+        ],
+        [
+            "Dés de jambon nature",
+            "d",
+            4,
+            [
+                "simply-market",
+                "auchan"
+            ],
+            "https://fr.openfoodfacts.org/produit/3596710285457/des-de-jambon-nature-auchan"
+        ],
+        [
+            "Blanc de Poulet J'AIME - 2 tr.",
+            "c",
             4,
             [],
-            "https://fr.openfoodfacts.org/produit/3033490526641/activia-nature-12-pots-4-gratuits-danone"
+            "https://fr.openfoodfacts.org/produit/3095759128010/blanc-de-poulet-j-aime-2-tr-fleury-michon"
         ],
         [
-            "Yaourt arôme naturel Vanille Bio Vrai",
+            "Jambon Serrano",
+            "d",
+            3,
+            [
+                "auchan"
+            ],
+            "https://fr.openfoodfacts.org/produit/3596710462544/jambon-serrano-auchan"
+        ],
+        [
+            "Le Bon Paris Fumé conservation Sans Nitrite",
+            "c",
+            4,
+            [
+                "cora",
+                "magasins-u",
+                "carrefour"
+            ],
+            "https://fr.openfoodfacts.org/produit/7613035989504/le-bon-paris-fume-conservation-sans-nitrite-herta"
+        ],
+        [
+            "Lardons Fumés",
+            "e",
+            4,
+            [],
+            "https://fr.openfoodfacts.org/produit/3700133906022/lardons-fumes-broceliande"
+        ],
+        [
+            "Aiguillettes de poulet rôti - 150 g",
+            "c",
+            4,
+            [
+                "magasins-u"
+            ],
+            "https://fr.openfoodfacts.org/produit/3095751926010/aiguillettes-de-poulet-roti-150-g-fleury-michon"
+        ],
+        [
+            "Tendre Noix à la Broche",
             "c",
             4,
             [
                 "carrefour"
             ],
-            "https://fr.openfoodfacts.org/produit/3273220535462/yaourt-arome-naturel-vanille-bio-vrai"
+            "https://fr.openfoodfacts.org/produit/7613035831995/tendre-noix-a-la-broche-herta"
         ],
         [
-            "Yaourt bifidus Brassé nature (0 % MG, 0 % sucre ajouté)",
-            "a",
-            3,
-            [
-                "leader-price"
-            ],
-            "https://fr.openfoodfacts.org/produit/3263859621018/yaourt-bifidus-brasse-nature-0-mg-0-sucre-ajoute-leader-price"
-        ],
-        [
-            "Activia (Saveur Vanille) 12 pots + 4 Gratuits",
-            "b",
+            "Happy Family",
+            "c",
             4,
             [
-                "auchan"
+                "super-u"
             ],
-            "https://fr.openfoodfacts.org/produit/3033490526610/activia-saveur-vanille-12-pots-4-gratuits-danone"
+            "https://fr.openfoodfacts.org/produit/3181232221344/happy-family-charal"
         ],
         [
-            "Activia (Brassé Nature) 8 Pots",
-            "b",
-            4,
-            [
-                "carrefour-market",
-                "magasins-u"
-            ],
-            "https://fr.openfoodfacts.org/produit/3033490699833/activia-brasse-nature-8-pots-danone"
-        ],
-        [
-            "Activia (Nature) 12 Pots",
-            "b",
-            4,
-            [],
-            "https://fr.openfoodfacts.org/produit/3033490594381/activia-nature-12-pots-danone"
-        ],
-        [
-            "Bifidus nature (12 Pots)",
-            "b",
-            3,
-            [
-                "intermarche"
-            ],
-            "https://fr.openfoodfacts.org/produit/3250390779100/bifidus-nature-12-pots-paturages"
-        ],
-        [
-            "Activa (Nature) 12 Pots",
-            "b",
-            4,
-            [
-                "auchan"
-            ],
-            "https://fr.openfoodfacts.org/produit/3033490853556/activa-nature-12-pots-danone"
-        ],
-        [
-            "Yopa ! Nature sur lit de Caramel (2,8 % MG)",
-            "b",
-            4,
-            [
-                "intermarche"
-            ],
-            "https://fr.openfoodfacts.org/produit/3329770053878/yopa-nature-sur-lit-de-caramel-2-8-mg-yoplait"
-        ],
-        [
-            "Yopa ! Nature (2,5 % MG)",
-            "a",
-            4,
-            [
-                "cora"
-            ],
-            "https://fr.openfoodfacts.org/produit/3329770050365/yopa-nature-2-5-mg-yoplait"
-        ],
-        [
-            "Yopa ! Noix de Coco (1,1 % MG)",
-            "a",
-            4,
-            [
-                "cora"
-            ],
-            "https://fr.openfoodfacts.org/produit/3329770053861/yopa-noix-de-coco-1-1-mg-yoplait"
-        ],
-        [
-            "Danio (0 % MG) Miel",
-            "a",
-            4,
-            [
-                "banque-alimentaire"
-            ],
-            "https://fr.openfoodfacts.org/produit/3033490959517/danio-0-mg-miel-danone"
-        ]
-    ],
-    "cereales-et-derives": [
-        [
-            "tresor",
-            "d",
-            4,
-            [],
-            "https://fr.openfoodfacts.org/produit/18923476/tresor-kelloggs"
-        ],
-        [
-            "Tresor",
-            "e",
-            4,
-            [],
-            "https://fr.openfoodfacts.org/produit/5059185500671/tresor-kellogg-s"
-        ],
-        [
-            "Trésor duo choco",
-            "d",
-            4,
-            [
-                "auchan"
-            ],
-            "https://fr.openfoodfacts.org/produit/5053827156332/tresor-duo-choco-kellogg-s"
-        ],
-        [
-            "Tresor",
-            "d",
-            4,
-            [],
-            "https://fr.openfoodfacts.org/produit/5050088806822/tresor-kellogs"
-        ],
-        [
-            "Tresor chocolat au lait",
-            "d",
-            4,
-            [],
-            "https://fr.openfoodfacts.org/produit/5050083572005/tresor-chocolat-au-lait-kellogg-s"
-        ],
-        [
-            "Trésor",
+            "billes au foie gras de canard coeur figue et graines de pavot",
             "e",
             "4",
             [],
-            "https://fr.openfoodfacts.org/produit/5050083458255/tresor-kellogg-s-tresor"
+            "https://fr.openfoodfacts.org/produit/3180940085699/billes-au-foie-gras-de-canard-coeur-figue-et-graines-de-pavot-madrange"
         ],
         [
-            "Trésor break",
+            "terrine aux petits légumes",
+            "b",
+            3,
+            [],
+            "https://fr.openfoodfacts.org/produit/3770011487028/terrine-aux-petits-legumes-pisciculture-du-moulin"
+        ],
+        [
+            "Véritable chorizo doux",
+            "e",
+            "4",
+            [
+                "auchan"
+            ],
+            "https://fr.openfoodfacts.org/produit/3596710401598/veritable-chorizo-doux-auchan"
+        ],
+        [
+            "Jambon Le Tradition sans nitrite",
+            "c",
+            4,
+            [
+                "intermarche"
+            ],
+            "https://fr.openfoodfacts.org/produit/3250392602253/jambon-le-tradition-sans-nitrite-monique-ranou"
+        ],
+        [
+            "Aiguillettes de canard du Sud-Ouest crues",
+            "a",
+            1,
+            [],
+            "https://fr.openfoodfacts.org/produit/3350030209940/aiguillettes-de-canard-du-sud-ouest-crues-monoprix-gourmet"
+        ],
+        [
+            "Steaks hachés pur boeuf (15% MG)",
+            "c",
+            1,
+            [
+                "carrefour"
+            ],
+            "https://fr.openfoodfacts.org/produit/3245415313186/steaks-haches-pur-boeuf-15-mg-carrefour-bio"
+        ],
+        [
+            "Escalopes de poulet surgelées",
+            "a",
+            1,
+            [
+                "picard"
+            ],
+            "https://fr.openfoodfacts.org/produit/3270160005451/escalopes-de-poulet-surgelees-picard"
+        ],
+        [
+            "Saucisson a l'ail, le paquet de 8 tranches",
+            "e",
+            4,
+            [
+                "intermarche"
+            ],
+            "https://fr.openfoodfacts.org/produit/3250391464647/saucisson-a-l-ail-le-paquet-de-8-tranches-le-porc-francais"
+        ],
+        [
+            "Rôti de porc cuit",
+            "b",
+            4,
+            [],
+            "https://fr.openfoodfacts.org/produit/3180050099630/roti-de-porc-cuit-leader-price"
+        ],
+        [
+            "Nuggets au poulet croustillants bio",
+            "c",
+            4,
+            [
+                "cora"
+            ],
+            "https://fr.openfoodfacts.org/produit/3422210436245/nuggets-au-poulet-croustillants-bio-nature-de-france"
+        ],
+        [
+            "4 Saucisses de Francfort",
+            "d",
+            3,
+            [
+                "monoprix"
+            ],
+            "https://fr.openfoodfacts.org/produit/3350030201890/4-saucisses-de-francfort-monoprix"
+        ],
+        [
+            "Quart de jambon sec traditionnel",
+            "d",
+            3,
+            [
+                "lidl"
+            ],
+            "https://fr.openfoodfacts.org/produit/20386924/quart-de-jambon-sec-traditionnel-saint-alby"
+        ],
+        [
+            "Steack hache15 % mg Facon bouchere",
+            "b",
+            1,
+            [
+                "leclerc"
+            ],
+            "https://fr.openfoodfacts.org/produit/3661112090630/steack-hache15-mg-facon-bouchere-bio-village"
+        ],
+        [
+            "Saucisse Sèche Droite LabelRouge",
+            "e",
+            4,
+            [
+                "lidl"
+            ],
+            "https://fr.openfoodfacts.org/produit/20680824/saucisse-seche-droite-labelrouge-le-cesarin"
+        ],
+        [
+            "Carpaccio sauce parmesan",
+            "a",
+            4,
+            [
+                "super-u",
+                "monoprix",
+                "auchan"
+            ],
+            "https://fr.openfoodfacts.org/produit/3181232180504/carpaccio-sauce-parmesan-auchan"
+        ],
+        [
+            "Lardons nature",
+            "e",
+            4,
+            [
+                "intermarche"
+            ],
+            "https://fr.openfoodfacts.org/produit/3250390314257/lardons-nature-monique-ranou"
+        ],
+        [
+            "Bacon Fumé (15 Tranches minimum)",
+            "d",
+            4,
+            [
+                "franprix",
+                "magasins-u",
+                "bi1"
+            ],
+            "https://fr.openfoodfacts.org/produit/3154230040286/bacon-fume-15-tranches-minimum-herta"
+        ],
+        [
+            "Jambon",
+            "d",
+            4,
+            [
+                "leclerc"
+            ],
+            "https://fr.openfoodfacts.org/produit/3661112056261/jambon-tradilege"
+        ]
+    ],
+    "desserts": [
+        [
+            "La teurgoule de cambremer au caramel",
+            "b",
+            3,
+            [
+                "carrefour"
+            ],
+            "https://fr.openfoodfacts.org/produit/3353930111023/la-teurgoule-de-cambremer-au-caramel"
+        ],
+        [
+            "Teurgoule",
+            "c",
+            4,
+            [],
+            "https://fr.openfoodfacts.org/produit/3355660007393/teurgoule"
+        ],
+        [
+            "La Teurgoule",
+            "c",
+            4,
+            [],
+            "https://fr.openfoodfacts.org/produit/3770003038146/la-teurgoule-tir"
+        ],
+        [
+            "Riz au lait au caramel",
+            "c",
+            3,
+            [
+                "magasins-u"
+            ],
+            "https://fr.openfoodfacts.org/produit/3479570000067/riz-au-lait-au-caramel-teurgoule-de-janville"
+        ],
+        [
+            "Riz au lait au chocolat",
+            "c",
+            3,
+            [
+                "magasins-u"
+            ],
+            "https://fr.openfoodfacts.org/produit/3479571400026/riz-au-lait-au-chocolat-teurgoule-de-janville"
+        ],
+        [
+            "Riz au lait à la cannelle bio",
+            "b",
+            3,
+            [],
+            "https://fr.openfoodfacts.org/produit/3479570000074/riz-au-lait-a-la-cannelle-bio-teurgoule-de-janville"
+        ],
+        [
+            "Semoule de riz à l'ancienne",
+            "a",
+            3,
+            [],
+            "https://fr.openfoodfacts.org/produit/3309070000147/semoule-de-riz-a-l-ancienne-ferme-de-la-poterie"
+        ],
+        [
+            "Profiteroles",
+            "c",
+            4,
+            [
+                "carrefour"
+            ],
+            "https://fr.openfoodfacts.org/produit/3245412435263/profiteroles-carrefour"
+        ],
+        [
+            "Pom'potes ssa 8 pom & 8 pomme poire 16 x 90 g. format familial",
+            "a",
+            "4",
+            [],
+            "https://fr.openfoodfacts.org/produit/3021762416806/pom-potes-ssa-8-pom-8-pomme-poire-16-x-90-g-format-familial-materne"
+        ],
+        [
+            "Fou de framboise",
+            "c",
+            4,
+            [],
+            "https://fr.openfoodfacts.org/produit/3270160840984/fou-de-framboise-picard"
+        ],
+        [
+            "Sorbet fou de poire",
+            "c",
+            4,
+            [],
+            "https://fr.openfoodfacts.org/produit/3270160841011/sorbet-fou-de-poire-picard"
+        ],
+        [
+            "Crème glacée de noix de coco",
+            "d",
+            4,
+            [],
+            "https://fr.openfoodfacts.org/produit/3270160841042/creme-glacee-de-noix-de-coco-picard"
+        ],
+        [
+            "Sorbet citron",
+            "c",
+            4,
+            [],
+            "https://fr.openfoodfacts.org/produit/3270160841035/sorbet-citron-picard"
+        ],
+        [
+            "Yaourt au soja - Vanille",
+            "a",
+            "4",
+            [
+                "magasins-u",
+                "delhaize"
+            ],
+            "https://fr.openfoodfacts.org/produit/5411188103387/yaourt-au-soja-vanille-alpro"
+        ],
+        [
+            "Mini amande",
             "e",
             4,
             [
                 "magasins-u",
                 "delhaize"
             ],
-            "https://fr.openfoodfacts.org/produit/5053827151924/tresor-break-kellog-s"
+            "https://fr.openfoodfacts.org/produit/8714100635650/mini-amande-magnum"
         ],
         [
-            "Tresor",
-            "d",
+            "Perles de chia framboise",
+            "b",
             4,
             [
-                "delhaize"
+                "monoprix"
             ],
-            "https://fr.openfoodfacts.org/produit/5053827131971/tresor-kellogg-s"
+            "https://fr.openfoodfacts.org/produit/3350033450448/perles-de-chia-framboise-monoprix"
         ],
         [
-            "Tresor",
-            "d",
-            4,
-            [],
-            "https://fr.openfoodfacts.org/produit/5053827132879/tresor-kellogg-s"
-        ],
-        [
-            "Trésor, gout chocolat noisette",
-            "d",
-            4,
-            [
-                "magasins-u"
-            ],
-            "https://fr.openfoodfacts.org/produit/5053827156189/tresor-gout-chocolat-noisette-kellogg-s"
-        ],
-        [
-            "Trésors",
-            "d",
-            4,
-            [
-                "magasins-u"
-            ],
-            "https://fr.openfoodfacts.org/produit/5050083501661/tresors-kellogg-s"
-        ],
-        [
-            "Choco Pillows - Dia",
-            "d",
-            4,
-            [
-                "minipreco"
-            ],
-            "https://fr.openfoodfacts.org/produit/8480017371843/choco-pillows-dia"
-        ],
-        [
-            "Nesquik® Choco coeurs",
+            "Yaourt noix de coco",
             "c",
             4,
             [
-                "hal-market"
+                "carrefour",
+                "magasins-u"
             ],
-            "https://fr.openfoodfacts.org/produit/8690632049045/nesquik-choco-coeurs-nestle"
+            "https://fr.openfoodfacts.org/produit/3456770316105/yaourt-noix-de-coco-mamie-nova"
         ],
         [
-            "Céréales fourrées chocolat noisettes",
+            "Coeur de fruit fuits de la passion",
             "c",
             4,
             [
                 "super-u",
                 "magasins-u"
             ],
-            "https://fr.openfoodfacts.org/produit/3256226763855/cereales-fourrees-chocolat-noisettes-u-bio"
+            "https://fr.openfoodfacts.org/produit/3456774850612/coeur-de-fruit-fuits-de-la-passion-mamie-nova"
         ],
         [
-            "Céréales fourrées chocolat noisette",
-            "d",
-            4,
-            [
-                "intermarche"
-            ],
-            "https://fr.openfoodfacts.org/produit/21208584/cereales-fourrees-chocolat-noisette-chabrior"
-        ],
-        [
-            "Trésor Chocolat Noisette",
-            "d",
-            4,
-            [
-                "casino"
-            ],
-            "https://fr.openfoodfacts.org/produit/5053827111621/tresor-chocolat-noisette-kellogg-s"
-        ],
-        [
-            "Cereales Fourrees Noisette Chocolat 250G Sans Gluten Bio",
-            "d",
-            3,
-            [],
-            "https://fr.openfoodfacts.org/produit/3760154261593/cereales-fourrees-noisette-chocolat-250g-sans-gluten-bio-nature-et-cie"
-        ],
-        [
-            "Duo Choc croustillant & fondant",
+            "Crème dessert Fermière Caramel Beurre Salé",
             "c",
             4,
             [
-                "carrefour"
+                "leclerc"
             ],
-            "https://fr.openfoodfacts.org/produit/3560070253807/duo-choc-croustillant-fondant-carrefour"
+            "https://fr.openfoodfacts.org/produit/3770000451184/creme-dessert-fermiere-caramel-beurre-sale-les-p-tits-fermiers"
         ],
         [
-            "Cereales fourrees chocolat noisette",
+            "Madeleines marbrées au chocolat",
             "d",
             4,
             [
-                "auchan"
+                "leclerc",
+                "magasins-u"
             ],
-            "https://fr.openfoodfacts.org/produit/3596710421954/cereales-fourrees-chocolat-noisette-auchan"
+            "https://fr.openfoodfacts.org/produit/3252755250002/madeleines-marbrees-au-chocolat-le-ster"
         ],
         [
-            "Crok'fondant",
+            "Pom pote crazy waouh",
+            "a",
+            4,
+            [
+                "magasins-u",
+                "leclerc"
+            ],
+            "https://fr.openfoodfacts.org/produit/3021761206613/pom-pote-crazy-waouh-materne"
+        ],
+        [
+            "Pom'potes sans sucres ajoutés pomme tropical",
+            "a",
+            4,
+            [
+                "magasins-u"
+            ],
+            "https://fr.openfoodfacts.org/produit/3021761204114/pom-potes-sans-sucres-ajoutes-pomme-tropical-materne"
+        ],
+        [
+            "Palets bretons pur beurre",
+            "e",
+            4,
+            [
+                "monoprix"
+            ],
+            "https://fr.openfoodfacts.org/produit/3350031669248/palets-bretons-pur-beurre-monoprix"
+        ],
+        [
+            "Macarons framboise",
+            "d",
+            4,
+            [
+                "picard"
+            ],
+            "https://fr.openfoodfacts.org/produit/3270160820122/macarons-framboise-picard"
+        ],
+        [
+            "Calin Extra",
+            "b",
+            3,
+            [
+                "magasins-u"
+            ],
+            "https://fr.openfoodfacts.org/produit/3329770057241/calin-extra-yoplait"
+        ],
+        [
+            "Fromage blanc 0%",
+            "a",
+            3,
+            [
+                "leader-price"
+            ],
+            "https://fr.openfoodfacts.org/produit/3263859710620/fromage-blanc-0-leader-price"
+        ],
+        [
+            "Sorbet citron jaune",
+            "c",
+            4,
+            [
+                "monoprix"
+            ],
+            "https://fr.openfoodfacts.org/produit/3350033398870/sorbet-citron-jaune-monoprix"
+        ],
+        [
+            "12 mini-cônes",
+            "d",
+            4,
+            [
+                "picard"
+            ],
+            "https://fr.openfoodfacts.org/produit/3270160657803/12-mini-cones-picard"
+        ],
+        [
+            "Maxi King",
+            "e",
+            4,
+            [
+                "lidl"
+            ],
+            "https://fr.openfoodfacts.org/produit/4008400551920/maxi-king-kinder"
+        ],
+        [
+            "Creme caramel",
             "c",
             4,
             [
                 "netto"
             ],
-            "https://fr.openfoodfacts.org/produit/3421557502460/crok-fondant-terres-et-cereales"
+            "https://fr.openfoodfacts.org/produit/3250391471287/creme-caramel-netto"
         ],
         [
-            "Céreales chocolatées fourrage chocolat",
-            "d",
-            4,
-            [
-                "leader-price"
-            ],
-            "https://fr.openfoodfacts.org/produit/3263851322715/cereales-chocolatees-fourrage-chocolat-leader-price"
-        ],
-        [
-            "Céréales fourrées chocolat noisette",
-            "d",
-            4,
-            [
-                "intermarche"
-            ],
-            "https://fr.openfoodfacts.org/produit/3250392614959/cereales-fourrees-chocolat-noisette-chabrior"
-        ],
-        [
-            "Fourrées Chocolat noisettes",
-            "d",
-            4,
-            [
-                "cora"
-            ],
-            "https://fr.openfoodfacts.org/produit/3257985566794/fourrees-chocolat-noisettes-cora"
-        ],
-        [
-            "Céréales fourrées au Cacao et aux Noisettes",
-            "d",
-            3,
-            [
-                "la-vie-claire"
-            ],
-            "https://fr.openfoodfacts.org/produit/3266191081076/cereales-fourrees-au-cacao-et-aux-noisettes-la-vie-claire"
-        ],
-        [
-            "Cereales fourrés au chocolat au lait",
-            "d",
-            4,
-            [
-                "aldi"
-            ],
-            "https://fr.openfoodfacts.org/produit/26019215/cereales-fourres-au-chocolat-au-lait-swing"
-        ],
-        [
-            "CRICA' CHOC Chocolat Noisette",
-            "c",
-            4,
-            [
-                "intermarche"
-            ],
-            "https://fr.openfoodfacts.org/produit/3250391372614/crica-choc-chocolat-noisette-chabrior"
-        ],
-        [
-            "Céréales fourrées à la noisette",
-            "d",
-            4,
-            [
-                "lidl"
-            ],
-            "https://fr.openfoodfacts.org/produit/20107868/cereales-fourrees-a-la-noisette-crownfield"
-        ],
-        [
-            "Jumblies",
+            "Creme brulee 2 x",
             "d",
             4,
             [
                 "auchan"
             ],
-            "https://fr.openfoodfacts.org/produit/3596710430307/jumblies-auchan"
+            "https://fr.openfoodfacts.org/produit/3456770728274/creme-brulee-2-x-mes-recettes-gourmandes"
+        ],
+        [
+            "Preparation pour creme brulee Delisse",
+            "d",
+            4,
+            [
+                "leclerc"
+            ],
+            "https://fr.openfoodfacts.org/produit/3564700482797/preparation-pour-creme-brulee-delisse-marque-repere"
+        ],
+        [
+            "Creme brulee",
+            "d",
+            4,
+            [
+                "auchan"
+            ],
+            "https://fr.openfoodfacts.org/produit/3596710445776/creme-brulee-auchan"
+        ],
+        [
+            "Crème brûlée bio",
+            "d",
+            3,
+            [
+                "super-u"
+            ],
+            "https://fr.openfoodfacts.org/produit/3372900901129/creme-brulee-bio-marie-morin"
+        ],
+        [
+            "Préparation Pour Crème Brûlée Marque Repere",
+            "d",
+            4,
+            [
+                "leclerc"
+            ],
+            "https://fr.openfoodfacts.org/produit/3564700324578/preparation-pour-creme-brulee-marque-repere-delisse"
+        ],
+        [
+            "Riz au lait bio",
+            "c",
+            3,
+            [
+                "carrefour"
+            ],
+            "https://fr.openfoodfacts.org/produit/3560071182649/riz-au-lait-bio-carrefour-bio"
+        ],
+        [
+            "Récré O'lé vanille",
+            "c",
+            "4",
+            [
+                "intermarche"
+            ],
+            "https://fr.openfoodfacts.org/produit/3700279302795/recre-o-le-vanille-mont-blanc"
+        ],
+        [
+            "Le fromage blanc des Limousins",
+            "b",
+            3,
+            [
+                "intermarche",
+                "magasins-u"
+            ],
+            "https://fr.openfoodfacts.org/produit/3597240060422/le-fromage-blanc-des-limousins-laiterie-les-fayes"
+        ],
+        [
+            "Mousse au chocolat pour beurre de cacao",
+            "d",
+            3,
+            [
+                "monoprix"
+            ],
+            "https://fr.openfoodfacts.org/produit/3350033573703/mousse-au-chocolat-pour-beurre-de-cacao-monoprix-bio"
+        ],
+        [
+            "Macarons",
+            "d",
+            "4",
+            [
+                "lidl"
+            ],
+            "https://fr.openfoodfacts.org/produit/3760197636099/macarons-sans-marque"
+        ],
+        [
+            "Café",
+            "b",
+            4,
+            [
+                "super-u",
+                "magasins-u",
+                "monoprix"
+            ],
+            "https://fr.openfoodfacts.org/produit/3273220085196/cafe-sojasun"
+        ],
+        [
+            "Dessert vegetal noisettes amande",
+            "b",
+            4,
+            [
+                "casino",
+                "cora",
+                "magasins-u",
+                "monoprix"
+            ],
+            "https://fr.openfoodfacts.org/produit/3273220085301/dessert-vegetal-noisettes-amande-sojasun"
+        ],
+        [
+            "La Madeleine au Beurre Frais",
+            "e",
+            4,
+            [
+                "monoprix",
+                "leclerc",
+                "magasins-u"
+            ],
+            "https://fr.openfoodfacts.org/produit/3178530402728/la-madeleine-au-beurre-frais-bonne-maman"
+        ]
+    ],
+    "cereales-et-derives": [
+        [
+            "Vermicelles",
+            "a",
+            3,
+            [
+                "super-u",
+                "magasins-u"
+            ],
+            "https://fr.openfoodfacts.org/produit/3038350011701/vermicelles-panzani"
+        ],
+        [
+            "Tortitas de maiz",
+            "d",
+            4,
+            [
+                "mercadona"
+            ],
+            "https://fr.openfoodfacts.org/produit/8480000141583/tortitas-de-maiz-hacendado"
+        ],
+        [
+            "Penne de sarrasin complet",
+            "a",
+            3,
+            [
+                "la-vie-claire"
+            ],
+            "https://fr.openfoodfacts.org/produit/8013885051342/penne-de-sarrasin-complet-castagno"
+        ],
+        [
+            "Pâtes - Penne Rigate n.73",
+            "a",
+            3,
+            [
+                "auchan",
+                "colruyt",
+                "magasins-u"
+            ],
+            "https://fr.openfoodfacts.org/produit/8076802085738/pates-penne-rigate-n-73-barilla"
+        ],
+        [
+            "Maccheroni",
+            "a",
+            3,
+            [
+                "leclerc"
+            ],
+            "https://fr.openfoodfacts.org/produit/3450970119856/maccheroni-eco"
+        ],
+        [
+            "Squares à l' avoine",
+            "a",
+            4,
+            [],
+            "https://fr.openfoodfacts.org/produit/0055577105665/squares-a-l-avoine-quaker"
+        ],
+        [
+            "NOUILLES DE RIZ THAILANDAIS SG",
+            "a",
+            1,
+            [],
+            "https://fr.openfoodfacts.org/produit/8713576282511/nouilles-de-riz-thailandais-sg-terra-sana"
+        ],
+        [
+            "Clearspring Organic Gluten Free Brown Rice Wide Noodles 200G",
+            "a",
+            3,
+            [],
+            "https://fr.openfoodfacts.org/produit/5021554989455/clearspring-organic-gluten-free-brown-rice-wide-noodles-200g"
+        ],
+        [
+            "Organic Gluten Free Brown Rice Noodles",
+            "b",
+            3,
+            [],
+            "https://fr.openfoodfacts.org/produit/5021554989431/organic-gluten-free-brown-rice-noodles-clearspring"
+        ],
+        [
+            "Rice noodle",
+            "b",
+            1,
+            [],
+            "https://fr.openfoodfacts.org/produit/4893333731569/rice-noodle"
+        ],
+        [
+            "Rice noodles",
+            "a",
+            3,
+            [
+                "marks-spencer"
+            ],
+            "https://fr.openfoodfacts.org/produit/00263931/rice-noodles-marks-spencer"
+        ],
+        [
+            "Riz long grain",
+            "b",
+            1,
+            [
+                "lidl"
+            ],
+            "https://fr.openfoodfacts.org/produit/20908270/riz-long-grain-golden-sun"
+        ],
+        [
+            "Avoine integral",
+            "a",
+            1,
+            [],
+            "https://fr.openfoodfacts.org/produit/20944551/avoine-integral-bioorganic"
+        ],
+        [
+            "Whole Wheat Tortillas",
+            "a",
+            4,
+            [],
+            "https://fr.openfoodfacts.org/produit/8410076471468/whole-wheat-tortillas-pancho-villa"
+        ],
+        [
+            "Tortillas",
+            "b",
+            4,
+            [],
+            "https://fr.openfoodfacts.org/produit/8410076474209/tortillas-panchovilla"
+        ],
+        [
+            "Birchermüesli Reddy Nature",
+            "a",
+            4,
+            [
+                "migros"
+            ],
+            "https://fr.openfoodfacts.org/produit/7610177003853/birchermuesli-reddy-nature-migros-bio"
+        ],
+        [
+            "Chia graines",
+            "a",
+            1,
+            [
+                "migros"
+            ],
+            "https://fr.openfoodfacts.org/produit/7613312044070/chia-graines-migros-bio"
+        ],
+        [
+            "Tagliatelles aux œufs frais",
+            "a",
+            3,
+            [
+                "carrefour"
+            ],
+            "https://fr.openfoodfacts.org/produit/3245414221550/tagliatelles-aux-oeufs-frais-carrefour"
+        ],
+        [
+            "Muesli Petit épeautre Framboises",
+            "a",
+            3,
+            [
+                "bio-c-bon"
+            ],
+            "https://fr.openfoodfacts.org/produit/3273120021041/muesli-petit-epeautre-framboises-celnat"
+        ],
+        [
+            "Codini d'épeautre complet aux pois chiches",
+            "a",
+            3,
+            [
+                "la-vie-claire"
+            ],
+            "https://fr.openfoodfacts.org/produit/8013885052110/codini-d-epeautre-complet-aux-pois-chiches-castagno-bio"
+        ],
+        [
+            "Vermicelles thaï de riz",
+            "b",
+            1,
+            [],
+            "https://fr.openfoodfacts.org/produit/3760103149415/vermicelles-thai-de-riz-riz-autour-du-riz"
+        ],
+        [
+            "Granola choco boost",
+            "c",
+            3,
+            [],
+            "https://fr.openfoodfacts.org/produit/3760287220108/granola-choco-boost"
+        ],
+        [
+            "Spécialité du moulin aux orties",
+            "a",
+            3,
+            [
+                "la-vie-claire"
+            ],
+            "https://fr.openfoodfacts.org/produit/3347439031319/specialite-du-moulin-aux-orties-moulin-des-moines"
+        ],
+        [
+            "Farine de ble",
+            "a",
+            1,
+            [
+                "carrefour",
+                "dia"
+            ],
+            "https://fr.openfoodfacts.org/produit/3270190117308/farine-de-ble-carrefour"
+        ],
+        [
+            "Farine de blé type 65",
+            "a",
+            1,
+            [
+                "cora"
+            ],
+            "https://fr.openfoodfacts.org/produit/3257980308276/farine-de-ble-type-65-nature-bio"
+        ],
+        [
+            "Mélange de flocons 5 céréales",
+            "a",
+            3,
+            [],
+            "https://fr.openfoodfacts.org/produit/5400113611431/melange-de-flocons-5-cereales-delhaize"
+        ],
+        [
+            "Ravioli à la viande",
+            "b",
+            3,
+            [],
+            "https://fr.openfoodfacts.org/produit/3153575512014/ravioli-a-la-viande-ecochard-traiteur"
+        ],
+        [
+            "Muesli croustillant nature",
+            "c",
+            "3",
+            [
+                "satoriz",
+                "bio14"
+            ],
+            "https://fr.openfoodfacts.org/produit/3111900350335/muesli-croustillant-nature-joseph-favrichon"
+        ],
+        [
+            "Cereales",
+            "e",
+            "4",
+            [],
+            "https://fr.openfoodfacts.org/produit/3572420000436/cereales-lucien-georgelin"
+        ],
+        [
+            "Ravioles du Dauphiné aux oeufs frais",
+            "d",
+            3,
+            [
+                "auchan"
+            ],
+            "https://fr.openfoodfacts.org/produit/3596710214716/ravioles-du-dauphine-aux-oeufs-frais-auchan"
+        ],
+        [
+            "ravioli ricotta, epinards & mascarpone",
+            "c",
+            4,
+            [
+                "auchan",
+                "magasins-u",
+                "casino"
+            ],
+            "https://fr.openfoodfacts.org/produit/8001665128063/ravioli-ricotta-epinards-mascarpone-giovanni-rana"
+        ],
+        [
+            "Flocons d'Avoine",
+            "a",
+            "3",
+            [
+                "lidl"
+            ],
+            "https://fr.openfoodfacts.org/produit/26018690/flocons-d-avoine-golden-bridge"
+        ],
+        [
+            "Muesli Croustillant à la Pomme avec Stévia",
+            "a",
+            "4",
+            [
+                "delhaize"
+            ],
+            "https://fr.openfoodfacts.org/produit/5400113521198/muesli-croustillant-a-la-pomme-avec-stevia-delhaize"
+        ],
+        [
+            "Fécule de maïs",
+            "c",
+            3,
+            [],
+            "https://fr.openfoodfacts.org/produit/3380390000444/fecule-de-mais-primeal"
+        ],
+        [
+            "Flocons d'avoine petits",
+            "a",
+            "3",
+            [
+                "bio14"
+            ],
+            "https://fr.openfoodfacts.org/produit/3329483601205/flocons-d-avoine-petits-markal"
+        ],
+        [
+            "Trine",
+            "a",
+            "3",
+            [
+                "carrefour"
+            ],
+            "https://fr.openfoodfacts.org/produit/3560070757794/trine-carrefour-selection"
+        ],
+        [
+            "Galettes de riz de Camargue Multicéréales",
+            "a",
+            4,
+            [],
+            "https://fr.openfoodfacts.org/produit/3261430007886/galettes-de-riz-de-camargue-multicereales-bongran"
+        ],
+        [
+            "Galette de riz",
+            "a",
+            4,
+            [
+                "biocoop"
+            ],
+            "https://fr.openfoodfacts.org/produit/3261430007114/galette-de-riz-bongran"
+        ],
+        [
+            "Galettes de riz de Camargue Complet",
+            "a",
+            4,
+            [
+                "biocoop"
+            ],
+            "https://fr.openfoodfacts.org/produit/3261430007428/galettes-de-riz-de-camargue-complet-bongran"
+        ],
+        [
+            "Collezione Lasagne Bolognesi",
+            "a",
+            3,
+            [
+                "walmart",
+                "sams-club",
+                "bodega-aurrera",
+                "soriana"
+            ],
+            "https://fr.openfoodfacts.org/produit/8076809523738/collezione-lasagne-bolognesi-barilla"
+        ],
+        [
+            "Pates Torti",
+            "a",
+            "3",
+            [
+                "super-u",
+                "franprix",
+                "carrefour",
+                "magasins-u"
+            ],
+            "https://fr.openfoodfacts.org/produit/3038350013606/pates-torti-panzani"
         ]
     ]
 }

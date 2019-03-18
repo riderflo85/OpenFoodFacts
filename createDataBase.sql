@@ -20,7 +20,7 @@ CREATE TABLE pb_aliments
     aliment_categorie VARCHAR(45) NOT NULL,
     alimment_nutrition VARCHAR(2),
     aliment_nova_group VARCHAR(2),
-    aliment_shop VARCHAR(45),
+    aliment_shop VARCHAR(80),
     aliment_link VARCHAR(140),
     PRIMARY KEY(id_aliments)
 )

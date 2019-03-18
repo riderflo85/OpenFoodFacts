@@ -78,12 +78,12 @@ def pull_data():
     food_file = os.path.join(directory, folder, "all.json")
     dico = {}
     for cat in const.CATEGORIES:
-        nb = 1
+        page = 1
         my_list = []
         print(cat)
-        while nb <= 3:
+        while page <= 3:
             api = "https://fr.openfoodfacts.org/categorie/{}/{}"
-            api = api.format(cat, str(nb))
+            api = api.format(cat, str(page))
             payload = {"json": 1}
             r = requests.get(url=api, params=payload)
             print(r.url)
@@ -102,10 +102,11 @@ def pull_data():
                         dico[cat] = my_list
                 except:
                     pass
-            nb += 1
+            page += 1
 
     with open(food_file, "w") as file:
                 json.dump(dico, file, indent=4, ensure_ascii=False)
+    time.sleep(0.2)
 
 
 def push_data(db):
@@ -144,6 +145,7 @@ def delete_duplicates():
 
     list_sort = []
     temp = []
+    all_temp = []
     dico = {}
 
     name_cate = ["boissons", "fruits", "legumes-et-derives", "produits-laitiers",
@@ -159,7 +161,6 @@ def delete_duplicates():
                 # Chaque aliment de la catégorie est ajouter a la liste de tri
                 list_sort.append(food_list)
 
-            print(len(list_sort))
             index = -1
 
             # On parcours la liste d'aliment qui peut potentiellement contenir
@@ -169,8 +170,9 @@ def delete_duplicates():
 
                 # Si l'aliment actuel n'est pas dans la liste temporaire on
                 # l'ajoute
-                if x[0] not in temp:
-                    temp.append(x[0])
+                if x[0].lower() not in temp and x[0].lower() not in all_temp:
+                    temp.append(x[0].lower())
+                    all_temp.append(x[0].lower())
 
                 # Si l'aliment actuel est déjà dans la liste temporaire cela
                 # veut dire que l'aliment actuel est un doublon, donc on le
@@ -182,13 +184,12 @@ def delete_duplicates():
             # On ajoute le nom de la catégorie actuel ainsi que tout ses aliments
             # triés dans un dictionnaire
             dico[cat] = list_sort
-            print(len(list_sort))
 
             # On vide le contenu des deux listes pour pouvoir refaire la même
             # opération pour la catégorie suivante
             list_sort = []
             temp = []
-
+    all_temp = []
 
     with open(food_file, "w") as file:
         json.dump(dico, file, indent=4, ensure_ascii=False)
