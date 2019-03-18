@@ -132,3 +132,63 @@ def push_data(db):
             values = values.format(al_na, al_ca, al_nu, al_no, al_sh, al_li)
             db.insert_data("pb_aliments", ali_champs, values)
             time.sleep(0.2)
+
+
+def delete_duplicates():
+    """ Fonction de tri de données. Supprime les doublons présent dans un fichier
+    .json"""
+
+    directory = os.path.dirname(__file__)
+    folder = "../ressources/"
+    food_file = os.path.join(directory, folder, "all.json")
+
+    list_sort = []
+    temp = []
+    dico = {}
+
+    name_cate = ["boissons", "fruits", "legumes-et-derives", "produits-laitiers",
+    "poissons", "viandes", "desserts", "cereales-et-derives"]
+
+    with open(food_file, "r") as file:
+        data = json.load(file)
+
+        # On parcours chaque catégories d'aliments
+        for cat in name_cate:
+
+            for food_list in data[cat]:
+                # Chaque aliment de la catégorie est ajouter a la liste de tri
+                list_sort.append(food_list)
+
+            print(len(list_sort))
+            index = -1
+
+            # On parcours la liste d'aliment qui peut potentiellement contenir
+            # des doublons
+            for x in list_sort[:]:
+                index += 1
+
+                # Si l'aliment actuel n'est pas dans la liste temporaire on
+                # l'ajoute
+                if x[0] not in temp:
+                    temp.append(x[0])
+
+                # Si l'aliment actuel est déjà dans la liste temporaire cela
+                # veut dire que l'aliment actuel est un doublon, donc on le
+                # supprime de sa liste grâce à son index
+                else:
+                    del(list_sort[index])
+                    index -= 1
+
+            # On ajoute le nom de la catégorie actuel ainsi que tout ses aliments
+            # triés dans un dictionnaire
+            dico[cat] = list_sort
+            print(len(list_sort))
+
+            # On vide le contenu des deux listes pour pouvoir refaire la même
+            # opération pour la catégorie suivante
+            list_sort = []
+            temp = []
+
+
+    with open(food_file, "w") as file:
+        json.dump(dico, file, indent=4, ensure_ascii=False)
