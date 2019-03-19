@@ -1,7 +1,6 @@
 #! /usr/bin python3
 # conding: utf-8
 
-API = "https://fr.openfoodfacts.org/cgi/search.pl"
 
 # -----------------------DataBase----------------------------------------------
 HOST = "192.168.1.13"
@@ -13,8 +12,8 @@ FOODFILE = "../ressources/all.json"
 
 USERCHOICE = ">>> "
 
-CATEGORIES = ["boissons", "fruits", "legumes-et-derives", "produits-laitiers",
-"poissons", "viandes", "desserts", "cereales-et-derives"]
+CATEGORIES = ["boissons", "cereales-et-derives", "desserts", "fruits",
+"legumes-et-derives", "poissons", "produits-laitiers", "viandes"]
 
 QUESTIONS = {
     1: "Quel aliment souhaitez-vous remplacer ?",
@@ -28,3 +27,10 @@ QUESTIONS = {
 
 REP1 = ["1", "2"]
 REP = ["o", "O", "n", "N"]
+
+INFOS_GN = "\tClassification NOVA pour la transformation des aliments;\n\
+Une classification en 4 groupes pour mettre en évidence le degré de transformation des aliments\n\
+Groupe 1 - Aliments non transformés ou transformés minimalement\n\
+Groupe 2 - Ingrédients culinaires transformés\n\
+Groupe 3 - Aliments transformés\n\
+Groupe 4 - Produits alimentaires et boissons ultra-transformés"

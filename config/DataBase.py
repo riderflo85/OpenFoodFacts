@@ -27,29 +27,34 @@ class DataBase():
         self.__execute(req)
         self.__commit()
 
-    def select_data(self, donnees, table, where, cond, join, *args):
-        if where is None and cond is None and join is False:
-            req = "SELECT {} FROM {}".format(donnees, table)
-            self.__execute(req)
-            self.colect_data = self.cursor.fetchall()
+    def select_simple(self, data, table):
+        req = "SELECT {} FROM {}".format(data, table)
+        self.__execute(req)
+        self.colect_data = self.cursor.fetchall()
 
-        elif where is None and cond is None and join:
-            req = "SELECT {} from {} inner join {} on {}={};"
-            req = req.format(donnees, table, *args)
-            self.__execute(req)
-            self.colect_data = self.cursor.fetchall()
+    def select_join(self, data, table, *args):
+        req = "SELECT {} FROM {} INNER JOIN {} ON {}={};"
+        req = req.format(data, table, *args)
+        self.__execute(req)
+        self.colect_data = self.cursor.fetchall()
 
-        elif join:
-            req = "SELECT {} from {} inner join {} on {}={} where {}={};"
-            req = req.format(donnees, table, *args, where, cond)
-            self.__execute(req)
-            self.colect_data = self.cursor.fetchall()
+    def select_where(self, data, table, where, cond):
+        req = "SELECT {} FROM {} WHERE {} = '{}'"
+        req = req.format(data, table, where, cond)
+        self.__execute(req)
+        self.colect_data = self.cursor.fetchall()
 
-        else:
-            req = "SELECT {} FROM {} WHERE {} = '{}'"
-            req = req.format(donnees, table, where, cond)
-            self.__execute(req)
-            self.colect_data = self.cursor.fetchall()
+    def select_where_join(self, data, table, where, cond, *args):
+        req = "SELECT {} FROM {} INNER JOIN {} ON {}={} WHERE {}={};"
+        req = req.format(data, table, *args, where, cond)
+        self.__execute(req)
+        self.colect_data = self.cursor.fetchall()
+    
+    def select_where_and(self, data, table, where, cond, c1, v1, c2, v2):
+        req = "SELECT {} FROM {} WHERE {}='{}' AND {}<{} AND {}<{};"
+        req = req.format(data, table, where, cond, c1, v1, c2, v2)
+        self.__execute(req)
+        self.colect_data = self.cursor.fecthall()
 
     def close(self):
         self.conn.close()

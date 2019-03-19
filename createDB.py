@@ -36,7 +36,6 @@ def main():
     db.connexion(const.HOST, const.USER, const.PWD)
     fonc.pull_data()
     fonc.delete_duplicates()
-    fonc.delete_duplicates()
     fonc.push_data(db)
     db.close()
 

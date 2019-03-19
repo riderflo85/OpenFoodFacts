@@ -37,16 +37,16 @@ def main():
 
             if user.rep == "1":
                 user.sign_in(db)
-                db.select_data("id_aliments", "pb_aliments", "aliment_name",
-                    db.result, join=False)
+                db.select_where("id_aliments", "pb_aliments", "aliment_name",
+                    db.result)
                 db.insert_data("pb_favoris", "favoris_aliment",
                     db.colect_data[0][0])
                 print("\nEnregistrement réussi")
 
             elif user.rep == "2":
                 user.sign_up(db)
-                db.select_data("id_aliments", "pb_aliments", "aliment_name",
-                    db.result, join=False)
+                db.select_where("id_aliments", "pb_aliments", "aliment_name",
+                    db.result)
                 db.insert_data("pb_favoris", "favoris_aliment",
                     db.colect_data[0][0])
                 print("\nEnregistrement réussi")
@@ -63,7 +63,7 @@ def main():
         print("\nAliment chercher:  ")
         # Afficher les aliments cherchés
         arg = ["pb_favoris", "id_aliments", "favoris_aliment"]
-        db.select_data("aliment_name", "pb_aliments", None, None, True, *arg)
+        db.select_join("aliment_name", "pb_aliments", *arg)
         print(db.colect_data[0][0])
 
         print("\nSubstitut enregistrés:  ")

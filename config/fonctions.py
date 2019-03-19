@@ -5,6 +5,7 @@ import json
 import requests
 import os
 import mysql.connector
+import random
 
 # My module
 from . import constants as const
@@ -24,12 +25,14 @@ def check(user, cond):
 def search(user, db):
 
     cond = []
-    db.select_data("*", "pb_categories", where=None, cond=None, join=False)
+    db.select_simple("*", "pb_categories")
     print("\nSélectionnez une catégorie :\n")
 
+    nb = 0
     for x in db.colect_data:
-        print("{} - {}".format(x[0], x[1]))
-        cond.append(str(x[0]))
+        nb += 1
+        print("{} - {}".format(nb, x[1]))
+        cond.append(str(nb))
 
     user.choice()
     check(user, cond)
@@ -37,28 +40,40 @@ def search(user, db):
     print("\nSélectionnez un aliment :\n")
     foo = int(user.rep)-1
     done = db.colect_data[foo][1]
-    db.select_data("aliment_name", "pb_aliments", "aliment_categorie",
-        done, False)
-    nb = 0
+    db.select_where("aliment_name", "pb_aliments", "aliment_categorie",
+        done)
 
-    for x in db.colect_data:
+    cond.clear()
+    choice = []
+    nb = 0
+    nb_choice = 0
+
+    while nb_choice <= 19:
+        choice.append(random.choice(db.colect_data))
+        nb_choice += 1
+
+    for x in choice:
         nb += 1
         print("{} - {}".format(nb, x[0]))
-        cond.append(nb)
+        cond.append(str(nb))
 
     user.choice()
     check(user, cond)
 
-    data = "aliment_name, aliment_shop, aliment_link"
+    data = "aliment_name, aliment_nutrition, aliment_nova_group, aliment_shop\
+, aliment_link"
     where = "aliment_name"
     foo = int(user.rep)-1
-    done = db.colect_data[foo][0]
+    value = choice[foo][0]
 
-    db.select_data(data, "pb_aliments", where, done, False)
+    db.select_where(data, "pb_aliments", where, value)
     print("\nAliment sélectionnez : {}".format(db.colect_data[0][0]))
     db.result = db.colect_data[0][0]
-    print("\nBoutique : {}".format(db.colect_data[0][1]))
-    print("\nLien internet : {}\n".format(db.colect_data[0][2]))
+    print("\nGrade nutritionnel : {}".format(db.colect_data[0][1]))
+    print("\n" + const.INFOS_GN)
+    print("\nGroupe nova : {}".format(db.colect_data[0][2]))
+    print("\nBoutique : {}".format(db.colect_data[0][3]))
+    print("\nLien internet : {}\n".format(db.colect_data[0][4]))
 
 
 def end(user):
@@ -87,7 +102,7 @@ def pull_data():
         my_list = []
         print(cat)
 
-        while page <= 30:
+        while page <= 10:
             api = "https://fr.openfoodfacts.org/categorie/{}/{}"
             api = api.format(cat, str(page))
             payload = {"json": 1}
