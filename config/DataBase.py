@@ -51,10 +51,10 @@ class DataBase():
         self.colect_data = self.cursor.fetchall()
     
     def select_where_and(self, data, table, where, cond, c1, v1, c2, v2):
-        req = "SELECT {} FROM {} WHERE {}='{}' AND {}<{} AND {}<{};"
+        req = "SELECT {} FROM {} WHERE {}='{}' AND {} < '{}' AND {} < {};"
         req = req.format(data, table, where, cond, c1, v1, c2, v2)
         self.__execute(req)
-        self.colect_data = self.cursor.fecthall()
+        self.colect_data = self.cursor.fetchall()
 
     def close(self):
         self.conn.close()

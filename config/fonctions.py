@@ -40,6 +40,7 @@ def search(user, db):
     print("\nSélectionnez un aliment :\n")
     foo = int(user.rep)-1
     done = db.colect_data[foo][1]
+    db.result = db.colect_data[foo][1]
     db.select_where("aliment_name", "pb_aliments", "aliment_categorie",
         done)
 
@@ -68,9 +69,8 @@ def search(user, db):
 
     db.select_where(data, "pb_aliments", where, value)
     print("\nAliment sélectionnez : {}".format(db.colect_data[0][0]))
-    db.result = db.colect_data[0][0]
-    print("\nGrade nutritionnel : {}".format(db.colect_data[0][1]))
     print("\n" + const.INFOS_GN)
+    print("\nGrade nutritionnel : {}".format(db.colect_data[0][1]))
     print("\nGroupe nova : {}".format(db.colect_data[0][2]))
     print("\nBoutique : {}".format(db.colect_data[0][3]))
     print("\nLien internet : {}\n".format(db.colect_data[0][4]))
@@ -234,3 +234,18 @@ def delete_duplicates():
 
     with open(food_file, "w") as file:
         json.dump(dico, file, indent=4, ensure_ascii=False)
+
+def substitute(db):
+    data = "aliment_name, aliment_nutrition, aliment_nova_group, aliment_shop\
+, aliment_link"
+    table = "pb_aliments"
+    where = "aliment_categorie"
+    value = db.result
+    crit1 = "aliment_nutrition"
+    val1 = "c"
+    ctri2 = "aliment_nova_group"
+    val2 = "2"
+    db.select_where_and(data, table, where, value, crit1, val1, ctri2, val2)
+
+    result = db.colect_data
+    print(result)

@@ -25,6 +25,8 @@ def main():
 
     if user.rep == "1":
         fonc.search(user, db)
+        fonc.substitute(db)
+
         print(const.QUESTIONS[5])
         user.choice()
         fonc.check(user, const.REP)
@@ -67,7 +69,7 @@ def main():
         print(db.colect_data[0][0])
 
         print("\nSubstitut enregistrés:  ")
-        # Afficher les substituts enregistrés
+        # Affiche les substituts enregistrés
 
         if fonc.end(user):
             main()
