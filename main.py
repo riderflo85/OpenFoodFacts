@@ -22,7 +22,6 @@ fonc.check(user, const.REP1)
 
 
 def main():
-
     if user.rep == "1":
         fonc.search(user, db)
         fonc.substitute(db)

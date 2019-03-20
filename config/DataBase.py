@@ -39,7 +39,7 @@ class DataBase():
         self.colect_data = self.cursor.fetchall()
 
     def select_where(self, data, table, where, cond):
-        req = "SELECT {} FROM {} WHERE {} = '{}'"
+        req = "SELECT {} FROM {} WHERE {} = \"{}\""
         req = req.format(data, table, where, cond)
         self.__execute(req)
         self.colect_data = self.cursor.fetchall()

@@ -11,87 +11,7 @@ import random
 from . import constants as const
 
 
-def check(user, cond):
-
-    if user.rep in cond:
-        pass
-
-    else:
-        print("Mauvaise réponse")
-        user.choice()
-        check(user, cond)
-
-
-def search(user, db):
-
-    cond = []
-    db.select_simple("*", "pb_categories")
-    print("\nSélectionnez une catégorie :\n")
-
-    nb = 0
-    for x in db.colect_data:
-        nb += 1
-        print("{} - {}".format(nb, x[1]))
-        cond.append(str(nb))
-
-    user.choice()
-    check(user, cond)
-
-    print("\nSélectionnez un aliment :\n")
-    foo = int(user.rep)-1
-    done = db.colect_data[foo][1]
-    db.result = db.colect_data[foo][1]
-    db.select_where("aliment_name", "pb_aliments", "aliment_categorie",
-        done)
-
-    cond.clear()
-    food = set()
-    nb = 0
-    nb_choice = 0
-
-    while len(food) <= 19:
-        food.add(random.choice(db.colect_data))
-
-    for x in food:
-        nb += 1
-        print("{} - {}".format(nb, x[0]))
-        cond.append(str(nb))
-
-    user.choice()
-    check(user, cond)
-
-    data = "aliment_name, aliment_nutrition, aliment_nova_group, aliment_shop\
-, aliment_link"
-    where = "aliment_name"
-    food = list(food)
-    index = int(user.rep)-1
-    value = food[index][0]
-
-    db.select_where(data, "pb_aliments", where, value)
-    print("\nAliment sélectionnez : {}".format(db.colect_data[0][0]))
-    print("\n" + const.INFOS_GN)
-    print("\nGrade nutritionnel : {}".format(db.colect_data[0][1]))
-    print("\nGroupe nova : {}".format(db.colect_data[0][2]))
-    print("\nBoutique : {}".format(db.colect_data[0][3]))
-    print("\nLien internet : {}\n".format(db.colect_data[0][4]))
-
-
-def end(user):
-
-    print("\nChoisissez une option: [1 ou 2]\n")
-    print("1- {}\n2- {}".format(const.QUESTIONS[6], const.QUESTIONS[7]))
-    user.choice()
-    check(user, const.REP1)
-
-    if user.rep == "1":
-        return True
-
-    else:
-        return False
-
-
 def pull_data():
-
     directory = os.path.dirname(__file__)
     folder = "../ressources/"
     food_file = os.path.join(directory, folder, "all.json")
@@ -135,46 +55,7 @@ def pull_data():
         json.dump(dico, file, indent=4, ensure_ascii=False)
 
 
-def push_data(db):
-
-    directory = os.path.dirname(__file__)
-    folder = "../ressources/"
-    food_file = os.path.join(directory, folder, "all.json")
-
-    with open(food_file, "r") as file:
-        data = json.load(file)
-
-    print("\n---------- Transfert des données en cours ----------\n")
-    print("-> Ceci peut prendre plusieurs minutes, merci de patienter")
-
-    for foo in data:
-        categories = foo
-        values = "'{}'".format(foo)
-        db.insert_data("pb_categories", "categorie_name", values)
-
-        for x in data[categories]:
-            al_na = x[0]
-            al_ca = categories
-            al_nu = str(x[1])
-            al_no = x[2]
-            al_sh = x[3]
-            al_li = x[4]
-            ali_champs = "aliment_name, aliment_categorie, aliment_nutrition,\
- aliment_nova_group, aliment_shop, aliment_link"
-            values = "\"{}\",\"{}\",\"{}\",\"{}\",\"{}\",\"{}\""
-            values = values.format(al_na, al_ca, al_nu, al_no, al_sh, al_li)
-
-            try:
-                db.insert_data("pb_aliments", ali_champs, values)
-
-            except mysql.connector.errors.IntegrityError:
-                pass
-
-    print("\n---------- Transfert terminé ------------------\n")
-
-
 def delete_duplicates():
-
     """ Fonction de tri de données. Supprime les doublons présent dans un fichier
     .json"""
 
@@ -235,6 +116,107 @@ def delete_duplicates():
     with open(food_file, "w") as file:
         json.dump(dico, file, indent=4, ensure_ascii=False)
 
+
+def push_data(db):
+    directory = os.path.dirname(__file__)
+    folder = "../ressources/"
+    food_file = os.path.join(directory, folder, "all.json")
+
+    with open(food_file, "r") as file:
+        data = json.load(file)
+
+    print("\n---------- Transfert des données en cours ----------\n")
+    print("-> Ceci peut prendre plusieurs minutes, merci de patienter")
+
+    for foo in data:
+        categories = foo
+        values = "'{}'".format(foo)
+        db.insert_data("pb_categories", "categorie_name", values)
+
+        for x in data[categories]:
+            al_na = x[0]
+            al_ca = categories
+            al_nu = str(x[1])
+            al_no = x[2]
+            al_sh = x[3]
+            al_li = x[4]
+            ali_champs = "aliment_name, aliment_categorie, aliment_nutrition,\
+ aliment_nova_group, aliment_shop, aliment_link"
+            values = "\"{}\",\"{}\",\"{}\",\"{}\",\"{}\",\"{}\""
+            values = values.format(al_na, al_ca, al_nu, al_no, al_sh, al_li)
+
+            try:
+                db.insert_data("pb_aliments", ali_champs, values)
+
+            except mysql.connector.errors.IntegrityError:
+                pass
+
+    print("\n---------- Transfert terminé ------------------\n")
+
+
+def check(user, cond):
+    if user.rep in cond:
+        pass
+
+    else:
+        print("Mauvaise réponse")
+        user.choice()
+        check(user, cond)
+
+
+def search(user, db):
+    cond = []
+    db.select_simple("*", "pb_categories")
+    print("\nSélectionnez une catégorie :\n")
+
+    nb = 0
+    for x in db.colect_data:
+        nb += 1
+        print("{} - {}".format(nb, x[1]))
+        cond.append(str(nb))
+
+    user.choice()
+    check(user, cond)
+
+    print("\nSélectionnez un aliment :\n")
+    foo = int(user.rep)-1
+    done = db.colect_data[foo][1]
+    db.result = db.colect_data[foo][1]
+    db.select_where("aliment_name", "pb_aliments", "aliment_categorie",
+        done)
+
+    cond.clear()
+    food = set()
+    nb = 0
+    nb_choice = 0
+
+    while len(food) <= 19:
+        food.add(random.choice(db.colect_data))
+
+    for x in food:
+        nb += 1
+        print("{} - {}".format(nb, x[0]))
+        cond.append(str(nb))
+
+    user.choice()
+    check(user, cond)
+
+    data = "aliment_name, aliment_nutrition, aliment_nova_group, aliment_shop\
+, aliment_link"
+    where = "aliment_name"
+    food = list(food)
+    index = int(user.rep)-1
+    value = food[index][0]
+
+    db.select_where(data, "pb_aliments", where, value)
+    print("\nAliment sélectionnez : {}".format(db.colect_data[0][0]))
+    print("\n" + const.INFOS_GN)
+    print("\nGrade nutritionnel : {}".format(db.colect_data[0][1]))
+    print("\nGroupe nova : {}".format(db.colect_data[0][2]))
+    print("\nBoutique : {}".format(db.colect_data[0][3]))
+    print("\nLien internet : {}\n".format(db.colect_data[0][4]))
+
+
 def substitute(db):
     data = "aliment_name, aliment_nutrition, aliment_nova_group, aliment_shop\
 , aliment_link"
@@ -255,4 +237,16 @@ def substitute(db):
     print("\nGroupe nova : {}".format(result[2]))
     print("\nBoutique : {}".format(result[3]))
     print("\nLien internet : {}\n".format(result[4]))
-    
+
+
+def end(user):
+    print("\nChoisissez une option: [1 ou 2]\n")
+    print("1- {}\n2- {}".format(const.QUESTIONS[6], const.QUESTIONS[7]))
+    user.choice()
+    check(user, const.REP1)
+
+    if user.rep == "1":
+        return True
+
+    else:
+        return False
