@@ -131,7 +131,7 @@ def push_data(db):
     for foo in data:
         categories = foo
         values = "'{}'".format(foo)
-        db.insert_data("pb_categories", "categorie_name", values)
+        db.insert_data(True, "pb_categories", "categorie_name", values)
 
         for x in data[categories]:
             al_na = x[0]
@@ -146,7 +146,7 @@ def push_data(db):
             values = values.format(al_na, al_ca, al_nu, al_no, al_sh, al_li)
 
             try:
-                db.insert_data("pb_aliments", ali_champs, values)
+                db.insert_data(True, "pb_aliments", ali_champs, values)
 
             except mysql.connector.errors.IntegrityError:
                 pass
@@ -209,6 +209,7 @@ def search(user, db):
     value = food[index][0]
 
     db.select_where(data, "pb_aliments", where, value)
+    db.food_search = db.colect_data[0][0]
     print("\nAliment sélectionnez : {}".format(db.colect_data[0][0]))
     print("\n" + const.INFOS_GN)
     print("\nGrade nutritionnel : {}".format(db.colect_data[0][1]))
@@ -230,6 +231,7 @@ def substitute(db):
     db.select_where_and(data, table, where, value, crit1, val1, ctri2, val2)
 
     result = random.choice(db.colect_data)
+    db.substi = result[0]
 
     print("\nVoici un substitut que nous pouvons vous proposez: ")
     print("\n{}".format(result[0]))
@@ -237,6 +239,28 @@ def substitute(db):
     print("\nGroupe nova : {}".format(result[2]))
     print("\nBoutique : {}".format(result[3]))
     print("\nLien internet : {}\n".format(result[4]))
+
+
+def save(db, user):
+    data = "id_aliments"
+    table1 = "pb_aliments"
+    where = "aliment_name"
+    db.union(data, table1, where, db.food_search,
+    data, table1, where, db.substi)
+
+    table2 = "pb_favoris"
+    column = "favoris_aliment, favoris_subtitute"
+    values1 = "'{}', '{}'".format(int(db.colect_data[0][0]), int(db.colect_data[1][0]))
+
+    db.insert_data(True, table2, column, values1)
+
+    db.union("user_favoris", "pb_users", "user_name", user,
+    "id_favoris", "pb_favoris", "favoris_aliment", int(db.colect_data[0][0]))
+    id_favoris = db.colect_data[1][0]
+    user_favoris = db.colect_data[0][0]+","+str(id_favoris)
+
+    db.update("pb_users", "user_favoris", user_favoris, "user_name", user)
+    print("\nEnregistrement réussi")
 
 
 def end(user):

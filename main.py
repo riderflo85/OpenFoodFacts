@@ -38,19 +38,11 @@ def main():
 
             if user.rep == "1":
                 user.sign_in(db)
-                db.select_where("id_aliments", "pb_aliments", "aliment_name",
-                    db.result)
-                db.insert_data("pb_favoris", "favoris_aliment",
-                    db.colect_data[0][0])
-                print("\nEnregistrement réussi")
+                fonc.save(db, user.current_user)
 
             elif user.rep == "2":
                 user.sign_up(db)
-                db.select_where("id_aliments", "pb_aliments", "aliment_name",
-                    db.result)
-                db.insert_data("pb_favoris", "favoris_aliment",
-                    db.colect_data[0][0])
-                print("\nEnregistrement réussi")
+                fonc.save(db, user.current_user)
 
         if fonc.end(user):
             main()
@@ -62,8 +54,8 @@ def main():
     elif user.rep == "2":
         user.sign_in(db)
 
-        arg = ["pb_favoris", "id_aliments", "favoris_aliment"]
         data = "aliment_name, aliment_link"
+        arg = ["pb_favoris", "id_aliments", "favoris_aliment"]
         db.select_join(data, "pb_aliments", *arg)
         result_name = []
         result_link = []

@@ -12,6 +12,8 @@ class DataBase():
         self.cursor = None
         self.colect_data = None
         self.result = None
+        self.food_search = None
+        self.substi = None
 
     def connexion(self, host, user, passwd):
         self.conn = mysql.connector.connect(
@@ -22,10 +24,16 @@ class DataBase():
         )
         self.cursor = self.conn.cursor()
 
-    def insert_data(self, *args):
-        req = "INSERT INTO {} ({}) VALUES ({});".format(*args)
-        self.__execute(req)
-        self.__commit()
+    def insert_data(self, one, *args):
+        if one:
+            req = "INSERT INTO {} ({}) VALUES ({});".format(*args)
+            self.__execute(req)
+            self.__commit()
+
+        else:
+            req = "INSERT INTO {} ({}) VALUES ({}), ({});".format(*args)
+            self.__execute(req)
+            self.__commit()
 
     def select_simple(self, data, table):
         req = "SELECT {} FROM {}".format(data, table)
@@ -55,6 +63,21 @@ class DataBase():
         req = req.format(data, table, where, cond, c1, v1, c2, v2)
         self.__execute(req)
         self.colect_data = self.cursor.fetchall()
+    
+    def union(self, d1, t1, w1, cond1, d2, t2, w2, cond2):
+        req1 = "SELECT {} FROM {} WHERE {} = \"{}\" UNION "
+        req1 = req1.format(d1, t1, w1, cond1)
+        req2 = "SELECT {} FROM {} WHERE {} = \"{}\";"
+        req2 = req2.format(d2, t2, w2, cond2)
+        req = req1+req2
+        self.__execute(req)
+        self.colect_data = self.cursor.fetchall()
+
+    def update(self, table, column, data, where, cond):
+        req = "UPDATE {} SET {} = '{}' WHERE {} = '{}';"
+        req = req.format(table, column, data, where, cond)
+        self.__execute(req)
+        self.__commit()
 
     def close(self):
         self.conn.close()

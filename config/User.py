@@ -13,6 +13,7 @@ class User():
         self.passwd = None
         self.rep = None
         self.tent = 0
+        self.current_user = None
 
     def choice(self):
         self.rep = input(self.select)
@@ -24,6 +25,7 @@ class User():
         db.select_where("user_name", "pb_users", "user_name", self.rep)
 
         if db.colect_data[0][0] == self.rep:
+            self.current_user = db.colect_data[0][0]
             print("Identifiant correct,")
             print("merci de renseignez votre mot de passe:")
 
@@ -45,7 +47,9 @@ class User():
 
             if self.__password(db, create=True):
                 values = "'{}', '{}'".format(self.rep, self.passwd)
-                db.insert_data("pb_users", "user_name, user_passwd", values)
+                self.current_user = self.rep
+                db.insert_data(True, "pb_users", "user_name, user_passwd",
+                    values)
                 print("Identifiant créez avec succès :-)")
 
         else:
