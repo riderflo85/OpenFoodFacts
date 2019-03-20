@@ -45,15 +45,14 @@ def search(user, db):
         done)
 
     cond.clear()
-    choice = []
+    food = set()
     nb = 0
     nb_choice = 0
 
-    while nb_choice <= 19:
-        choice.append(random.choice(db.colect_data))
-        nb_choice += 1
+    while len(food) <= 19:
+        food.add(random.choice(db.colect_data))
 
-    for x in choice:
+    for x in food:
         nb += 1
         print("{} - {}".format(nb, x[0]))
         cond.append(str(nb))
@@ -64,8 +63,9 @@ def search(user, db):
     data = "aliment_name, aliment_nutrition, aliment_nova_group, aliment_shop\
 , aliment_link"
     where = "aliment_name"
-    foo = int(user.rep)-1
-    value = choice[foo][0]
+    food = list(food)
+    index = int(user.rep)-1
+    value = food[index][0]
 
     db.select_where(data, "pb_aliments", where, value)
     print("\nAliment sélectionnez : {}".format(db.colect_data[0][0]))
@@ -247,5 +247,12 @@ def substitute(db):
     val2 = "2"
     db.select_where_and(data, table, where, value, crit1, val1, ctri2, val2)
 
-    result = db.colect_data
-    print(result)
+    result = random.choice(db.colect_data)
+
+    print("\nVoici un substitut que nous pouvons vous proposez: ")
+    print("\n{}".format(result[0]))
+    print("\nGrade nutritionnel : {}".format(result[1]))
+    print("\nGroupe nova : {}".format(result[2]))
+    print("\nBoutique : {}".format(result[3]))
+    print("\nLien internet : {}\n".format(result[4]))
+    

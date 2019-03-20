@@ -21,7 +21,7 @@ class User():
     def sign_in(self, db):
         print("\nVeuillez renseigner votre identifiant: ")
         self.choice()
-        db.select_data("user_name", "pb_users", "user_name", self.rep, False)
+        db.select_where("user_name", "pb_users", "user_name", self.rep)
 
         if db.colect_data[0][0] == self.rep:
             print("Identifiant correct,")
@@ -37,7 +37,7 @@ class User():
     def sign_up(self, db):
         print("\nVeuillez renseigner un identifiant pour votre compte: ")
         self.choice()
-        db.select_data("user_name", "pb_users", "user_name", self.rep, False)
+        db.select_where("user_name", "pb_users", "user_name", self.rep)
 
         if db.colect_data == []:
             print("Identifiant libre,")
@@ -66,8 +66,7 @@ class User():
 
         else:
             pwd = getpass()
-            db.select_data("user_passwd", "pb_users", "user_name",
-                self.rep, False)
+            db.select_where("user_passwd", "pb_users", "user_name", self.rep)
 
             if pbkdf2_sha256.verify(pwd, db.colect_data[0][0]):
                 return True

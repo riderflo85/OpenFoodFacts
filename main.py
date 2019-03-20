@@ -62,11 +62,20 @@ def main():
 
     elif user.rep == "2":
         user.sign_in(db)
-        print("\nAliment chercher:  ")
-        # Afficher les aliments cherchés
+
         arg = ["pb_favoris", "id_aliments", "favoris_aliment"]
-        db.select_join("aliment_name", "pb_aliments", *arg)
-        print(db.colect_data[0][0])
+        data = "aliment_name, aliment_link"
+        db.select_join(data, "pb_aliments", *arg)
+        result_name = []
+        result_link = []
+
+        for x in db.colect_data:
+            result_name.append(x[0])
+            result_link.append(x[1])
+
+        print("\n\tAliment chercher:  \n")
+        print("Nom des aliments: \n{}\n".format(result_name))
+        print("Lien internet pour plus d'infos: \n{}\n".format(result_link))
 
         print("\nSubstitut enregistrés:  ")
         # Affiche les substituts enregistrés
