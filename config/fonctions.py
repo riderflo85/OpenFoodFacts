@@ -12,6 +12,8 @@ from . import constants as const
 
 
 def pull_data():
+    """Fonction qui récupère des données de OpenFoodFacts grace à leur API"""
+
     directory = os.path.dirname(__file__)
     folder = "../ressources/"
     food_file = os.path.join(directory, folder, "all.json")
@@ -29,12 +31,14 @@ def pull_data():
             r = requests.get(url=api, params=payload)
             print(r.url)
 
+            # Test si la réponse de l'API peut être encoder en JSON
             try:
                 rep = r.json()
 
             except json.decoder.JSONDecodeError:
                 pass
 
+            # Parcour la réponse de l'API et récupère certaine données
             for x in rep["products"]:
                 try:
                     pn = x["product_name_fr"].replace("\n", " ")
@@ -51,6 +55,7 @@ def pull_data():
 
             page += 1
 
+    # Enregistre les données récoltées dans un fichier .JSON
     with open(food_file, "w") as file:
         json.dump(dico, file, indent=4, ensure_ascii=False)
 
@@ -118,21 +123,28 @@ def delete_duplicates():
 
 
 def push_data(db):
+    """Fonction qui envoi les données dans la base de données"""
+
     directory = os.path.dirname(__file__)
     folder = "../ressources/"
     food_file = os.path.join(directory, folder, "all.json")
 
+    # Ouvre le fichier JSON en lecture pour pouvoir traité les données
     with open(food_file, "r") as file:
         data = json.load(file)
 
     print("\n---------- Transfert des données en cours ----------\n")
     print("-> Ceci peut prendre plusieurs minutes, merci de patienter")
 
+    # Parcours toute les catégories dans le JSON et les enregristres
+    # dans la base de données
     for foo in data:
         categories = foo
         values = "'{}'".format(foo)
         db.insert_data("pb_categories", "categorie_name", values)
 
+        # Parcours les aliments et leurs attributs de chaque catégorie et les
+        # enregistres dans la base de donnée
         for x in data[categories]:
             al_na = x[0]
             al_ca = categories
@@ -155,9 +167,14 @@ def push_data(db):
 
 
 def check(user, cond):
+    """Fonction qui permet de vérifier si l'utilisateur écris une réponse
+    correct ou non"""
+
     if user.rep in cond:
         pass
 
+    # Si la réponse est pas bonne, le fonction s'execute de nouveau
+    # (récursivité)
     else:
         print("Mauvaise réponse")
         user.choice()
@@ -165,7 +182,11 @@ def check(user, cond):
 
 
 def search(user, db):
+    """Fonction qui execute la recherche et l'affichage d'aliments contenus dans
+    la base de données"""
+
     cond = []
+    # Recherche et affiche toute les catégories d'aliments
     db.select_simple("*", "pb_categories")
     print("\nSélectionnez une catégorie :\n")
 
@@ -182,6 +203,7 @@ def search(user, db):
     foo = int(user.rep)-1
     done = db.colect_data[foo][1]
     db.result = db.colect_data[foo][1]
+    # Sélectionne tout les produits de la catégories précédement sélectionné
     db.select_where("aliment_name", "pb_aliments", "aliment_categorie",
         done)
 
@@ -190,6 +212,7 @@ def search(user, db):
     nb = 0
     nb_choice = 0
 
+    # Boucle qui permet de piocher 20 produits au hasard
     while len(food) <= 19:
         food.add(random.choice(db.colect_data))
 
@@ -210,6 +233,7 @@ def search(user, db):
 
     db.select_where(data, "pb_aliments", where, value)
     db.food_search = db.colect_data[0][0]
+    # Affichage des informations de l'aliments précédement sélectionné
     print("\nAliment sélectionnez : {}".format(db.colect_data[0][0]))
     print("\n" + const.INFOS_GN)
     print("\nGrade nutritionnel : {}".format(db.colect_data[0][1]))
@@ -219,6 +243,8 @@ def search(user, db):
 
 
 def substitute(db):
+    """Fonction qui propose un substitut en fonction de plusieurs critères"""
+
     data = "aliment_name, aliment_nutrition, aliment_nova_group, aliment_shop\
 , aliment_link"
     table = "pb_aliments"
@@ -242,6 +268,8 @@ def substitute(db):
 
 
 def save(db, user):
+    """Fonction qui enregistre la recherche ainsi que le substitut"""
+
     data = "id_aliments"
     table1 = "pb_aliments"
     where = "aliment_name"
@@ -260,6 +288,9 @@ def save(db, user):
 
 
 def end(user):
+    """Fonction qui permet de déterminer si l'utilisateur veut quittez le
+    programme ou non"""
+
     print("\nChoisissez une option: [1 ou 2]\n")
     print("1- {}\n2- {}".format(const.QUESTIONS[6], const.QUESTIONS[7]))
     user.choice()

@@ -7,8 +7,11 @@ from getpass import getpass
 
 
 class User():
+    """Classe utilisateur"""
 
     def __init__(self, select):
+        """Constructeur qui définit des varaibles d'initialisation"""
+
         self.select = select
         self.passwd = None
         self.rep = None
@@ -17,19 +20,27 @@ class User():
         self.user_id = None
 
     def choice(self):
+        """Fonction qui demande a l'utilisateur de saisir une réponse"""
+
         self.rep = input(self.select)
         return self.rep
 
     def sign_in(self, db):
+        """Fonction qui permet à l'utilisateur de pouvoir se connecter à
+        son compte"""
+
         print("\nVeuillez renseigner votre identifiant: ")
         self.choice()
         db.select_where("user_name", "pb_users", "user_name", self.rep)
 
+        # Vérifie si l'identifiant est présent dans la base de données
         if db.colect_data[0][0] == self.rep:
             self.current_user = db.colect_data[0][0]
             print("Identifiant correct,")
             print("merci de renseignez votre mot de passe:")
 
+            # Compare le mot de passe saisi ainsi que le mot de passe
+            # enregistrer dans la base de données
             if self.__password(db, create=False):
                 db.select_where("id_users", "pb_users", "user_name",
                     self.current_user)
@@ -41,6 +52,9 @@ class User():
             self.sign_in(db)
 
     def sign_up(self, db):
+        """Fonction qui permet à l'utilisateur de pouvoir se créer un
+        compte"""
+
         print("\nVeuillez renseigner un identifiant pour votre compte: ")
         self.choice()
         db.select_where("user_name", "pb_users", "user_name", self.rep)
@@ -63,6 +77,9 @@ class User():
             self.sign_up(db)
 
     def __password(self, db, create):
+        """Fonction protégée qui demande de saisir un mot de passe et
+        le hash"""
+
         if create:
             pwd = getpass()
             hashed = pbkdf2_sha256.hash(pwd)
