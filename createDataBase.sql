@@ -31,8 +31,9 @@ CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 CREATE TABLE pb_favoris
 (
     id_favoris INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    id_users INT UNSIGNED NOT NULL,
     favoris_aliment INT UNSIGNED,
-    favoris_subtitute INT UNSIGNED,
+    favoris_substitute INT UNSIGNED,
     PRIMARY KEY(id_favoris)
 )
 CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
@@ -44,7 +45,6 @@ CREATE TABLE pb_users
     id_users INT UNSIGNED NOT NULL AUTO_INCREMENT,
     user_name VARCHAR(45) NOT NULL UNIQUE,
     user_passwd VARCHAR(88) NOT NULL,
-    user_favoris INT UNSIGNED,
     PRIMARY KEY(id_users)
 )
 CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
@@ -54,9 +54,5 @@ CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ALTER TABLE pb_aliments
 ADD CONSTRAINT FK_pb_aliments FOREIGN KEY(aliment_categorie) REFERENCES pb_categories(categorie_name);
 ALTER TABLE pb_favoris
-ADD CONSTRAINT FK_pb_favoris_alimt FOREIGN KEY(favoris_aliment) REFERENCES pb_aliments(id_aliments);
-ALTER TABLE pb_favoris
-ADD CONSTRAINT FK_pb_favoris_subti FOREIGN KEY(favoris_subtitute) REFERENCES pb_aliments(id_aliments);
-ALTER TABLE pb_users
-ADD CONSTRAINT FK_pb_users FOREIGN KEY(user_favoris) REFERENCES pb_favoris(id_favoris);
+ADD CONSTRAINT FK_pb_favoris_users FOREIGN KEY(id_users) REFERENCES pb_users(id_users);
 ------------------------------------------------------------------------------

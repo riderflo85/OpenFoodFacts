@@ -38,11 +38,11 @@ def main():
 
             if user.rep == "1":
                 user.sign_in(db)
-                fonc.save(db, user.current_user)
+                fonc.save(db, user.user_id)
 
             elif user.rep == "2":
                 user.sign_up(db)
-                fonc.save(db, user.current_user)
+                fonc.save(db, user.user_id)
 
         if fonc.end(user):
             main()
@@ -55,8 +55,10 @@ def main():
         user.sign_in(db)
 
         data = "aliment_name, aliment_link"
+        where = "id_users"
+        cond = user.user_id
         arg = ["pb_favoris", "id_aliments", "favoris_aliment"]
-        db.select_join(data, "pb_aliments", *arg)
+        db.select_where_join(data, "pb_aliments", where, cond, *arg)
         result_name = []
         result_link = []
 
@@ -64,12 +66,52 @@ def main():
             result_name.append(x[0])
             result_link.append(x[1])
 
-        print("\n\tAliment chercher:  \n")
-        print("Nom des aliments: \n{}\n".format(result_name))
-        print("Lien internet pour plus d'infos: \n{}\n".format(result_link))
+        print("-------------------------------------------------------------")
+        print("\n\t\tAliment chercher:")
+        print("\tNom des aliments:\n")
 
-        print("\nSubstitut enregistrés:  ")
+        index = 0
+        for x in result_name:
+            index += 1
+            print("{} - {}".format(index, x))
+
+        print("\n\tLien internet pour plus d'infos:\n")
+
+        index = 0
+        for x in result_link:
+            index += 1
+            print("{} - {}".format(index, x))
+
         # Affiche les substituts enregistrés
+        data = "aliment_name, aliment_link"
+        where = "id_users"
+        cond = user.user_id
+        arg = ["pb_favoris", "id_aliments", "favoris_substitute"]
+        db.select_where_join(data, "pb_aliments", where, cond, *arg)
+        result_name = []
+        result_link = []
+
+        for x in db.colect_data:
+            result_name.append(x[0])
+            result_link.append(x[1])
+        print("-------------------------------------------------------------")
+
+        print("-------------------------------------------------------------")
+        print("\n\t\tSubstitus enregistrés:")
+        print("\tNom des aliments:\n")
+        
+        index = 0
+        for x in result_name:
+            index += 1
+            print("{} - {}".format(index, x))
+
+        print("\n\tLien internet pour plus d'infos:\n")
+        
+        index = 0
+        for x in result_link:
+            index += 1
+            print("{} - {}".format(index, x))
+        print("-------------------------------------------------------------")
 
         if fonc.end(user):
             main()

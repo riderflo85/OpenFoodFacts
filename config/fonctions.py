@@ -131,7 +131,7 @@ def push_data(db):
     for foo in data:
         categories = foo
         values = "'{}'".format(foo)
-        db.insert_data(True, "pb_categories", "categorie_name", values)
+        db.insert_data("pb_categories", "categorie_name", values)
 
         for x in data[categories]:
             al_na = x[0]
@@ -146,7 +146,7 @@ def push_data(db):
             values = values.format(al_na, al_ca, al_nu, al_no, al_sh, al_li)
 
             try:
-                db.insert_data(True, "pb_aliments", ali_champs, values)
+                db.insert_data("pb_aliments", ali_champs, values)
 
             except mysql.connector.errors.IntegrityError:
                 pass
@@ -247,19 +247,15 @@ def save(db, user):
     where = "aliment_name"
     db.union(data, table1, where, db.food_search,
     data, table1, where, db.substi)
+    id_food = db.colect_data
 
     table2 = "pb_favoris"
-    column = "favoris_aliment, favoris_subtitute"
-    values1 = "'{}', '{}'".format(int(db.colect_data[0][0]), int(db.colect_data[1][0]))
+    column = "id_users, favoris_aliment, favoris_substitute"
+    values1 = "{}, {}, {}".format(int(user),
+        int(id_food[0][0]), int(id_food[1][0]))
 
-    db.insert_data(True, table2, column, values1)
+    db.insert_data(table2, column, values1)
 
-    db.union("user_favoris", "pb_users", "user_name", user,
-    "id_favoris", "pb_favoris", "favoris_aliment", int(db.colect_data[0][0]))
-    id_favoris = db.colect_data[1][0]
-    user_favoris = db.colect_data[0][0]+","+str(id_favoris)
-
-    db.update("pb_users", "user_favoris", user_favoris, "user_name", user)
     print("\nEnregistrement réussi")
 
 

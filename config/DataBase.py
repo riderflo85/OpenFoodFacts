@@ -24,16 +24,10 @@ class DataBase():
         )
         self.cursor = self.conn.cursor()
 
-    def insert_data(self, one, *args):
-        if one:
-            req = "INSERT INTO {} ({}) VALUES ({});".format(*args)
-            self.__execute(req)
-            self.__commit()
-
-        else:
-            req = "INSERT INTO {} ({}) VALUES ({}), ({});".format(*args)
-            self.__execute(req)
-            self.__commit()
+    def insert_data(self, *args):
+        req = "INSERT INTO {} ({}) VALUES ({});".format(*args)
+        self.__execute(req)
+        self.__commit()
 
     def select_simple(self, data, table):
         req = "SELECT {} FROM {}".format(data, table)
@@ -72,12 +66,6 @@ class DataBase():
         req = req1+req2
         self.__execute(req)
         self.colect_data = self.cursor.fetchall()
-
-    def update(self, table, column, data, where, cond):
-        req = "UPDATE {} SET {} = '{}' WHERE {} = '{}';"
-        req = req.format(table, column, data, where, cond)
-        self.__execute(req)
-        self.__commit()
 
     def close(self):
         self.conn.close()
