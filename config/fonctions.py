@@ -287,6 +287,78 @@ def save(db, user):
     print("\nEnregistrement réussi")
 
 
+def search_result(db, user):
+    """Fonction qui recherche et affiche les favoris de l'utilisateur
+    en cour"""
+
+    # ----------Recherche les aliments enregistrés----------
+    data = "aliment_name, aliment_link"
+    where = "id_users"
+    cond = user.user_id
+    arg = ["pb_favoris", "id_aliments", "favoris_aliment"]
+    db.select_where_join(data, "pb_aliments", where, cond, *arg)
+    result_name = []
+    result_link = []
+
+    for x in db.colect_data:
+        result_name.append(x[0])
+        result_link.append(x[1])
+    # ------------------------------------------------------
+
+    # -----------Affiche les aliments enregistrés-----------
+    print("-------------------------------------------------------------")
+    print("\n\t\tAliment chercher:")
+    print("\tNom des aliments:\n")
+
+    index = 0
+    for x in result_name:
+        index += 1
+        print("{} - {}".format(index, x))
+
+    print("\n\tLien internet pour plus d'infos:\n")
+
+    index = 0
+    for x in result_link:
+        index += 1
+        print("{} - {}".format(index, x))
+
+    print("-------------------------------------------------------------")
+    # ------------------------------------------------------
+
+    # ---------Recherche les substituts enregistrés---------
+    data = "aliment_name, aliment_link"
+    where = "id_users"
+    cond = user.user_id
+    arg = ["pb_favoris", "id_aliments", "favoris_substitute"]
+    db.select_where_join(data, "pb_aliments", where, cond, *arg)
+    result_name = []
+    result_link = []
+
+    for x in db.colect_data:
+        result_name.append(x[0])
+        result_link.append(x[1])
+    # ------------------------------------------------------
+
+    # ----------Affiche les substituts enregistrés----------
+    print("-------------------------------------------------------------")
+    print("\n\t\tSubstitus enregistrés:")
+    print("\tNom des aliments:\n")
+        
+    index = 0
+    for x in result_name:
+        index += 1
+        print("{} - {}".format(index, x))
+
+    print("\n\tLien internet pour plus d'infos:\n")
+        
+    index = 0
+    for x in result_link:
+        index += 1
+        print("{} - {}".format(index, x))
+    print("-------------------------------------------------------------")
+    # ------------------------------------------------------
+
+
 def end(user):
     """Fonction qui permet de déterminer si l'utilisateur veut quittez le
     programme ou non"""

@@ -53,65 +53,7 @@ def main():
 
     elif user.rep == "2":
         user.sign_in(db)
-
-        data = "aliment_name, aliment_link"
-        where = "id_users"
-        cond = user.user_id
-        arg = ["pb_favoris", "id_aliments", "favoris_aliment"]
-        db.select_where_join(data, "pb_aliments", where, cond, *arg)
-        result_name = []
-        result_link = []
-
-        for x in db.colect_data:
-            result_name.append(x[0])
-            result_link.append(x[1])
-
-        print("-------------------------------------------------------------")
-        print("\n\t\tAliment chercher:")
-        print("\tNom des aliments:\n")
-
-        index = 0
-        for x in result_name:
-            index += 1
-            print("{} - {}".format(index, x))
-
-        print("\n\tLien internet pour plus d'infos:\n")
-
-        index = 0
-        for x in result_link:
-            index += 1
-            print("{} - {}".format(index, x))
-
-        # Affiche les substituts enregistrés
-        data = "aliment_name, aliment_link"
-        where = "id_users"
-        cond = user.user_id
-        arg = ["pb_favoris", "id_aliments", "favoris_substitute"]
-        db.select_where_join(data, "pb_aliments", where, cond, *arg)
-        result_name = []
-        result_link = []
-
-        for x in db.colect_data:
-            result_name.append(x[0])
-            result_link.append(x[1])
-        print("-------------------------------------------------------------")
-
-        print("-------------------------------------------------------------")
-        print("\n\t\tSubstitus enregistrés:")
-        print("\tNom des aliments:\n")
-        
-        index = 0
-        for x in result_name:
-            index += 1
-            print("{} - {}".format(index, x))
-
-        print("\n\tLien internet pour plus d'infos:\n")
-        
-        index = 0
-        for x in result_link:
-            index += 1
-            print("{} - {}".format(index, x))
-        print("-------------------------------------------------------------")
+        fonc.search_result(db, user)
 
         if fonc.end(user):
             main()
