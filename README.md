@@ -45,18 +45,22 @@ et vous proposez un substitut plus sain à l'aliment qui vous fait envie.
 
   ### INSTALLATION
 
-    Une fois python3.7 et mysql installés, créez un utilisateur mysql et attribuer les droits sur la base de données 'purbeurre'
+    Une fois python3.7 et mysql installés, créez un utilisateur mysql et attribuer les droits sur la base
+    de données 'purbeurre'
 
         - CREATE USER 'user'@'hôte' IDENTIFIED BY 'mot_de_passe';
         - GRANT ALL PRIVILEGES ON purbeurre.* TO 'user'@'hôte';
 
 
-    Ensuite, téléchargez ou clonez le dépôt, déplacez-vous dans le dossier du projet et installez les dépendances
+    Ensuite, téléchargez ou clonez le dépôt, déplacez-vous dans le dossier du projet et installez
+    les dépendances
 
         - pipenv install
+        - pipenv shell
 
 
-    Éditez le fichier "constants.py" et précisez l'hôte(HOST), le nom d'utilisateur(USER) ainsi que le mot de passe(PWD) de l'utilisateur précédement créé dans mysql
+    Éditez le fichier "constants.py" et précisez l'hôte(HOST), le nom d'utilisateur(USER) ainsi que
+    le mot de passe(PWD) de l'utilisateur précédement créé dans mysql
 
 
     Puis lancez le script "createDB.py"
@@ -65,4 +69,4 @@ et vous proposez un substitut plus sain à l'aliment qui vous fait envie.
 
   ### UTILISATION
 
-    Vous pouvez maintenant executer "main.py"
+    Vous pouvez maintenant executer "main.py" (python3 main.py)
