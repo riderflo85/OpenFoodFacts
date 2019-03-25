@@ -3,3 +3,4 @@ categories*.json
 .vscode
 __pycache__
 openfoodfacts_search.csv
+createDataBase.sql
