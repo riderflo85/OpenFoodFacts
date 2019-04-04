@@ -10,8 +10,8 @@ from config.DataBase import DataBase
 
 
 def create_db():
-    """Focntion qui parcours le script .sql et execute les requetes
-    pour pouvoir créer la base de données"""
+    """Function that runs the SQL script and runs the queries to create
+    the database"""
 
     conn = mysql.connector.connect(
         host=const.HOST,

@@ -5,10 +5,10 @@ import mysql.connector
 
 
 class DataBase():
-    """Classe qui gère les requetes SQL avec la base de données"""
+    """Class that manages SQL queries with the database"""
 
     def __init__(self, name_BDD):
-        """Constructeur de la classe qui défini des variables de base"""
+        """Constructor of the class that defines basic variables"""
 
         self.name_BDD = name_BDD
         self.conn = None
@@ -19,7 +19,7 @@ class DataBase():
         self.substi = None
 
     def connexion(self, host, user, passwd):
-        """Connexion à la base de données"""
+        """Connection to the database"""
 
         self.conn = mysql.connector.connect(
             host=host,
@@ -30,21 +30,21 @@ class DataBase():
         self.cursor = self.conn.cursor()
 
     def insert_data(self, *args):
-        """Insertion de données"""
+        """Insert data in to the database"""
 
         req = "INSERT INTO {} ({}) VALUES ({});".format(*args)
         self.__execute(req)
         self.__commit()
 
     def select_simple(self, data, table):
-        """Selection simple de donnée"""
+        """Simple selection of the data"""
 
         req = "SELECT {} FROM {}".format(data, table)
         self.__execute(req)
         self.colect_data = self.cursor.fetchall()
 
     def select_join(self, data, table, *args):
-        """Sélection de données avec une jointure"""
+        """Selection of data with a joint"""
 
         req = "SELECT {} FROM {} INNER JOIN {} ON {}={};"
         req = req.format(data, table, *args)
@@ -52,7 +52,7 @@ class DataBase():
         self.colect_data = self.cursor.fetchall()
 
     def select_where(self, data, table, where, cond):
-        """Sélection de donnée avec une clause where"""
+        """Data selection with a where clause"""
 
         req = "SELECT {} FROM {} WHERE {} = \"{}\""
         req = req.format(data, table, where, cond)
@@ -60,7 +60,7 @@ class DataBase():
         self.colect_data = self.cursor.fetchall()
 
     def select_where_join(self, data, table, where, cond, *args):
-        """Sélection de donnée avec une jointure et une clause where"""
+        """Data selection with a joint and a where clause"""
 
         req = "SELECT {} FROM {} INNER JOIN {} ON {}={} WHERE {}={};"
         req = req.format(data, table, *args, where, cond)
@@ -68,7 +68,7 @@ class DataBase():
         self.colect_data = self.cursor.fetchall()
     
     def select_where_and(self, data, table, where, cond, c1, v1, c2, v2):
-        """Sélection de donnée multiple avec une clause where"""
+        """Multiple data selection with a where clause"""
 
         req = "SELECT {} FROM {} WHERE {}='{}' AND {} < '{}' AND {} < {};"
         req = req.format(data, table, where, cond, c1, v1, c2, v2)
@@ -76,7 +76,7 @@ class DataBase():
         self.colect_data = self.cursor.fetchall()
     
     def union(self, d1, t1, w1, cond1, d2, t2, w2, cond2):
-        """Union de requetes avec la clause where"""
+        """Union of requests with the where clause"""
 
         req1 = "SELECT {} FROM {} WHERE {} = \"{}\" UNION "
         req1 = req1.format(d1, t1, w1, cond1)
@@ -87,18 +87,17 @@ class DataBase():
         self.colect_data = self.cursor.fetchall()
 
     def close(self):
-        """Fermeture de la connexion avec la base de données"""
+        """Closure of the database connection"""
 
         self.conn.close()
 
     def __execute(self, *args):
-        """Méthode de classe protégéé qui permet de d'executé les requetes
-        SQL"""
+        """Protected class method that allows to execute SQL queries"""
 
         self.cursor.execute(*args)
 
     def __commit(self):
-        """Méthode de classe protégée qui permet de validé l'insertion de
-        données dans la base de données"""
+        """Protected class method that validates the insertion of data in
+        the database"""
 
         self.conn.commit()
